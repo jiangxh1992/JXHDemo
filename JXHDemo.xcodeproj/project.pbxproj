@@ -17,14 +17,6 @@
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
 		F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3211BD8B30000803182 /* MainTableViewController.m */; };
 		F755A3251BD8B32600803182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3241BD8B32600803182 /* main.m */; };
-		F755A33D1BD8B40000803182 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A32E1BD8B40000803182 /* NavigationController.m */; };
-		F755A33E1BD8B40000803182 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3301BD8B40000803182 /* VisitViewController.m */; };
-		F755A33F1BD8B40000803182 /* VisitTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3321BD8B40000803182 /* VisitTableTableViewController.m */; };
-		F755A3401BD8B40000803182 /* NewCreateVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */; };
-		F755A3411BD8B40000803182 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3361BD8B40000803182 /* MYViewController.m */; };
-		F755A3421BD8B40000803182 /* VisitCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3381BD8B40000803182 /* VisitCellFrame.m */; };
-		F755A3431BD8B40000803182 /* VisitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A33A1BD8B40000803182 /* VisitTableViewCell.m */; };
-		F755A3441BD8B40000803182 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A33C1BD8B40000803182 /* Visit.m */; };
 		F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */; };
 		F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3481BD8B40D00803182 /* MyCalenderView.m */; };
 		F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */; };
@@ -69,22 +61,6 @@
 		F755A3201BD8B30000803182 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		F755A3211BD8B30000803182 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		F755A3241BD8B32600803182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F755A32D1BD8B40000803182 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
-		F755A32E1BD8B40000803182 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		F755A32F1BD8B40000803182 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
-		F755A3301BD8B40000803182 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
-		F755A3311BD8B40000803182 /* VisitTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitTableTableViewController.h; sourceTree = "<group>"; };
-		F755A3321BD8B40000803182 /* VisitTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitTableTableViewController.m; sourceTree = "<group>"; };
-		F755A3331BD8B40000803182 /* NewCreateVisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCreateVisitViewController.h; sourceTree = "<group>"; };
-		F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCreateVisitViewController.m; sourceTree = "<group>"; };
-		F755A3351BD8B40000803182 /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
-		F755A3361BD8B40000803182 /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
-		F755A3371BD8B40000803182 /* VisitCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitCellFrame.h; sourceTree = "<group>"; };
-		F755A3381BD8B40000803182 /* VisitCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitCellFrame.m; sourceTree = "<group>"; };
-		F755A3391BD8B40000803182 /* VisitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitTableViewCell.h; sourceTree = "<group>"; };
-		F755A33A1BD8B40000803182 /* VisitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitTableViewCell.m; sourceTree = "<group>"; };
-		F755A33B1BD8B40000803182 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
-		F755A33C1BD8B40000803182 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
 		F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalendarViewController.h; sourceTree = "<group>"; };
 		F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalendarViewController.m; sourceTree = "<group>"; };
 		F755A3471BD8B40D00803182 /* MyCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalenderView.h; sourceTree = "<group>"; };
@@ -154,7 +130,6 @@
 				F755A3291BD8B3E400803182 /* 左对齐alertview */,
 				F755A32A1BD8B3E400803182 /* 日历 */,
 				F755A32B1BD8B3E400803182 /* 时间轴 */,
-				F755A32C1BD8B3E400803182 /* 随访记录 */,
 				F755A3191BD8B2D300803182 /* NSString高度 */,
 				F70AE9D51BD084B9008F817D /* 地图 */,
 				F70AE9AF1BD08343008F817D /* Supporting Files */,
@@ -280,29 +255,6 @@
 			path = "时间轴";
 			sourceTree = "<group>";
 		};
-		F755A32C1BD8B3E400803182 /* 随访记录 */ = {
-			isa = PBXGroup;
-			children = (
-				F755A32D1BD8B40000803182 /* NavigationController.h */,
-				F755A32E1BD8B40000803182 /* NavigationController.m */,
-				F755A32F1BD8B40000803182 /* VisitViewController.h */,
-				F755A3301BD8B40000803182 /* VisitViewController.m */,
-				F755A3311BD8B40000803182 /* VisitTableTableViewController.h */,
-				F755A3321BD8B40000803182 /* VisitTableTableViewController.m */,
-				F755A3331BD8B40000803182 /* NewCreateVisitViewController.h */,
-				F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */,
-				F755A3351BD8B40000803182 /* MYViewController.h */,
-				F755A3361BD8B40000803182 /* MYViewController.m */,
-				F755A3371BD8B40000803182 /* VisitCellFrame.h */,
-				F755A3381BD8B40000803182 /* VisitCellFrame.m */,
-				F755A3391BD8B40000803182 /* VisitTableViewCell.h */,
-				F755A33A1BD8B40000803182 /* VisitTableViewCell.m */,
-				F755A33B1BD8B40000803182 /* Visit.h */,
-				F755A33C1BD8B40000803182 /* Visit.m */,
-			);
-			path = "随访记录";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,7 +357,6 @@
 			files = (
 				F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */,
 				F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */,
-				F755A33F1BD8B40000803182 /* VisitTableTableViewController.m in Sources */,
 				F755A35F1BD8B43C00803182 /* NewRecordViewController.m in Sources */,
 				F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */,
 				F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */,
@@ -413,19 +364,12 @@
 				F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */,
 				F755A35D1BD8B43C00803182 /* TimerShaftCell.m in Sources */,
 				F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */,
-				F755A3421BD8B40000803182 /* VisitCellFrame.m in Sources */,
-				F755A3431BD8B40000803182 /* VisitTableViewCell.m in Sources */,
-				F755A3401BD8B40000803182 /* NewCreateVisitViewController.m in Sources */,
 				F755A3251BD8B32600803182 /* main.m in Sources */,
 				F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */,
 				F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */,
 				F755A3221BD8B30000803182 /* AppDelegate.m in Sources */,
-				F755A33E1BD8B40000803182 /* VisitViewController.m in Sources */,
-				F755A3441BD8B40000803182 /* Visit.m in Sources */,
 				F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */,
-				F755A33D1BD8B40000803182 /* NavigationController.m in Sources */,
 				F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */,
-				F755A3411BD8B40000803182 /* MYViewController.m in Sources */,
 				F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */,
 				F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */,
 			);
@@ -494,7 +438,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = /Users/jxh/Desktop/JXHDemo/JXHDemo/Prefix.pch;
+				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -537,7 +481,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = /Users/jxh/Desktop/JXHDemo/JXHDemo/Prefix.pch;
+				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

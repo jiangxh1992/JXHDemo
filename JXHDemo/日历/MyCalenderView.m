@@ -103,8 +103,6 @@
 -(id)init {
     //日历的尺寸为320px宽，400px高
     self = [self initWithFrame:CGRectMake(0, 0, 320, 400)];
-    if (self) {
-    }
     return self;
 }
 

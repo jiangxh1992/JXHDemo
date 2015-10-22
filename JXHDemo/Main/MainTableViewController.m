@@ -14,7 +14,6 @@
 #import "AlertViewController.h"
 #import "CustomCalendarViewController.h"
 #import "TimerShaftTableViewController.h"
-#import "VisitTableTableViewController.h"
 
 @interface MainTableViewController ()
 
@@ -29,7 +28,7 @@
     // table设置
     [self setTableView];
     //视图名称
-    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"随访记录", nil];
+    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", nil];
 }
 /**
  *  导航栏设置
@@ -125,11 +124,6 @@
         // 时间轴
         TimerShaftTableViewController *timerVC = [[TimerShaftTableViewController alloc] init];
         [self.navigationController pushViewController:timerVC animated:YES];
-    }
-    if (indexPath.row == 7) {
-        // 随访记录
-        VisitTableTableViewController *visitVC = [[VisitTableTableViewController alloc] init];
-        [self.navigationController pushViewController:visitVC animated:YES];
     }
 }
 

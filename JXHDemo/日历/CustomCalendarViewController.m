@@ -5,7 +5,7 @@
 //  Created by txbydev3 on 15/9/17.
 //  Copyright (c) 2015年 txbydev3. All rights reserved.
 //
-
+#define calendarY 74 //日历到顶端的高度
 #import "CustomCalendarViewController.h"
 @interface CustomCalendarViewController ()
 //私有属性
@@ -22,9 +22,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-    }
     return self;
 }
 /**
@@ -40,7 +37,7 @@
     //格式化为格利高里日历
     _gregorian       = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     //日历的尺寸
-    _customCalendarView                             = [[MyCalenderView alloc]initWithFrame:CGRectMake(0, 40, 320, 360)];
+    _customCalendarView                             = [[MyCalenderView alloc]initWithFrame:CGRectMake(0, calendarY, 320, 360)];
     //代理和数据源协议设为self
     _customCalendarView.delegate                    = self;
     _customCalendarView.datasource                  = self;
@@ -73,12 +70,10 @@
     //日历月份切换动画重置
     _customCalendarView.nextMonthAnimation          = UIViewAnimationOptionTransitionCrossDissolve;
     _customCalendarView.prevMonthAnimation          = UIViewAnimationOptionTransitionCrossDissolve;
-    
     dispatch_async(dispatch_get_main_queue(), ^{        
         [self.view addSubview:_customCalendarView];
         _customCalendarView.center = CGPointMake(self.view.center.x, _customCalendarView.center.y);
     });
-    
     NSDateComponents * yearComponent = [_gregorian components:NSCalendarUnitYear fromDate:[NSDate date]];
     _currentYear = yearComponent.year;
 }
@@ -130,14 +125,5 @@
 }
 
 #pragma mark - Action methods
-
-/**
- *8.
- */
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
