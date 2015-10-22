@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70AE9BB1BD08343008F817D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70AE9B91BD08343008F817D /* Main.storyboard */; };
+		F70AE9BD1BD08343008F817D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70AE9BC1BD08343008F817D /* Images.xcassets */; };
+		F70AE9C01BD08343008F817D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70AE9BE1BD08343008F817D /* LaunchScreen.xib */; };
+		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
+		F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9D71BD084C9008F817D /* MapViewController.m */; };
+		F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9DB1BD0A018008F817D /* KCAnnotation.m */; };
+		F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */; };
+		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
+		F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3211BD8B30000803182 /* MainTableViewController.m */; };
+		F755A3251BD8B32600803182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3241BD8B32600803182 /* main.m */; };
+		F755A33D1BD8B40000803182 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A32E1BD8B40000803182 /* NavigationController.m */; };
+		F755A33E1BD8B40000803182 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3301BD8B40000803182 /* VisitViewController.m */; };
+		F755A33F1BD8B40000803182 /* VisitTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3321BD8B40000803182 /* VisitTableTableViewController.m */; };
+		F755A3401BD8B40000803182 /* NewCreateVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */; };
+		F755A3411BD8B40000803182 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3361BD8B40000803182 /* MYViewController.m */; };
+		F755A3421BD8B40000803182 /* VisitCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3381BD8B40000803182 /* VisitCellFrame.m */; };
+		F755A3431BD8B40000803182 /* VisitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A33A1BD8B40000803182 /* VisitTableViewCell.m */; };
+		F755A3441BD8B40000803182 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A33C1BD8B40000803182 /* Visit.m */; };
+		F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */; };
+		F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3481BD8B40D00803182 /* MyCalenderView.m */; };
+		F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */; };
+		F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A34F1BD8B41A00803182 /* UICheckBox.m */; };
+		F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3511BD8B41A00803182 /* CheckBoxViewController.m */; };
+		F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */; };
+		F755A35D1BD8B43C00803182 /* TimerShaftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3571BD8B43C00803182 /* TimerShaftCell.m */; };
+		F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3591BD8B43C00803182 /* TimerButton.m */; };
+		F755A35F1BD8B43C00803182 /* NewRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A35B1BD8B43C00803182 /* NewRecordViewController.m */; };
+		F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3611BD8B44A00803182 /* AlertViewController.m */; };
+		F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3641BD8B45500803182 /* OpenWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F70AE9C61BD08343008F817D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F70AE9A41BD08343008F817D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F70AE9AB1BD08343008F817D;
+			remoteInfo = JXHDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F70AE9AC1BD08343008F817D /* JXHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70AE9B01BD08343008F817D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70AE9BA1BD08343008F817D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F70AE9BC1BD08343008F817D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F70AE9BF1BD08343008F817D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F70AE9C51BD08343008F817D /* JXHDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXHDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70AE9CA1BD08343008F817D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70AE9CB1BD08343008F817D /* JXHDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHDemoTests.m; sourceTree = "<group>"; };
+		F70AE9D61BD084C9008F817D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F70AE9D71BD084C9008F817D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F70AE9D91BD08BB1008F817D /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		F70AE9DA1BD0A018008F817D /* KCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnotation.h; sourceTree = "<group>"; };
+		F70AE9DB1BD0A018008F817D /* KCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnotation.m; sourceTree = "<group>"; };
+		F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
+		F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
+		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F755A31F1BD8B30000803182 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F755A3201BD8B30000803182 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		F755A3211BD8B30000803182 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		F755A3241BD8B32600803182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F755A32D1BD8B40000803182 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		F755A32E1BD8B40000803182 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		F755A32F1BD8B40000803182 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
+		F755A3301BD8B40000803182 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
+		F755A3311BD8B40000803182 /* VisitTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitTableTableViewController.h; sourceTree = "<group>"; };
+		F755A3321BD8B40000803182 /* VisitTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitTableTableViewController.m; sourceTree = "<group>"; };
+		F755A3331BD8B40000803182 /* NewCreateVisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCreateVisitViewController.h; sourceTree = "<group>"; };
+		F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCreateVisitViewController.m; sourceTree = "<group>"; };
+		F755A3351BD8B40000803182 /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
+		F755A3361BD8B40000803182 /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
+		F755A3371BD8B40000803182 /* VisitCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitCellFrame.h; sourceTree = "<group>"; };
+		F755A3381BD8B40000803182 /* VisitCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitCellFrame.m; sourceTree = "<group>"; };
+		F755A3391BD8B40000803182 /* VisitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitTableViewCell.h; sourceTree = "<group>"; };
+		F755A33A1BD8B40000803182 /* VisitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitTableViewCell.m; sourceTree = "<group>"; };
+		F755A33B1BD8B40000803182 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
+		F755A33C1BD8B40000803182 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
+		F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalendarViewController.h; sourceTree = "<group>"; };
+		F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalendarViewController.m; sourceTree = "<group>"; };
+		F755A3471BD8B40D00803182 /* MyCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalenderView.h; sourceTree = "<group>"; };
+		F755A3481BD8B40D00803182 /* MyCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalenderView.m; sourceTree = "<group>"; };
+		F755A3491BD8B40D00803182 /* MyScheduleListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleListTableViewController.h; sourceTree = "<group>"; };
+		F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleListTableViewController.m; sourceTree = "<group>"; };
+		F755A34E1BD8B41A00803182 /* UICheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckBox.h; sourceTree = "<group>"; };
+		F755A34F1BD8B41A00803182 /* UICheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckBox.m; sourceTree = "<group>"; };
+		F755A3501BD8B41A00803182 /* CheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxViewController.h; sourceTree = "<group>"; };
+		F755A3511BD8B41A00803182 /* CheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxViewController.m; sourceTree = "<group>"; };
+		F755A3541BD8B43C00803182 /* TimerShaftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftTableViewController.h; sourceTree = "<group>"; };
+		F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftTableViewController.m; sourceTree = "<group>"; };
+		F755A3561BD8B43C00803182 /* TimerShaftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftCell.h; sourceTree = "<group>"; };
+		F755A3571BD8B43C00803182 /* TimerShaftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftCell.m; sourceTree = "<group>"; };
+		F755A3581BD8B43C00803182 /* TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButton.h; sourceTree = "<group>"; };
+		F755A3591BD8B43C00803182 /* TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButton.m; sourceTree = "<group>"; };
+		F755A35A1BD8B43C00803182 /* NewRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRecordViewController.h; sourceTree = "<group>"; };
+		F755A35B1BD8B43C00803182 /* NewRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRecordViewController.m; sourceTree = "<group>"; };
+		F755A3601BD8B44A00803182 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		F755A3611BD8B44A00803182 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		F755A3631BD8B45500803182 /* OpenWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebViewController.h; sourceTree = "<group>"; };
+		F755A3641BD8B45500803182 /* OpenWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F70AE9A91BD08343008F817D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70AE9C21BD08343008F817D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F70AE9A31BD08343008F817D = {
+			isa = PBXGroup;
+			children = (
+				F70AE9AE1BD08343008F817D /* JXHDemo */,
+				F70AE9C81BD08343008F817D /* JXHDemoTests */,
+				F70AE9AD1BD08343008F817D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F70AE9AD1BD08343008F817D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F70AE9AC1BD08343008F817D /* JXHDemo.app */,
+				F70AE9C51BD08343008F817D /* JXHDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F70AE9AE1BD08343008F817D /* JXHDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F755A31D1BD8B30000803182 /* Main */,
+				F755A3271BD8B3E400803182 /* UIWebView */,
+				F755A3281BD8B3E400803182 /* 复选框 */,
+				F755A3291BD8B3E400803182 /* 左对齐alertview */,
+				F755A32A1BD8B3E400803182 /* 日历 */,
+				F755A32B1BD8B3E400803182 /* 时间轴 */,
+				F755A32C1BD8B3E400803182 /* 随访记录 */,
+				F755A3191BD8B2D300803182 /* NSString高度 */,
+				F70AE9D51BD084B9008F817D /* 地图 */,
+				F70AE9AF1BD08343008F817D /* Supporting Files */,
+			);
+			path = JXHDemo;
+			sourceTree = "<group>";
+		};
+		F70AE9AF1BD08343008F817D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F70AE9B91BD08343008F817D /* Main.storyboard */,
+				F70AE9BC1BD08343008F817D /* Images.xcassets */,
+				F70AE9BE1BD08343008F817D /* LaunchScreen.xib */,
+				F70AE9B01BD08343008F817D /* Info.plist */,
+				F70AE9D91BD08BB1008F817D /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F70AE9C81BD08343008F817D /* JXHDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F70AE9CB1BD08343008F817D /* JXHDemoTests.m */,
+				F70AE9C91BD08343008F817D /* Supporting Files */,
+			);
+			path = JXHDemoTests;
+			sourceTree = "<group>";
+		};
+		F70AE9C91BD08343008F817D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F70AE9CA1BD08343008F817D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F70AE9D51BD084B9008F817D /* 地图 */ = {
+			isa = PBXGroup;
+			children = (
+				F70AE9D61BD084C9008F817D /* MapViewController.h */,
+				F70AE9D71BD084C9008F817D /* MapViewController.m */,
+				F70AE9DA1BD0A018008F817D /* KCAnnotation.h */,
+				F70AE9DB1BD0A018008F817D /* KCAnnotation.m */,
+			);
+			path = "地图";
+			sourceTree = "<group>";
+		};
+		F755A3191BD8B2D300803182 /* NSString高度 */ = {
+			isa = PBXGroup;
+			children = (
+				F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */,
+				F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */,
+			);
+			path = "NSString高度";
+			sourceTree = "<group>";
+		};
+		F755A31D1BD8B30000803182 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F755A3241BD8B32600803182 /* main.m */,
+				F755A31E1BD8B30000803182 /* AppDelegate.h */,
+				F755A31F1BD8B30000803182 /* AppDelegate.m */,
+				F755A3201BD8B30000803182 /* MainTableViewController.h */,
+				F755A3211BD8B30000803182 /* MainTableViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F755A3271BD8B3E400803182 /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F755A3631BD8B45500803182 /* OpenWebViewController.h */,
+				F755A3641BD8B45500803182 /* OpenWebViewController.m */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		F755A3281BD8B3E400803182 /* 复选框 */ = {
+			isa = PBXGroup;
+			children = (
+				F755A34E1BD8B41A00803182 /* UICheckBox.h */,
+				F755A34F1BD8B41A00803182 /* UICheckBox.m */,
+				F755A3501BD8B41A00803182 /* CheckBoxViewController.h */,
+				F755A3511BD8B41A00803182 /* CheckBoxViewController.m */,
+			);
+			path = "复选框";
+			sourceTree = "<group>";
+		};
+		F755A3291BD8B3E400803182 /* 左对齐alertview */ = {
+			isa = PBXGroup;
+			children = (
+				F755A3601BD8B44A00803182 /* AlertViewController.h */,
+				F755A3611BD8B44A00803182 /* AlertViewController.m */,
+			);
+			path = "左对齐alertview";
+			sourceTree = "<group>";
+		};
+		F755A32A1BD8B3E400803182 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */,
+				F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */,
+				F755A3471BD8B40D00803182 /* MyCalenderView.h */,
+				F755A3481BD8B40D00803182 /* MyCalenderView.m */,
+				F755A3491BD8B40D00803182 /* MyScheduleListTableViewController.h */,
+				F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		F755A32B1BD8B3E400803182 /* 时间轴 */ = {
+			isa = PBXGroup;
+			children = (
+				F755A3541BD8B43C00803182 /* TimerShaftTableViewController.h */,
+				F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */,
+				F755A3561BD8B43C00803182 /* TimerShaftCell.h */,
+				F755A3571BD8B43C00803182 /* TimerShaftCell.m */,
+				F755A3581BD8B43C00803182 /* TimerButton.h */,
+				F755A3591BD8B43C00803182 /* TimerButton.m */,
+				F755A35A1BD8B43C00803182 /* NewRecordViewController.h */,
+				F755A35B1BD8B43C00803182 /* NewRecordViewController.m */,
+			);
+			path = "时间轴";
+			sourceTree = "<group>";
+		};
+		F755A32C1BD8B3E400803182 /* 随访记录 */ = {
+			isa = PBXGroup;
+			children = (
+				F755A32D1BD8B40000803182 /* NavigationController.h */,
+				F755A32E1BD8B40000803182 /* NavigationController.m */,
+				F755A32F1BD8B40000803182 /* VisitViewController.h */,
+				F755A3301BD8B40000803182 /* VisitViewController.m */,
+				F755A3311BD8B40000803182 /* VisitTableTableViewController.h */,
+				F755A3321BD8B40000803182 /* VisitTableTableViewController.m */,
+				F755A3331BD8B40000803182 /* NewCreateVisitViewController.h */,
+				F755A3341BD8B40000803182 /* NewCreateVisitViewController.m */,
+				F755A3351BD8B40000803182 /* MYViewController.h */,
+				F755A3361BD8B40000803182 /* MYViewController.m */,
+				F755A3371BD8B40000803182 /* VisitCellFrame.h */,
+				F755A3381BD8B40000803182 /* VisitCellFrame.m */,
+				F755A3391BD8B40000803182 /* VisitTableViewCell.h */,
+				F755A33A1BD8B40000803182 /* VisitTableViewCell.m */,
+				F755A33B1BD8B40000803182 /* Visit.h */,
+				F755A33C1BD8B40000803182 /* Visit.m */,
+			);
+			path = "随访记录";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F70AE9AB1BD08343008F817D /* JXHDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70AE9CF1BD08343008F817D /* Build configuration list for PBXNativeTarget "JXHDemo" */;
+			buildPhases = (
+				F70AE9A81BD08343008F817D /* Sources */,
+				F70AE9A91BD08343008F817D /* Frameworks */,
+				F70AE9AA1BD08343008F817D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXHDemo;
+			productName = JXHDemo;
+			productReference = F70AE9AC1BD08343008F817D /* JXHDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F70AE9C41BD08343008F817D /* JXHDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70AE9D21BD08343008F817D /* Build configuration list for PBXNativeTarget "JXHDemoTests" */;
+			buildPhases = (
+				F70AE9C11BD08343008F817D /* Sources */,
+				F70AE9C21BD08343008F817D /* Frameworks */,
+				F70AE9C31BD08343008F817D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F70AE9C71BD08343008F817D /* PBXTargetDependency */,
+			);
+			name = JXHDemoTests;
+			productName = JXHDemoTests;
+			productReference = F70AE9C51BD08343008F817D /* JXHDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F70AE9A41BD08343008F817D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Jiangxh;
+				TargetAttributes = {
+					F70AE9AB1BD08343008F817D = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					F70AE9C41BD08343008F817D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = F70AE9AB1BD08343008F817D;
+					};
+				};
+			};
+			buildConfigurationList = F70AE9A71BD08343008F817D /* Build configuration list for PBXProject "JXHDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F70AE9A31BD08343008F817D;
+			productRefGroup = F70AE9AD1BD08343008F817D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F70AE9AB1BD08343008F817D /* JXHDemo */,
+				F70AE9C41BD08343008F817D /* JXHDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F70AE9AA1BD08343008F817D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70AE9BB1BD08343008F817D /* Main.storyboard in Resources */,
+				F70AE9C01BD08343008F817D /* LaunchScreen.xib in Resources */,
+				F70AE9BD1BD08343008F817D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70AE9C31BD08343008F817D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F70AE9A81BD08343008F817D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */,
+				F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */,
+				F755A33F1BD8B40000803182 /* VisitTableTableViewController.m in Sources */,
+				F755A35F1BD8B43C00803182 /* NewRecordViewController.m in Sources */,
+				F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */,
+				F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */,
+				F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */,
+				F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */,
+				F755A35D1BD8B43C00803182 /* TimerShaftCell.m in Sources */,
+				F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */,
+				F755A3421BD8B40000803182 /* VisitCellFrame.m in Sources */,
+				F755A3431BD8B40000803182 /* VisitTableViewCell.m in Sources */,
+				F755A3401BD8B40000803182 /* NewCreateVisitViewController.m in Sources */,
+				F755A3251BD8B32600803182 /* main.m in Sources */,
+				F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */,
+				F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */,
+				F755A3221BD8B30000803182 /* AppDelegate.m in Sources */,
+				F755A33E1BD8B40000803182 /* VisitViewController.m in Sources */,
+				F755A3441BD8B40000803182 /* Visit.m in Sources */,
+				F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */,
+				F755A33D1BD8B40000803182 /* NavigationController.m in Sources */,
+				F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */,
+				F755A3411BD8B40000803182 /* MYViewController.m in Sources */,
+				F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */,
+				F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70AE9C11BD08343008F817D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F70AE9C71BD08343008F817D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F70AE9AB1BD08343008F817D /* JXHDemo */;
+			targetProxy = F70AE9C61BD08343008F817D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F70AE9B91BD08343008F817D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70AE9BA1BD08343008F817D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F70AE9BE1BD08343008F817D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70AE9BF1BD08343008F817D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F70AE9CD1BD08343008F817D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/jxh/Desktop/JXHDemo/JXHDemo/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F70AE9CE1BD08343008F817D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = /Users/jxh/Desktop/JXHDemo/JXHDemo/Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70AE9D01BD08343008F817D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXHDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F70AE9D11BD08343008F817D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXHDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F70AE9D31BD08343008F817D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JXHDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXHDemo.app/JXHDemo";
+			};
+			name = Debug;
+		};
+		F70AE9D41BD08343008F817D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JXHDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXHDemo.app/JXHDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F70AE9A71BD08343008F817D /* Build configuration list for PBXProject "JXHDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70AE9CD1BD08343008F817D /* Debug */,
+				F70AE9CE1BD08343008F817D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70AE9CF1BD08343008F817D /* Build configuration list for PBXNativeTarget "JXHDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70AE9D01BD08343008F817D /* Debug */,
+				F70AE9D11BD08343008F817D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70AE9D21BD08343008F817D /* Build configuration list for PBXNativeTarget "JXHDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70AE9D31BD08343008F817D /* Debug */,
+				F70AE9D41BD08343008F817D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F70AE9A41BD08343008F817D /* Project object */;
+}
