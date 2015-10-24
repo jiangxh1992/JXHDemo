@@ -5,7 +5,9 @@
 //  Created by txbydev3 on 15/9/23.
 //  Copyright © 2015年 txbydev3. All rights reserved.
 //
-
+/************************************
+ *重写UIButton成复选框组件
+ ************************************/
 #import <UIKit/UIKit.h>
 
 @interface UICheckBox : UIButton

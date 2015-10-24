@@ -9,4 +9,6 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/左对齐alertview/AlertViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/日历/CustomCalendarViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/日历/MyCalenderView.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/时间轴/TimerShaftTableViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/时间轴/TimerShaftTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/TestViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/可以展开的TableView/FolderTableViewController.h

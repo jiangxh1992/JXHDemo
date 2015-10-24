@@ -14,6 +14,9 @@
 #import "AlertViewController.h"
 #import "CustomCalendarViewController.h"
 #import "TimerShaftTableViewController.h"
+#import "TestViewController.h"
+#import "FolderTableViewController.h"
+#import "AffineViewController.h"
 
 @interface MainTableViewController ()
 
@@ -28,7 +31,7 @@
     // table设置
     [self setTableView];
     //视图名称
-    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", nil];
+    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", nil];
 }
 /**
  *  导航栏设置
@@ -124,6 +127,21 @@
         // 时间轴
         TimerShaftTableViewController *timerVC = [[TimerShaftTableViewController alloc] init];
         [self.navigationController pushViewController:timerVC animated:YES];
+    }
+    if (indexPath.row == 7) {
+        //测试
+        TestViewController *testVC = [[TestViewController alloc] init];
+        [self.navigationController pushViewController:testVC animated:YES];
+    }
+    if (indexPath.row == 8) {
+        //可折叠的表格
+        FolderTableViewController *folderVC = [[FolderTableViewController alloc] init];
+        [self.navigationController pushViewController:folderVC animated:YES];
+    }
+    if (indexPath.row == 9) {
+        //UIView二维图形Affine几何变换
+        AffineViewController *affineVC = [[AffineViewController alloc] init];
+        [self.navigationController pushViewController:affineVC animated:YES];
     }
 }
 
