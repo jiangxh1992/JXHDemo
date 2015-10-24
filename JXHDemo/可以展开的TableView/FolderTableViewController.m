@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Jiangxh. All rights reserved.
 //
 #define sectionHeaderH 40 //组头部的高度
+#define sectionHeaderH 40 //组头部的高度
 #import "FolderTableViewController.h"
 #import "SectionHeaderView.h"
 
@@ -57,17 +58,20 @@
  */
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     //section头部视图
-    SectionHeaderView *sectionHeader = [[SectionHeaderView alloc] initWithIcon:@"arrow" andTitle:[_titles objectAtIndex:section]];
+    SectionHeaderView *sectionHeader = [[SectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, sectionHeaderH)];
+    //标题
+    [sectionHeader setTitle:[_titles objectAtIndex:section] forState:UIControlStateNormal];
     //为headerview打上tag
     [sectionHeader setTag:section];
     //代理
     sectionHeader.delegate = self;
     return sectionHeader;
 }
+#pragma mark SectionHeader实现代理
 /**
  *  实现代理，sectionheader 点击
  */
-- (void)sectionDidClicked:(UIButton *)sender {
+- (void)sectionDidClicked:(SectionHeaderView *)sender {
     //取得相应section的展开状态并取反
     BOOL isOpen = ![[_isOpen objectAtIndex:sender.tag] boolValue];
     //转化成对象

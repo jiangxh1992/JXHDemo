@@ -33,6 +33,7 @@
 		F774BCB91BDA1C46002A5CC1 /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCB81BDA1C46002A5CC1 /* SectionHeader.m */; };
 		F774BCBC1BDA1E96002A5CC1 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */; };
 		F777FCAA1BDB23E800C5CBEA /* AffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F777FCA91BDB23E800C5CBEA /* AffineViewController.m */; };
+		F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F777FCAB1BDB636B00C5CBEA /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		F777FCA81BDB23E800C5CBEA /* AffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineViewController.h; sourceTree = "<group>"; };
 		F777FCA91BDB23E800C5CBEA /* AffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineViewController.m; sourceTree = "<group>"; };
+		F777FCAB1BDB636B00C5CBEA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,17 +141,17 @@
 		F70AE9AE1BD08343008F817D /* JXHDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F755A31D1BD8B30000803182 /* Main */,
+				F755A31D1BD8B30000803182 /* Main导航 */,
 				F777FCA71BDB234E00C5CBEA /* UIView二维图形Affine几何变换 */,
 				F774BCAD1BDA0A63002A5CC1 /* 可以展开的TableView */,
 				F774BCA91BD9C95E002A5CC1 /* TestViewController */,
 				F755A3271BD8B3E400803182 /* UIWebView */,
-				F755A3281BD8B3E400803182 /* 复选框 */,
-				F755A3291BD8B3E400803182 /* 左对齐alertview */,
-				F755A32A1BD8B3E400803182 /* 日历 */,
-				F755A32B1BD8B3E400803182 /* 时间轴 */,
-				F755A3191BD8B2D300803182 /* NSString高度 */,
-				F70AE9D51BD084B9008F817D /* 地图 */,
+				F755A3281BD8B3E400803182 /* UICheckBox复选框 */,
+				F755A3291BD8B3E400803182 /* 文字左对齐Alertview */,
+				F755A32A1BD8B3E400803182 /* 日历Calendar */,
+				F755A32B1BD8B3E400803182 /* 时间轴TableView实现 */,
+				F755A3191BD8B2D300803182 /* boundingRectWithSize计算字符串高度 */,
+				F70AE9D51BD084B9008F817D /* 地图MKMap */,
 				F70AE9AF1BD08343008F817D /* Supporting Files */,
 			);
 			path = JXHDemo;
@@ -158,6 +160,7 @@
 		F70AE9AF1BD08343008F817D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F777FCAB1BDB636B00C5CBEA /* icon.png */,
 				F70AE9B91BD08343008F817D /* Main.storyboard */,
 				F70AE9BC1BD08343008F817D /* Images.xcassets */,
 				F70AE9BE1BD08343008F817D /* LaunchScreen.xib */,
@@ -184,7 +187,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F70AE9D51BD084B9008F817D /* 地图 */ = {
+		F70AE9D51BD084B9008F817D /* 地图MKMap */ = {
 			isa = PBXGroup;
 			children = (
 				F70AE9D61BD084C9008F817D /* MapViewController.h */,
@@ -192,19 +195,21 @@
 				F70AE9DA1BD0A018008F817D /* KCAnnotation.h */,
 				F70AE9DB1BD0A018008F817D /* KCAnnotation.m */,
 			);
+			name = "地图MKMap";
 			path = "地图";
 			sourceTree = "<group>";
 		};
-		F755A3191BD8B2D300803182 /* NSString高度 */ = {
+		F755A3191BD8B2D300803182 /* boundingRectWithSize计算字符串高度 */ = {
 			isa = PBXGroup;
 			children = (
 				F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */,
 				F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */,
 			);
+			name = "boundingRectWithSize计算字符串高度";
 			path = "NSString高度";
 			sourceTree = "<group>";
 		};
-		F755A31D1BD8B30000803182 /* Main */ = {
+		F755A31D1BD8B30000803182 /* Main导航 */ = {
 			isa = PBXGroup;
 			children = (
 				F755A3241BD8B32600803182 /* main.m */,
@@ -213,6 +218,7 @@
 				F755A3201BD8B30000803182 /* MainTableViewController.h */,
 				F755A3211BD8B30000803182 /* MainTableViewController.m */,
 			);
+			name = "Main导航";
 			path = Main;
 			sourceTree = "<group>";
 		};
@@ -225,7 +231,7 @@
 			path = UIWebView;
 			sourceTree = "<group>";
 		};
-		F755A3281BD8B3E400803182 /* 复选框 */ = {
+		F755A3281BD8B3E400803182 /* UICheckBox复选框 */ = {
 			isa = PBXGroup;
 			children = (
 				F755A34E1BD8B41A00803182 /* UICheckBox.h */,
@@ -233,19 +239,21 @@
 				F755A3501BD8B41A00803182 /* CheckBoxViewController.h */,
 				F755A3511BD8B41A00803182 /* CheckBoxViewController.m */,
 			);
+			name = "UICheckBox复选框";
 			path = "复选框";
 			sourceTree = "<group>";
 		};
-		F755A3291BD8B3E400803182 /* 左对齐alertview */ = {
+		F755A3291BD8B3E400803182 /* 文字左对齐Alertview */ = {
 			isa = PBXGroup;
 			children = (
 				F755A3601BD8B44A00803182 /* AlertViewController.h */,
 				F755A3611BD8B44A00803182 /* AlertViewController.m */,
 			);
+			name = "文字左对齐Alertview";
 			path = "左对齐alertview";
 			sourceTree = "<group>";
 		};
-		F755A32A1BD8B3E400803182 /* 日历 */ = {
+		F755A32A1BD8B3E400803182 /* 日历Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */,
@@ -255,10 +263,11 @@
 				F755A3491BD8B40D00803182 /* MyScheduleListTableViewController.h */,
 				F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */,
 			);
+			name = "日历Calendar";
 			path = "日历";
 			sourceTree = "<group>";
 		};
-		F755A32B1BD8B3E400803182 /* 时间轴 */ = {
+		F755A32B1BD8B3E400803182 /* 时间轴TableView实现 */ = {
 			isa = PBXGroup;
 			children = (
 				F755A3541BD8B43C00803182 /* TimerShaftTableViewController.h */,
@@ -270,6 +279,7 @@
 				F755A35A1BD8B43C00803182 /* NewRecordViewController.h */,
 				F755A35B1BD8B43C00803182 /* NewRecordViewController.m */,
 			);
+			name = "时间轴TableView实现";
 			path = "时间轴";
 			sourceTree = "<group>";
 		};
@@ -409,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */,
 				F70AE9BB1BD08343008F817D /* Main.storyboard in Resources */,
 				F70AE9C01BD08343008F817D /* LaunchScreen.xib in Resources */,
 				F70AE9BD1BD08343008F817D /* Images.xcassets in Resources */,
@@ -578,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -589,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

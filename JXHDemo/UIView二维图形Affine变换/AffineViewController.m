@@ -81,7 +81,7 @@
  *  宽度a倍，高度d倍：
  *  view.transform = CGAffineTransformMakeScale(a,d));
  *  3.旋转
- *  旋转B角，逆时针B为正，顺时针B为负：
+ *  旋转B角，逆时针B为负，顺时针B为正：
  *  view.transform = CGAffineTransformMakeRotation(B*(M_PI/180.0));
  *  4.翻转（绕图形对称轴翻转）
  *  左右翻转：
@@ -95,41 +95,64 @@
 
 @interface AffineViewController ()
 
+/**
+ *  测试uiimageview
+ */
+@property (nonatomic) UIImageView *imageView;
+
 @end
 
 @implementation AffineViewController
-
+/**
+ *  视图加载
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 背景色
     self.view.backgroundColor = RGBColor(230, 230, 230);
-    
     // 测试二维图形变换
     [self transformTest];
 }
-
 /**
  *  测试二维图形变换
  */
 - (void)transformTest {
     //定义一个UIView
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
     //设置中心
-    view.center = self.view.center;
-    //颜色
-    view.backgroundColor = [UIColor purpleColor];
+    _imageView.center = self.view.center;
+    //背景颜色
+    _imageView.backgroundColor = [UIColor purpleColor];
+    //贴图
+    [_imageView setImage:[UIImage imageNamed:@"male"]];
+    //图片内容适应
+    _imageView.contentMode = UIViewContentModeCenter;
     //显示
-    [self.view addSubview:view];
-    
-    /**
-     *  定义几种矩阵变换
-     */
-    
-    /**
-     *  定义几种系统函数变换
-     */
-    //逆时针旋转90度
-    CGAffineTransform unClockWise90 = CGAffineTransformMakeRotation(90.0*(M_PI/180.0));
+    [self.view addSubview:_imageView];
+    //逆时针旋转90度按钮
+    UIButton *btn_transform = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn_transform setCenter:CGPointMake(ApplicationW/2, ApplicationH-100)];
+    [btn_transform setTitle:@"上下翻转缩放" forState:UIControlStateNormal];
+    [btn_transform sizeToFit];
+    [btn_transform addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn_transform];
+}
+/**
+ *  按钮点击事件
+ */
+- (void)click {
+    //顺时针旋转90度
+    //CGAffineTransform unClockWise90 = CGAffineTransformMakeRotation(90.0*(M_PI/180.0));
+    //向右移动20像素，向上移动30像素
+    //CGAffineTransform move = CGAffineTransformMakeTranslation(20.0, -30.0);
+    //宽度缩小一倍，高度两倍
+    CGAffineTransform scale = CGAffineTransformMakeScale(0.5, 2.0);
+    //上下翻转
+    CGAffineTransform upsideDown = CGAffineTransformScale(_imageView.transform, 1.0, -1.0);
+    //上下翻转缩放
+    CGAffineTransform contact = CGAffineTransformConcat(upsideDown, scale);
+    //变换
+    _imageView.transform = contact;
 }
 
 @end
