@@ -13,6 +13,7 @@
 		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
 		F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9D71BD084C9008F817D /* MapViewController.m */; };
 		F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9DB1BD0A018008F817D /* KCAnnotation.m */; };
+		F72C06BE1BDE0C1000221DFA /* AlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */; };
 		F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */; };
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
 		F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3211BD8B30000803182 /* MainTableViewController.m */; };
@@ -60,6 +61,8 @@
 		F70AE9D91BD08BB1008F817D /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F70AE9DA1BD0A018008F817D /* KCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnotation.h; sourceTree = "<group>"; };
 		F70AE9DB1BD0A018008F817D /* KCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnotation.m; sourceTree = "<group>"; };
+		F72C06BC1BDE0C1000221DFA /* AlertControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertControllerViewController.h; sourceTree = "<group>"; };
+		F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertControllerViewController.m; sourceTree = "<group>"; };
 		F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
 		F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
 		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F755A31D1BD8B30000803182 /* Main导航 */,
+				F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */,
 				F777FCA71BDB234E00C5CBEA /* UIView二维图形Affine几何变换 */,
 				F774BCAD1BDA0A63002A5CC1 /* 可以展开的TableView */,
 				F774BCA91BD9C95E002A5CC1 /* TestViewController */,
@@ -197,6 +201,15 @@
 			);
 			name = "地图MKMap";
 			path = "地图";
+			sourceTree = "<group>";
+		};
+		F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				F72C06BC1BDE0C1000221DFA /* AlertControllerViewController.h */,
+				F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */,
+			);
+			path = "提示框与操作表UIAlertController";
 			sourceTree = "<group>";
 		};
 		F755A3191BD8B2D300803182 /* boundingRectWithSize计算字符串高度 */ = {
@@ -448,6 +461,7 @@
 				F774BCB01BDA0A9D002A5CC1 /* FolderTableViewController.m in Sources */,
 				F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */,
 				F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */,
+				F72C06BE1BDE0C1000221DFA /* AlertControllerViewController.m in Sources */,
 				F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */,
 				F774BCAC1BD9C97B002A5CC1 /* TestViewController.m in Sources */,
 				F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */,

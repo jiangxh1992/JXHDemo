@@ -17,6 +17,7 @@
 #import "TestViewController.h"
 #import "FolderTableViewController.h"
 #import "AffineViewController.h"
+#import "AlertControllerViewController.h"
 
 @interface MainTableViewController ()
 
@@ -31,7 +32,7 @@
     // table设置
     [self setTableView];
     //视图名称
-    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", nil];
+    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", @"提示框与操作表UIAlertController", nil];
 }
 /**
  *  导航栏设置
@@ -142,6 +143,11 @@
         //UIView二维图形Affine几何变换
         AffineViewController *affineVC = [[AffineViewController alloc] init];
         [self.navigationController pushViewController:affineVC animated:YES];
+    }
+    if (indexPath.row ==10) {
+        //提示框与操作表UIAlertController
+        AlertControllerViewController *alertcontrollerVC = [[AlertControllerViewController alloc] init];
+        [self.navigationController pushViewController:alertcontrollerVC animated:YES];
     }
 }
 

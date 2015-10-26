@@ -12,4 +12,5 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/时间轴/TimerShaftTableViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/TestViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/可以展开的TableView/FolderTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIView二维图形Affine变换/AffineViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIView二维图形Affine变换/AffineViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/提示框与操作表UIAlertController/AlertControllerViewController.h
