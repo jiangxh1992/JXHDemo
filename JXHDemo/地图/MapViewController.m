@@ -12,14 +12,12 @@
 /**
  *  宏定义常量
  */
-//经度
-#define latitude 31.338928
-//纬度
-#define longitude 120.613353
+// 地图中心坐标
+#define MapCenter CLLocationCoordinate2DMake(31.302682, 120.634743)
 //地图显示范围
-#define delta 0.5
+#define delta 0.1
 
-@interface MapViewController ()<MKAnnotation,MKMapViewDelegate>
+@interface MapViewController ()//<MKAnnotation,MKMapViewDelegate>
 
 /**
  *  位置管理
@@ -43,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始位置
-    _initLocation = CLLocationCoordinate2DMake(latitude, longitude);
+    _initLocation = MapCenter;
     //地图设置
     [self setMapView];
 }
@@ -54,7 +52,7 @@
     //设置地图位置
     _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 30, ApplicationW, ApplicationH - 30)];
     //设置代理
-    _mapView.delegate = self;
+    //_mapView.delegate = self;
     //设置地图可缩放
     [_mapView setZoomEnabled:YES];
     //设置可滚动
@@ -80,7 +78,7 @@
 /**
  *  添加大头针
  */
--(void)addAnnotation{
+-(void)addAnnotation {
     MKPointAnnotation *annotation=[[MKPointAnnotation alloc]init];
     annotation.coordinate = _initLocation;
     [annotation setTitle:@"苏大附一"];

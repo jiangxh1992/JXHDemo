@@ -38,6 +38,7 @@
         //
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         //paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+        //内容居左
         paragraphStyle.alignment = NSTextAlignmentLeft;
         //行间距
         paragraphStyle.lineSpacing = 5.0;
