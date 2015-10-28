@@ -19,10 +19,10 @@
     self.view.backgroundColor = RGBColor(230, 230, 230);
     
     //1.UIActionSheet组件测试
-    //[self actionSheet];
+    [self actionSheet];
     
     //2.UIAlertView组件测试
-    [self alertView];
+    //[self alertView];
     
     //3.UIAlertController组件测试
     //[self alertController];

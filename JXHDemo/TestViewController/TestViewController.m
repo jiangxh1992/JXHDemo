@@ -7,7 +7,7 @@
 //
 
 #import "TestViewController.h"
-
+#import "UIAlertView+DIY.h"
 @interface TestViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end
@@ -19,7 +19,10 @@
     self.view.backgroundColor = RGBColor(230, 230, 230);
     
     // 1.测试sizeToFit
-    [self sizeToFit];
+    //[self sizeToFit];
+    
+    // 2.测试DIY alertView
+    [self alertViewTest];
 }
 /**
  *  1.测试sizeToFit
@@ -44,6 +47,60 @@
     [label sizeToFit];
     //显示label
     [self.view addSubview:label];
+}
+/**
+ *  2.测试DIY alertView
+ */
+- (void)alertViewTest {
+    //定一个提示框
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DIY" message:@"这个应该不显示" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    // 1.自定义小标题label
+    UILabel *title = [[UILabel alloc] init];
+    //文字内容
+    [title setText:@"小标题"];
+    //文字颜色
+    [title setTextColor:[UIColor blueColor]];
+    //文字字体
+    [title setFont:[UIFont boldSystemFontOfSize:20]];
+    [self autoSetLabelFrame:title];
+    //添加居左的label
+    //[alert addLeftAlignmentLabel:title];
+    // 2.自定义正文label
+    UILabel *label = [[UILabel alloc] init];
+    //文字内容
+    [label setText:@"自定义的提示内容哦为了显示换行我多写一点，不行再多写一点，换行了没，没换我再写一点。"];
+    [self autoSetLabelFrame:label];
+    [self autoSetNextOriginFromView:title toView:label];
+    //添加居左的label
+    //[alert addLeftAlignmentLabel:label];
+    //初始化提示框的子视图
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    [view addSubview:title];
+    [view addSubview:label];
+    [alert addUIView:view];
+    //显示提示框
+    [alert show];
+}
+/**
+ *  自动设置UILabel的段落尺寸并居左
+ */
+- (void)autoSetLabelFrame: (UILabel *)label {
+    CGSize size = [label.text sizeWithFont:label.font maxW:240];
+    [label setFrame:CGRectMake(margin, 0, size.width, size.height)];
+    //文字换行模式
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    //行数
+    label.numberOfLines = 0;
+    //文字左对齐
+    label.textAlignment = NSTextAlignmentLeft;
+}
+/**
+ *  自动根据上一个视图设置下一个视图的原点
+ */
+- (void)autoSetNextOriginFromView: (UIView *)preView toView:(UIView *)nextView {
+    CGRect preRect = preView.frame;
+    CGSize nextSize = nextView.frame.size;
+    nextView.frame = CGRectMake(preRect.origin.x, preRect.origin.y + preRect.size.height, nextSize.width, nextSize.height);
 }
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AlertViewController.h"
-
+#import "JXHAlertView.h"
 @interface AlertViewController ()
 
 @end
@@ -26,7 +26,8 @@
 
 - (void) alertBtnTapped {
     NSString *msg = @"1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的";
-    [self showAlertWithMessage:msg Title:@"title"];
+    //[self showAlertWithMessage:msg Title:@"title"];
+    JXHAlertView *jxhView = [[JXHAlertView alloc] init];
 }
 /**
  * 用标题和内容显示提示框

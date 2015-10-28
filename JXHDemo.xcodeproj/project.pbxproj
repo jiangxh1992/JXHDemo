@@ -13,7 +13,11 @@
 		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
 		F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9D71BD084C9008F817D /* MapViewController.m */; };
 		F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9DB1BD0A018008F817D /* KCAnnotation.m */; };
+		F722DAC01BE0751200D5EC1F /* UIAlertView+DIY.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */; };
+		F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */; };
 		F72C06BE1BDE0C1000221DFA /* AlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */; };
+		F72C06C71BDE1A7600221DFA /* UIDIYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */; };
+		F72C06CA1BDE21A300221DFA /* JXHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06C91BDE21A300221DFA /* JXHAlertView.m */; };
 		F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */; };
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
 		F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3211BD8B30000803182 /* MainTableViewController.m */; };
@@ -35,6 +39,7 @@
 		F774BCBC1BDA1E96002A5CC1 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */; };
 		F777FCAA1BDB23E800C5CBEA /* AffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F777FCA91BDB23E800C5CBEA /* AffineViewController.m */; };
 		F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F777FCAB1BDB636B00C5CBEA /* icon.png */; };
+		F78375991BDF56250055457B /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78375981BDF56250055457B /* PickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +66,16 @@
 		F70AE9D91BD08BB1008F817D /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F70AE9DA1BD0A018008F817D /* KCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnotation.h; sourceTree = "<group>"; };
 		F70AE9DB1BD0A018008F817D /* KCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnotation.m; sourceTree = "<group>"; };
+		F722DABE1BE0751200D5EC1F /* UIAlertView+DIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+DIY.h"; sourceTree = "<group>"; };
+		F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+DIY.m"; sourceTree = "<group>"; };
+		F722DBAE1BE0AAAF00D5EC1F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		F72C06BC1BDE0C1000221DFA /* AlertControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertControllerViewController.h; sourceTree = "<group>"; };
 		F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertControllerViewController.m; sourceTree = "<group>"; };
+		F72C06C51BDE1A7600221DFA /* UIDIYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDIYAlertView.h; sourceTree = "<group>"; };
+		F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDIYAlertView.m; sourceTree = "<group>"; };
+		F72C06C81BDE21A300221DFA /* JXHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHAlertView.h; sourceTree = "<group>"; };
+		F72C06C91BDE21A300221DFA /* JXHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHAlertView.m; sourceTree = "<group>"; };
 		F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
 		F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
 		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +116,8 @@
 		F777FCA81BDB23E800C5CBEA /* AffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineViewController.h; sourceTree = "<group>"; };
 		F777FCA91BDB23E800C5CBEA /* AffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineViewController.m; sourceTree = "<group>"; };
 		F777FCAB1BDB636B00C5CBEA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F78375971BDF56250055457B /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		F78375981BDF56250055457B /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +159,8 @@
 		F70AE9AE1BD08343008F817D /* JXHDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F722DAC11BE0A0AD00D5EC1F /* Common */,
+				F78375961BDF55D10055457B /* 选择框PickerView */,
 				F755A31D1BD8B30000803182 /* Main导航 */,
 				F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */,
 				F777FCA71BDB234E00C5CBEA /* UIView二维图形Affine几何变换 */,
@@ -201,6 +218,39 @@
 			);
 			name = "地图MKMap";
 			path = "地图";
+			sourceTree = "<group>";
+		};
+		F722DAC11BE0A0AD00D5EC1F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F722DBAD1BE0AAA500D5EC1F /* Category */,
+				F722DBA61BE0A9DC00D5EC1F /* Lib */,
+				F722DBAA1BE0A9DC00D5EC1F /* Tool */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F722DBA61BE0A9DC00D5EC1F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F722DBAA1BE0A9DC00D5EC1F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F722DBAD1BE0AAA500D5EC1F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F722DBAE1BE0AAAF00D5EC1F /* NSString+Extension.h */,
+				F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */ = {
@@ -261,6 +311,10 @@
 			children = (
 				F755A3601BD8B44A00803182 /* AlertViewController.h */,
 				F755A3611BD8B44A00803182 /* AlertViewController.m */,
+				F72C06C51BDE1A7600221DFA /* UIDIYAlertView.h */,
+				F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */,
+				F72C06C81BDE21A300221DFA /* JXHAlertView.h */,
+				F72C06C91BDE21A300221DFA /* JXHAlertView.m */,
 			);
 			name = "文字左对齐Alertview";
 			path = "左对齐alertview";
@@ -301,6 +355,8 @@
 			children = (
 				F774BCAA1BD9C97B002A5CC1 /* TestViewController.h */,
 				F774BCAB1BD9C97B002A5CC1 /* TestViewController.m */,
+				F722DABE1BE0751200D5EC1F /* UIAlertView+DIY.h */,
+				F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */,
 			);
 			path = TestViewController;
 			sourceTree = "<group>";
@@ -350,6 +406,15 @@
 			);
 			name = "UIView二维图形Affine几何变换";
 			path = "UIView二维图形Affine变换";
+			sourceTree = "<group>";
+		};
+		F78375961BDF55D10055457B /* 选择框PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F78375971BDF56250055457B /* PickerViewController.h */,
+				F78375981BDF56250055457B /* PickerViewController.m */,
+			);
+			path = "选择框PickerView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,13 +534,18 @@
 				F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */,
 				F755A3251BD8B32600803182 /* main.m in Sources */,
 				F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */,
+				F78375991BDF56250055457B /* PickerViewController.m in Sources */,
 				F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */,
 				F755A3221BD8B30000803182 /* AppDelegate.m in Sources */,
+				F72C06C71BDE1A7600221DFA /* UIDIYAlertView.m in Sources */,
+				F72C06CA1BDE21A300221DFA /* JXHAlertView.m in Sources */,
+				F722DAC01BE0751200D5EC1F /* UIAlertView+DIY.m in Sources */,
 				F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */,
 				F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */,
 				F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */,
 				F774BCBC1BDA1E96002A5CC1 /* SectionHeaderView.m in Sources */,
 				F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */,
+				F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +674,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib/ESKit",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
+				);
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -616,6 +691,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib/ESKit",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
+				);
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

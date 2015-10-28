@@ -18,6 +18,7 @@
 #import "FolderTableViewController.h"
 #import "AffineViewController.h"
 #import "AlertControllerViewController.h"
+#import "PickerViewController.h"
 
 @interface MainTableViewController ()
 
@@ -32,7 +33,7 @@
     // table设置
     [self setTableView];
     //视图名称
-    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", @"提示框与操作表UIAlertController", nil];
+    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", @"提示框与操作表UIAlertController", @"选择框PickerView", nil];
 }
 /**
  *  导航栏设置
@@ -148,6 +149,11 @@
         //提示框与操作表UIAlertController
         AlertControllerViewController *alertcontrollerVC = [[AlertControllerViewController alloc] init];
         [self.navigationController pushViewController:alertcontrollerVC animated:YES];
+    }
+    if (indexPath.row == 11) {
+        //选择框PickerView
+        PickerViewController *pickerVC = [[PickerViewController alloc] init];
+        [self.navigationController pushViewController:pickerVC animated:YES];
     }
 }
 

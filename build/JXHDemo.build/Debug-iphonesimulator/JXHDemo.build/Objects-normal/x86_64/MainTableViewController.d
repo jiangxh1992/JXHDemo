@@ -1,6 +1,7 @@
 dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/MainTableViewController.m \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/MainTableViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/地图/MapViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/NSString高度/LabelHeightViewController.h \
@@ -13,4 +14,5 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/TestViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/可以展开的TableView/FolderTableViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIView二维图形Affine变换/AffineViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/提示框与操作表UIAlertController/AlertControllerViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/提示框与操作表UIAlertController/AlertControllerViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/选择框PickerView/PickerViewController.h
