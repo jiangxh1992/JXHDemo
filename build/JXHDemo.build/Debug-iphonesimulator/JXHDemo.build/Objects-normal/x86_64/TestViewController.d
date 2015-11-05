@@ -1,6 +1,8 @@
 dependencies: \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/TestViewController.m \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation基本用法/TestViewController/TestViewController.m \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/TestViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/TestViewController/UIAlertView+DIY.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIImage+Extension.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIView+Extension.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation基本用法/TestViewController/TestViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation基本用法/TestViewController/UIAlertView+DIY.h

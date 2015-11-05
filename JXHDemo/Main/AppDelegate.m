@@ -8,13 +8,14 @@
 
 #import "AppDelegate.h"
 #import "MainTableViewController.h"
+#import "ESTabBarController.h"
+#import "NewFeatureViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 初始化window
@@ -23,36 +24,43 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     // window背景色
     self.window.backgroundColor = [UIColor whiteColor];
+    // 设置底部导航根控制器
+    [self setupRootViewController];
     
-    // 表格菜单
-    MainTableViewController *mainVC = [[MainTableViewController alloc] init];
-    // 根导航
-    UINavigationController *rootNavVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    // 跟导航作为window的跟控制器
-    self.window.rootViewController = rootNavVC;
+//    // 表格菜单
+//    MainTableViewController *mainVC = [[MainTableViewController alloc] init];
+//    // 根导航
+//    UINavigationController *rootNavVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//    // 跟导航作为window的跟控制器
+//    self.window.rootViewController = rootNavVC;
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+/**
+ *  根据是不是第一次登录，设置根控制器，如果是第一次登录则进入欢迎界面，否则直接进入主页面
+ */
+- (void)setupRootViewController
+{
+    // 版本号key
+    NSString *key = (NSString *)kCFBundleVersionKey;
+    // 当前最新应用的版本号
+    NSString *version = [NSBundle mainBundle].infoDictionary[key];
+    // 沙盒中存储的登录过的应用版本号
+    NSString *savedVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+    // 判断是否第一次进入当前版本
+    if ([version isEqualToString:savedVersion])
+    {
+        // 不是第一次(进入主界面)
+        self.window.rootViewController = [[ESTabBarController alloc] init];
+    }
+    else
+    {
+        // 保存版本号
+        [[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        // 第一次登录(显示新特性欢迎界面)
+        self.window.rootViewController = [[NewFeatureViewController alloc] init];
+    }
 }
 
 @end

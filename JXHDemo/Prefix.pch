@@ -9,8 +9,11 @@
 #ifndef JXHDemo_Prefix_pch
 #define JXHDemo_Prefix_pch
 
+
 // 系统扩展类头文件
 #import "NSString+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
 
 // 自定义Log
 #ifdef DEBUG // 调试状态, 打开LOG功能
@@ -22,6 +25,9 @@
  *通过RGB创建颜色
  */
 #define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 创建UIAlertView并且显示
+#define ESAlert(msg) [[[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
 /**
  *获取屏幕尺寸
  */
@@ -49,6 +55,9 @@
 #define normalFont [UIFont systemFontOfSize:15]
 //加粗字体
 #define boldFont [UIFont boldSystemFontOfSize:15]
+
+//导航栏高度
+#define ESNavH 44
 
 /**
  * 时间轴常量

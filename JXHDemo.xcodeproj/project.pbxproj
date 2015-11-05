@@ -11,35 +11,45 @@
 		F70AE9BD1BD08343008F817D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70AE9BC1BD08343008F817D /* Images.xcassets */; };
 		F70AE9C01BD08343008F817D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70AE9BE1BD08343008F817D /* LaunchScreen.xib */; };
 		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
-		F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9D71BD084C9008F817D /* MapViewController.m */; };
-		F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9DB1BD0A018008F817D /* KCAnnotation.m */; };
-		F722DAC01BE0751200D5EC1F /* UIAlertView+DIY.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */; };
 		F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */; };
-		F72C06BE1BDE0C1000221DFA /* AlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */; };
-		F72C06C71BDE1A7600221DFA /* UIDIYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */; };
-		F72C06CA1BDE21A300221DFA /* JXHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C06C91BDE21A300221DFA /* JXHAlertView.m */; };
-		F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */; };
+		F722DBD81BE20DDF00D5EC1F /* ESNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */; };
+		F722DBD91BE20DDF00D5EC1F /* ESTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */; };
+		F722DBDB1BE20DDF00D5EC1F /* NewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */; };
+		F722DBDC1BE20DDF00D5EC1F /* ESTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD51BE20DDF00D5EC1F /* ESTabBar.m */; };
+		F722DBDD1BE20DDF00D5EC1F /* ESTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD71BE20DDF00D5EC1F /* ESTabBarButton.m */; };
+		F722DBE01BE20F3C00D5EC1F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBDF1BE20F3C00D5EC1F /* UIImage+Extension.m */; };
+		F722DBE21BE2108700D5EC1F /* ESKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F722DBE11BE2108700D5EC1F /* ESKit.framework */; };
+		F722DBE51BE213F200D5EC1F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBE41BE213F200D5EC1F /* UIBarButtonItem+Extension.m */; };
+		F7438A9B1BEAFC93001CBF6D /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A7C1BEAFC93001CBF6D /* MainTableViewController.m */; };
+		F7438A9C1BEAFC93001CBF6D /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A7F1BEAFC93001CBF6D /* LabelHeightViewController.m */; };
+		F7438A9D1BEAFC93001CBF6D /* AffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A821BEAFC93001CBF6D /* AffineViewController.m */; };
+		F7438A9E1BEAFC93001CBF6D /* OpenWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A851BEAFC93001CBF6D /* OpenWebViewController.m */; };
+		F7438A9F1BEAFC93001CBF6D /* FolderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A881BEAFC93001CBF6D /* FolderTableViewController.m */; };
+		F7438AA01BEAFC93001CBF6D /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A8A1BEAFC93001CBF6D /* SectionHeader.m */; };
+		F7438AA11BEAFC93001CBF6D /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A8C1BEAFC93001CBF6D /* SectionHeaderView.m */; };
+		F7438AA21BEAFC93001CBF6D /* CheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A8F1BEAFC93001CBF6D /* CheckBoxViewController.m */; };
+		F7438AA31BEAFC93001CBF6D /* UICheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A911BEAFC93001CBF6D /* UICheckBox.m */; };
+		F7438AA41BEAFC93001CBF6D /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A941BEAFC93001CBF6D /* AlertViewController.m */; };
+		F7438AA51BEAFC93001CBF6D /* AlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A971BEAFC93001CBF6D /* AlertControllerViewController.m */; };
+		F7438AA61BEAFC93001CBF6D /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438A9A1BEAFC93001CBF6D /* PickerViewController.m */; };
+		F7438ABF1BEAFCB2001CBF6D /* KCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AA91BEAFCB2001CBF6D /* KCAnnotation.m */; };
+		F7438AC01BEAFCB2001CBF6D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AAB1BEAFCB2001CBF6D /* MapViewController.m */; };
+		F7438AC11BEAFCB2001CBF6D /* SplitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AAE1BEAFCB2001CBF6D /* SplitTableViewController.m */; };
+		F7438AC21BEAFCB2001CBF6D /* CustomCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AB11BEAFCB2001CBF6D /* CustomCalendarViewController.m */; };
+		F7438AC31BEAFCB2001CBF6D /* MyCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AB31BEAFCB2001CBF6D /* MyCalenderView.m */; };
+		F7438AC41BEAFCB2001CBF6D /* MyScheduleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AB51BEAFCB2001CBF6D /* MyScheduleListTableViewController.m */; };
+		F7438AC51BEAFCB2001CBF6D /* NewRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AB81BEAFCB2001CBF6D /* NewRecordViewController.m */; };
+		F7438AC61BEAFCB2001CBF6D /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438ABA1BEAFCB2001CBF6D /* TimerButton.m */; };
+		F7438AC71BEAFCB2001CBF6D /* TimerShaftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438ABC1BEAFCB2001CBF6D /* TimerShaftCell.m */; };
+		F7438AC81BEAFCB2001CBF6D /* TimerShaftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438ABE1BEAFCB2001CBF6D /* TimerShaftTableViewController.m */; };
+		F7438ACD1BEAFCE3001CBF6D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438ACA1BEAFCE3001CBF6D /* TestViewController.m */; };
+		F7438ACE1BEAFCE3001CBF6D /* UIAlertView+DIY.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438ACC1BEAFCE3001CBF6D /* UIAlertView+DIY.m */; };
+		F7438AD11BEB4DE0001CBF6D /* MyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AD01BEB4DE0001CBF6D /* MyDemoViewController.m */; };
+		F7438AD41BEB4DFD001CBF6D /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7438AD31BEB4DFD001CBF6D /* FoundationViewController.m */; };
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
-		F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3211BD8B30000803182 /* MainTableViewController.m */; };
 		F755A3251BD8B32600803182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3241BD8B32600803182 /* main.m */; };
-		F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */; };
-		F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3481BD8B40D00803182 /* MyCalenderView.m */; };
-		F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */; };
-		F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A34F1BD8B41A00803182 /* UICheckBox.m */; };
-		F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3511BD8B41A00803182 /* CheckBoxViewController.m */; };
-		F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */; };
-		F755A35D1BD8B43C00803182 /* TimerShaftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3571BD8B43C00803182 /* TimerShaftCell.m */; };
-		F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3591BD8B43C00803182 /* TimerButton.m */; };
-		F755A35F1BD8B43C00803182 /* NewRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A35B1BD8B43C00803182 /* NewRecordViewController.m */; };
-		F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3611BD8B44A00803182 /* AlertViewController.m */; };
-		F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3641BD8B45500803182 /* OpenWebViewController.m */; };
-		F774BCAC1BD9C97B002A5CC1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCAB1BD9C97B002A5CC1 /* TestViewController.m */; };
-		F774BCB01BDA0A9D002A5CC1 /* FolderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCAF1BDA0A9D002A5CC1 /* FolderTableViewController.m */; };
-		F774BCB91BDA1C46002A5CC1 /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCB81BDA1C46002A5CC1 /* SectionHeader.m */; };
-		F774BCBC1BDA1E96002A5CC1 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */; };
-		F777FCAA1BDB23E800C5CBEA /* AffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F777FCA91BDB23E800C5CBEA /* AffineViewController.m */; };
 		F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F777FCAB1BDB636B00C5CBEA /* icon.png */; };
-		F78375991BDF56250055457B /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78375981BDF56250055457B /* PickerViewController.m */; };
+		F7960CFC1BE33A1A004BA408 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7960CFB1BE33A1A004BA408 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,63 +71,82 @@
 		F70AE9C51BD08343008F817D /* JXHDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXHDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70AE9CA1BD08343008F817D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F70AE9CB1BD08343008F817D /* JXHDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHDemoTests.m; sourceTree = "<group>"; };
-		F70AE9D61BD084C9008F817D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		F70AE9D71BD084C9008F817D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		F70AE9D91BD08BB1008F817D /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		F70AE9DA1BD0A018008F817D /* KCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnotation.h; sourceTree = "<group>"; };
-		F70AE9DB1BD0A018008F817D /* KCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnotation.m; sourceTree = "<group>"; };
-		F722DABE1BE0751200D5EC1F /* UIAlertView+DIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+DIY.h"; sourceTree = "<group>"; };
-		F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+DIY.m"; sourceTree = "<group>"; };
 		F722DBAE1BE0AAAF00D5EC1F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		F72C06BC1BDE0C1000221DFA /* AlertControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertControllerViewController.h; sourceTree = "<group>"; };
-		F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertControllerViewController.m; sourceTree = "<group>"; };
-		F72C06C51BDE1A7600221DFA /* UIDIYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDIYAlertView.h; sourceTree = "<group>"; };
-		F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDIYAlertView.m; sourceTree = "<group>"; };
-		F72C06C81BDE21A300221DFA /* JXHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHAlertView.h; sourceTree = "<group>"; };
-		F72C06C91BDE21A300221DFA /* JXHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHAlertView.m; sourceTree = "<group>"; };
-		F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
-		F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
+		F722DBCA1BE20DDF00D5EC1F /* ESNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESNavigationController.h; sourceTree = "<group>"; };
+		F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESNavigationController.m; sourceTree = "<group>"; };
+		F722DBCC1BE20DDF00D5EC1F /* ESTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBarController.h; sourceTree = "<group>"; };
+		F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTabBarController.m; sourceTree = "<group>"; };
+		F722DBD01BE20DDF00D5EC1F /* NewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureViewController.h; sourceTree = "<group>"; };
+		F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureViewController.m; sourceTree = "<group>"; };
+		F722DBD41BE20DDF00D5EC1F /* ESTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBar.h; sourceTree = "<group>"; };
+		F722DBD51BE20DDF00D5EC1F /* ESTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTabBar.m; sourceTree = "<group>"; };
+		F722DBD61BE20DDF00D5EC1F /* ESTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBarButton.h; sourceTree = "<group>"; };
+		F722DBD71BE20DDF00D5EC1F /* ESTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTabBarButton.m; sourceTree = "<group>"; };
+		F722DBDE1BE20F3C00D5EC1F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		F722DBDF1BE20F3C00D5EC1F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		F722DBE11BE2108700D5EC1F /* ESKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESKit.framework; sourceTree = "<group>"; };
+		F722DBE31BE213F200D5EC1F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		F722DBE41BE213F200D5EC1F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		F7438A7B1BEAFC93001CBF6D /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		F7438A7C1BEAFC93001CBF6D /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		F7438A7E1BEAFC93001CBF6D /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
+		F7438A7F1BEAFC93001CBF6D /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
+		F7438A811BEAFC93001CBF6D /* AffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineViewController.h; sourceTree = "<group>"; };
+		F7438A821BEAFC93001CBF6D /* AffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineViewController.m; sourceTree = "<group>"; };
+		F7438A841BEAFC93001CBF6D /* OpenWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebViewController.h; sourceTree = "<group>"; };
+		F7438A851BEAFC93001CBF6D /* OpenWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebViewController.m; sourceTree = "<group>"; };
+		F7438A871BEAFC93001CBF6D /* FolderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderTableViewController.h; sourceTree = "<group>"; };
+		F7438A881BEAFC93001CBF6D /* FolderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderTableViewController.m; sourceTree = "<group>"; };
+		F7438A891BEAFC93001CBF6D /* SectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeader.h; sourceTree = "<group>"; };
+		F7438A8A1BEAFC93001CBF6D /* SectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeader.m; sourceTree = "<group>"; };
+		F7438A8B1BEAFC93001CBF6D /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		F7438A8C1BEAFC93001CBF6D /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		F7438A8E1BEAFC93001CBF6D /* CheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxViewController.h; sourceTree = "<group>"; };
+		F7438A8F1BEAFC93001CBF6D /* CheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxViewController.m; sourceTree = "<group>"; };
+		F7438A901BEAFC93001CBF6D /* UICheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckBox.h; sourceTree = "<group>"; };
+		F7438A911BEAFC93001CBF6D /* UICheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckBox.m; sourceTree = "<group>"; };
+		F7438A931BEAFC93001CBF6D /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		F7438A941BEAFC93001CBF6D /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		F7438A961BEAFC93001CBF6D /* AlertControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertControllerViewController.h; sourceTree = "<group>"; };
+		F7438A971BEAFC93001CBF6D /* AlertControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertControllerViewController.m; sourceTree = "<group>"; };
+		F7438A991BEAFC93001CBF6D /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		F7438A9A1BEAFC93001CBF6D /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		F7438AA81BEAFCB2001CBF6D /* KCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnotation.h; sourceTree = "<group>"; };
+		F7438AA91BEAFCB2001CBF6D /* KCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnotation.m; sourceTree = "<group>"; };
+		F7438AAA1BEAFCB2001CBF6D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F7438AAB1BEAFCB2001CBF6D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F7438AAD1BEAFCB2001CBF6D /* SplitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitTableViewController.h; sourceTree = "<group>"; };
+		F7438AAE1BEAFCB2001CBF6D /* SplitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitTableViewController.m; sourceTree = "<group>"; };
+		F7438AB01BEAFCB2001CBF6D /* CustomCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalendarViewController.h; sourceTree = "<group>"; };
+		F7438AB11BEAFCB2001CBF6D /* CustomCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalendarViewController.m; sourceTree = "<group>"; };
+		F7438AB21BEAFCB2001CBF6D /* MyCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalenderView.h; sourceTree = "<group>"; };
+		F7438AB31BEAFCB2001CBF6D /* MyCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalenderView.m; sourceTree = "<group>"; };
+		F7438AB41BEAFCB2001CBF6D /* MyScheduleListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleListTableViewController.h; sourceTree = "<group>"; };
+		F7438AB51BEAFCB2001CBF6D /* MyScheduleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleListTableViewController.m; sourceTree = "<group>"; };
+		F7438AB71BEAFCB2001CBF6D /* NewRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRecordViewController.h; sourceTree = "<group>"; };
+		F7438AB81BEAFCB2001CBF6D /* NewRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRecordViewController.m; sourceTree = "<group>"; };
+		F7438AB91BEAFCB2001CBF6D /* TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButton.h; sourceTree = "<group>"; };
+		F7438ABA1BEAFCB2001CBF6D /* TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButton.m; sourceTree = "<group>"; };
+		F7438ABB1BEAFCB2001CBF6D /* TimerShaftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftCell.h; sourceTree = "<group>"; };
+		F7438ABC1BEAFCB2001CBF6D /* TimerShaftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftCell.m; sourceTree = "<group>"; };
+		F7438ABD1BEAFCB2001CBF6D /* TimerShaftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftTableViewController.h; sourceTree = "<group>"; };
+		F7438ABE1BEAFCB2001CBF6D /* TimerShaftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftTableViewController.m; sourceTree = "<group>"; };
+		F7438AC91BEAFCE3001CBF6D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = "JXHDemo/Foundation基本用法/TestViewController/TestViewController.h"; sourceTree = SOURCE_ROOT; };
+		F7438ACA1BEAFCE3001CBF6D /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = "JXHDemo/Foundation基本用法/TestViewController/TestViewController.m"; sourceTree = SOURCE_ROOT; };
+		F7438ACB1BEAFCE3001CBF6D /* UIAlertView+DIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+DIY.h"; path = "JXHDemo/Foundation基本用法/TestViewController/UIAlertView+DIY.h"; sourceTree = SOURCE_ROOT; };
+		F7438ACC1BEAFCE3001CBF6D /* UIAlertView+DIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+DIY.m"; path = "JXHDemo/Foundation基本用法/TestViewController/UIAlertView+DIY.m"; sourceTree = SOURCE_ROOT; };
+		F7438ACF1BEB4DE0001CBF6D /* MyDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDemoViewController.h; sourceTree = "<group>"; };
+		F7438AD01BEB4DE0001CBF6D /* MyDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDemoViewController.m; sourceTree = "<group>"; };
+		F7438AD21BEB4DFD001CBF6D /* FoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationViewController.h; sourceTree = "<group>"; };
+		F7438AD31BEB4DFD001CBF6D /* FoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
 		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F755A31F1BD8B30000803182 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F755A3201BD8B30000803182 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		F755A3211BD8B30000803182 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		F755A3241BD8B32600803182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalendarViewController.h; sourceTree = "<group>"; };
-		F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalendarViewController.m; sourceTree = "<group>"; };
-		F755A3471BD8B40D00803182 /* MyCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalenderView.h; sourceTree = "<group>"; };
-		F755A3481BD8B40D00803182 /* MyCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalenderView.m; sourceTree = "<group>"; };
-		F755A3491BD8B40D00803182 /* MyScheduleListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleListTableViewController.h; sourceTree = "<group>"; };
-		F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleListTableViewController.m; sourceTree = "<group>"; };
-		F755A34E1BD8B41A00803182 /* UICheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckBox.h; sourceTree = "<group>"; };
-		F755A34F1BD8B41A00803182 /* UICheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckBox.m; sourceTree = "<group>"; };
-		F755A3501BD8B41A00803182 /* CheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxViewController.h; sourceTree = "<group>"; };
-		F755A3511BD8B41A00803182 /* CheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxViewController.m; sourceTree = "<group>"; };
-		F755A3541BD8B43C00803182 /* TimerShaftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftTableViewController.h; sourceTree = "<group>"; };
-		F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftTableViewController.m; sourceTree = "<group>"; };
-		F755A3561BD8B43C00803182 /* TimerShaftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerShaftCell.h; sourceTree = "<group>"; };
-		F755A3571BD8B43C00803182 /* TimerShaftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerShaftCell.m; sourceTree = "<group>"; };
-		F755A3581BD8B43C00803182 /* TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButton.h; sourceTree = "<group>"; };
-		F755A3591BD8B43C00803182 /* TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButton.m; sourceTree = "<group>"; };
-		F755A35A1BD8B43C00803182 /* NewRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRecordViewController.h; sourceTree = "<group>"; };
-		F755A35B1BD8B43C00803182 /* NewRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRecordViewController.m; sourceTree = "<group>"; };
-		F755A3601BD8B44A00803182 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
-		F755A3611BD8B44A00803182 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
-		F755A3631BD8B45500803182 /* OpenWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebViewController.h; sourceTree = "<group>"; };
-		F755A3641BD8B45500803182 /* OpenWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebViewController.m; sourceTree = "<group>"; };
-		F774BCAA1BD9C97B002A5CC1 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		F774BCAB1BD9C97B002A5CC1 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		F774BCAE1BDA0A9D002A5CC1 /* FolderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderTableViewController.h; sourceTree = "<group>"; };
-		F774BCAF1BDA0A9D002A5CC1 /* FolderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderTableViewController.m; sourceTree = "<group>"; };
-		F774BCB71BDA1C46002A5CC1 /* SectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeader.h; sourceTree = "<group>"; };
-		F774BCB81BDA1C46002A5CC1 /* SectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeader.m; sourceTree = "<group>"; };
-		F774BCBA1BDA1E96002A5CC1 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
-		F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
-		F777FCA81BDB23E800C5CBEA /* AffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineViewController.h; sourceTree = "<group>"; };
-		F777FCA91BDB23E800C5CBEA /* AffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineViewController.m; sourceTree = "<group>"; };
 		F777FCAB1BDB636B00C5CBEA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		F78375971BDF56250055457B /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
-		F78375981BDF56250055457B /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		F7960CFA1BE33A1A004BA408 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F7960CFB1BE33A1A004BA408 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F722DBE21BE2108700D5EC1F /* ESKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,20 +189,11 @@
 		F70AE9AE1BD08343008F817D /* JXHDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F7438A731BEAFA9C001CBF6D /* Foundation基本用法 */,
+				F7438A721BEAF8D8001CBF6D /* 自定义功能模块 */,
+				F7438A711BEAF855001CBF6D /* UIKit测试 */,
 				F722DAC11BE0A0AD00D5EC1F /* Common */,
-				F78375961BDF55D10055457B /* 选择框PickerView */,
 				F755A31D1BD8B30000803182 /* Main导航 */,
-				F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */,
-				F777FCA71BDB234E00C5CBEA /* UIView二维图形Affine几何变换 */,
-				F774BCAD1BDA0A63002A5CC1 /* 可以展开的TableView */,
-				F774BCA91BD9C95E002A5CC1 /* TestViewController */,
-				F755A3271BD8B3E400803182 /* UIWebView */,
-				F755A3281BD8B3E400803182 /* UICheckBox复选框 */,
-				F755A3291BD8B3E400803182 /* 文字左对齐Alertview */,
-				F755A32A1BD8B3E400803182 /* 日历Calendar */,
-				F755A32B1BD8B3E400803182 /* 时间轴TableView实现 */,
-				F755A3191BD8B2D300803182 /* boundingRectWithSize计算字符串高度 */,
-				F70AE9D51BD084B9008F817D /* 地图MKMap */,
 				F70AE9AF1BD08343008F817D /* Supporting Files */,
 			);
 			path = JXHDemo;
@@ -208,18 +229,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F70AE9D51BD084B9008F817D /* 地图MKMap */ = {
-			isa = PBXGroup;
-			children = (
-				F70AE9D61BD084C9008F817D /* MapViewController.h */,
-				F70AE9D71BD084C9008F817D /* MapViewController.m */,
-				F70AE9DA1BD0A018008F817D /* KCAnnotation.h */,
-				F70AE9DB1BD0A018008F817D /* KCAnnotation.m */,
-			);
-			name = "地图MKMap";
-			path = "地图";
-			sourceTree = "<group>";
-		};
 		F722DAC11BE0A0AD00D5EC1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +242,7 @@
 		F722DBA61BE0A9DC00D5EC1F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				F722DBE11BE2108700D5EC1F /* ESKit.framework */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -247,174 +257,231 @@
 		F722DBAD1BE0AAA500D5EC1F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F7960CFA1BE33A1A004BA408 /* UIView+Extension.h */,
+				F7960CFB1BE33A1A004BA408 /* UIView+Extension.m */,
+				F722DBE31BE213F200D5EC1F /* UIBarButtonItem+Extension.h */,
+				F722DBE41BE213F200D5EC1F /* UIBarButtonItem+Extension.m */,
+				F722DBDE1BE20F3C00D5EC1F /* UIImage+Extension.h */,
+				F722DBDF1BE20F3C00D5EC1F /* UIImage+Extension.m */,
 				F722DBAE1BE0AAAF00D5EC1F /* NSString+Extension.h */,
 				F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		F72C06BB1BDE0BE200221DFA /* 提示框与操作表UIAlertController */ = {
+		F722DBC91BE20DDF00D5EC1F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F72C06BC1BDE0C1000221DFA /* AlertControllerViewController.h */,
-				F72C06BD1BDE0C1000221DFA /* AlertControllerViewController.m */,
+				F722DBCA1BE20DDF00D5EC1F /* ESNavigationController.h */,
+				F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */,
+				F722DBCC1BE20DDF00D5EC1F /* ESTabBarController.h */,
+				F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */,
+				F722DBD01BE20DDF00D5EC1F /* NewFeatureViewController.h */,
+				F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F722DBD31BE20DDF00D5EC1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F722DBD41BE20DDF00D5EC1F /* ESTabBar.h */,
+				F722DBD51BE20DDF00D5EC1F /* ESTabBar.m */,
+				F722DBD61BE20DDF00D5EC1F /* ESTabBarButton.h */,
+				F722DBD71BE20DDF00D5EC1F /* ESTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7438A711BEAF855001CBF6D /* UIKit测试 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A7B1BEAFC93001CBF6D /* MainTableViewController.h */,
+				F7438A7C1BEAFC93001CBF6D /* MainTableViewController.m */,
+				F7438A7D1BEAFC93001CBF6D /* NSString高度 */,
+				F7438A801BEAFC93001CBF6D /* UIView二维图形Affine变换 */,
+				F7438A831BEAFC93001CBF6D /* UIWebView */,
+				F7438A861BEAFC93001CBF6D /* 可以展开的TableView */,
+				F7438A8D1BEAFC93001CBF6D /* 复选框 */,
+				F7438A921BEAFC93001CBF6D /* 左对齐alertview */,
+				F7438A951BEAFC93001CBF6D /* 提示框与操作表UIAlertController */,
+				F7438A981BEAFC93001CBF6D /* 选择框PickerView */,
+			);
+			path = "UIKit测试";
+			sourceTree = "<group>";
+		};
+		F7438A721BEAF8D8001CBF6D /* 自定义功能模块 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438AA71BEAFCB2001CBF6D /* 地图 */,
+				F7438AAC1BEAFCB2001CBF6D /* 带搜索框的分栏表格 */,
+				F7438AAF1BEAFCB2001CBF6D /* 日历 */,
+				F7438AB61BEAFCB2001CBF6D /* 时间轴 */,
+				F7438ACF1BEB4DE0001CBF6D /* MyDemoViewController.h */,
+				F7438AD01BEB4DE0001CBF6D /* MyDemoViewController.m */,
+			);
+			path = "自定义功能模块";
+			sourceTree = "<group>";
+		};
+		F7438A731BEAFA9C001CBF6D /* Foundation基本用法 */ = {
+			isa = PBXGroup;
+			children = (
+				F774BCA91BD9C95E002A5CC1 /* TestViewController */,
+				F7438AD21BEB4DFD001CBF6D /* FoundationViewController.h */,
+				F7438AD31BEB4DFD001CBF6D /* FoundationViewController.m */,
+			);
+			path = "Foundation基本用法";
+			sourceTree = "<group>";
+		};
+		F7438A7D1BEAFC93001CBF6D /* NSString高度 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A7E1BEAFC93001CBF6D /* LabelHeightViewController.h */,
+				F7438A7F1BEAFC93001CBF6D /* LabelHeightViewController.m */,
+			);
+			path = "NSString高度";
+			sourceTree = "<group>";
+		};
+		F7438A801BEAFC93001CBF6D /* UIView二维图形Affine变换 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A811BEAFC93001CBF6D /* AffineViewController.h */,
+				F7438A821BEAFC93001CBF6D /* AffineViewController.m */,
+			);
+			path = "UIView二维图形Affine变换";
+			sourceTree = "<group>";
+		};
+		F7438A831BEAFC93001CBF6D /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A841BEAFC93001CBF6D /* OpenWebViewController.h */,
+				F7438A851BEAFC93001CBF6D /* OpenWebViewController.m */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		F7438A861BEAFC93001CBF6D /* 可以展开的TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A871BEAFC93001CBF6D /* FolderTableViewController.h */,
+				F7438A881BEAFC93001CBF6D /* FolderTableViewController.m */,
+				F7438A891BEAFC93001CBF6D /* SectionHeader.h */,
+				F7438A8A1BEAFC93001CBF6D /* SectionHeader.m */,
+				F7438A8B1BEAFC93001CBF6D /* SectionHeaderView.h */,
+				F7438A8C1BEAFC93001CBF6D /* SectionHeaderView.m */,
+			);
+			path = "可以展开的TableView";
+			sourceTree = "<group>";
+		};
+		F7438A8D1BEAFC93001CBF6D /* 复选框 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A8E1BEAFC93001CBF6D /* CheckBoxViewController.h */,
+				F7438A8F1BEAFC93001CBF6D /* CheckBoxViewController.m */,
+				F7438A901BEAFC93001CBF6D /* UICheckBox.h */,
+				F7438A911BEAFC93001CBF6D /* UICheckBox.m */,
+			);
+			path = "复选框";
+			sourceTree = "<group>";
+		};
+		F7438A921BEAFC93001CBF6D /* 左对齐alertview */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A931BEAFC93001CBF6D /* AlertViewController.h */,
+				F7438A941BEAFC93001CBF6D /* AlertViewController.m */,
+			);
+			path = "左对齐alertview";
+			sourceTree = "<group>";
+		};
+		F7438A951BEAFC93001CBF6D /* 提示框与操作表UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				F7438A961BEAFC93001CBF6D /* AlertControllerViewController.h */,
+				F7438A971BEAFC93001CBF6D /* AlertControllerViewController.m */,
 			);
 			path = "提示框与操作表UIAlertController";
 			sourceTree = "<group>";
 		};
-		F755A3191BD8B2D300803182 /* boundingRectWithSize计算字符串高度 */ = {
+		F7438A981BEAFC93001CBF6D /* 选择框PickerView */ = {
 			isa = PBXGroup;
 			children = (
-				F755A31A1BD8B2D300803182 /* LabelHeightViewController.h */,
-				F755A31B1BD8B2D300803182 /* LabelHeightViewController.m */,
+				F7438A991BEAFC93001CBF6D /* PickerViewController.h */,
+				F7438A9A1BEAFC93001CBF6D /* PickerViewController.m */,
 			);
-			name = "boundingRectWithSize计算字符串高度";
-			path = "NSString高度";
+			path = "选择框PickerView";
+			sourceTree = "<group>";
+		};
+		F7438AA71BEAFCB2001CBF6D /* 地图 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438AA81BEAFCB2001CBF6D /* KCAnnotation.h */,
+				F7438AA91BEAFCB2001CBF6D /* KCAnnotation.m */,
+				F7438AAA1BEAFCB2001CBF6D /* MapViewController.h */,
+				F7438AAB1BEAFCB2001CBF6D /* MapViewController.m */,
+			);
+			path = "地图";
+			sourceTree = "<group>";
+		};
+		F7438AAC1BEAFCB2001CBF6D /* 带搜索框的分栏表格 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438AAD1BEAFCB2001CBF6D /* SplitTableViewController.h */,
+				F7438AAE1BEAFCB2001CBF6D /* SplitTableViewController.m */,
+			);
+			path = "带搜索框的分栏表格";
+			sourceTree = "<group>";
+		};
+		F7438AAF1BEAFCB2001CBF6D /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438AB01BEAFCB2001CBF6D /* CustomCalendarViewController.h */,
+				F7438AB11BEAFCB2001CBF6D /* CustomCalendarViewController.m */,
+				F7438AB21BEAFCB2001CBF6D /* MyCalenderView.h */,
+				F7438AB31BEAFCB2001CBF6D /* MyCalenderView.m */,
+				F7438AB41BEAFCB2001CBF6D /* MyScheduleListTableViewController.h */,
+				F7438AB51BEAFCB2001CBF6D /* MyScheduleListTableViewController.m */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		F7438AB61BEAFCB2001CBF6D /* 时间轴 */ = {
+			isa = PBXGroup;
+			children = (
+				F7438AB71BEAFCB2001CBF6D /* NewRecordViewController.h */,
+				F7438AB81BEAFCB2001CBF6D /* NewRecordViewController.m */,
+				F7438AB91BEAFCB2001CBF6D /* TimerButton.h */,
+				F7438ABA1BEAFCB2001CBF6D /* TimerButton.m */,
+				F7438ABB1BEAFCB2001CBF6D /* TimerShaftCell.h */,
+				F7438ABC1BEAFCB2001CBF6D /* TimerShaftCell.m */,
+				F7438ABD1BEAFCB2001CBF6D /* TimerShaftTableViewController.h */,
+				F7438ABE1BEAFCB2001CBF6D /* TimerShaftTableViewController.m */,
+			);
+			path = "时间轴";
 			sourceTree = "<group>";
 		};
 		F755A31D1BD8B30000803182 /* Main导航 */ = {
 			isa = PBXGroup;
 			children = (
+				F722DBC91BE20DDF00D5EC1F /* Controller */,
+				F722DBD31BE20DDF00D5EC1F /* View */,
 				F755A3241BD8B32600803182 /* main.m */,
 				F755A31E1BD8B30000803182 /* AppDelegate.h */,
 				F755A31F1BD8B30000803182 /* AppDelegate.m */,
-				F755A3201BD8B30000803182 /* MainTableViewController.h */,
-				F755A3211BD8B30000803182 /* MainTableViewController.m */,
 			);
 			name = "Main导航";
 			path = Main;
 			sourceTree = "<group>";
 		};
-		F755A3271BD8B3E400803182 /* UIWebView */ = {
-			isa = PBXGroup;
-			children = (
-				F755A3631BD8B45500803182 /* OpenWebViewController.h */,
-				F755A3641BD8B45500803182 /* OpenWebViewController.m */,
-			);
-			path = UIWebView;
-			sourceTree = "<group>";
-		};
-		F755A3281BD8B3E400803182 /* UICheckBox复选框 */ = {
-			isa = PBXGroup;
-			children = (
-				F755A34E1BD8B41A00803182 /* UICheckBox.h */,
-				F755A34F1BD8B41A00803182 /* UICheckBox.m */,
-				F755A3501BD8B41A00803182 /* CheckBoxViewController.h */,
-				F755A3511BD8B41A00803182 /* CheckBoxViewController.m */,
-			);
-			name = "UICheckBox复选框";
-			path = "复选框";
-			sourceTree = "<group>";
-		};
-		F755A3291BD8B3E400803182 /* 文字左对齐Alertview */ = {
-			isa = PBXGroup;
-			children = (
-				F755A3601BD8B44A00803182 /* AlertViewController.h */,
-				F755A3611BD8B44A00803182 /* AlertViewController.m */,
-				F72C06C51BDE1A7600221DFA /* UIDIYAlertView.h */,
-				F72C06C61BDE1A7600221DFA /* UIDIYAlertView.m */,
-				F72C06C81BDE21A300221DFA /* JXHAlertView.h */,
-				F72C06C91BDE21A300221DFA /* JXHAlertView.m */,
-			);
-			name = "文字左对齐Alertview";
-			path = "左对齐alertview";
-			sourceTree = "<group>";
-		};
-		F755A32A1BD8B3E400803182 /* 日历Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				F755A3451BD8B40D00803182 /* CustomCalendarViewController.h */,
-				F755A3461BD8B40D00803182 /* CustomCalendarViewController.m */,
-				F755A3471BD8B40D00803182 /* MyCalenderView.h */,
-				F755A3481BD8B40D00803182 /* MyCalenderView.m */,
-				F755A3491BD8B40D00803182 /* MyScheduleListTableViewController.h */,
-				F755A34A1BD8B40D00803182 /* MyScheduleListTableViewController.m */,
-			);
-			name = "日历Calendar";
-			path = "日历";
-			sourceTree = "<group>";
-		};
-		F755A32B1BD8B3E400803182 /* 时间轴TableView实现 */ = {
-			isa = PBXGroup;
-			children = (
-				F755A3541BD8B43C00803182 /* TimerShaftTableViewController.h */,
-				F755A3551BD8B43C00803182 /* TimerShaftTableViewController.m */,
-				F755A3561BD8B43C00803182 /* TimerShaftCell.h */,
-				F755A3571BD8B43C00803182 /* TimerShaftCell.m */,
-				F755A3581BD8B43C00803182 /* TimerButton.h */,
-				F755A3591BD8B43C00803182 /* TimerButton.m */,
-				F755A35A1BD8B43C00803182 /* NewRecordViewController.h */,
-				F755A35B1BD8B43C00803182 /* NewRecordViewController.m */,
-			);
-			name = "时间轴TableView实现";
-			path = "时间轴";
-			sourceTree = "<group>";
-		};
 		F774BCA91BD9C95E002A5CC1 /* TestViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F774BCAA1BD9C97B002A5CC1 /* TestViewController.h */,
-				F774BCAB1BD9C97B002A5CC1 /* TestViewController.m */,
-				F722DABE1BE0751200D5EC1F /* UIAlertView+DIY.h */,
-				F722DABF1BE0751200D5EC1F /* UIAlertView+DIY.m */,
+				F7438AC91BEAFCE3001CBF6D /* TestViewController.h */,
+				F7438ACA1BEAFCE3001CBF6D /* TestViewController.m */,
+				F7438ACB1BEAFCE3001CBF6D /* UIAlertView+DIY.h */,
+				F7438ACC1BEAFCE3001CBF6D /* UIAlertView+DIY.m */,
 			);
-			path = TestViewController;
-			sourceTree = "<group>";
-		};
-		F774BCAD1BDA0A63002A5CC1 /* 可以展开的TableView */ = {
-			isa = PBXGroup;
-			children = (
-				F774BCB31BDA1B3F002A5CC1 /* Controller */,
-				F774BCB21BDA1B37002A5CC1 /* View */,
-				F774BCB11BDA1B30002A5CC1 /* Model */,
-			);
-			path = "可以展开的TableView";
-			sourceTree = "<group>";
-		};
-		F774BCB11BDA1B30002A5CC1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F774BCB71BDA1C46002A5CC1 /* SectionHeader.h */,
-				F774BCB81BDA1C46002A5CC1 /* SectionHeader.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		F774BCB21BDA1B37002A5CC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F774BCBA1BDA1E96002A5CC1 /* SectionHeaderView.h */,
-				F774BCBB1BDA1E96002A5CC1 /* SectionHeaderView.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		F774BCB31BDA1B3F002A5CC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F774BCAE1BDA0A9D002A5CC1 /* FolderTableViewController.h */,
-				F774BCAF1BDA0A9D002A5CC1 /* FolderTableViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		F777FCA71BDB234E00C5CBEA /* UIView二维图形Affine几何变换 */ = {
-			isa = PBXGroup;
-			children = (
-				F777FCA81BDB23E800C5CBEA /* AffineViewController.h */,
-				F777FCA91BDB23E800C5CBEA /* AffineViewController.m */,
-			);
-			name = "UIView二维图形Affine几何变换";
-			path = "UIView二维图形Affine变换";
-			sourceTree = "<group>";
-		};
-		F78375961BDF55D10055457B /* 选择框PickerView */ = {
-			isa = PBXGroup;
-			children = (
-				F78375971BDF56250055457B /* PickerViewController.h */,
-				F78375981BDF56250055457B /* PickerViewController.m */,
-			);
-			path = "选择框PickerView";
+			name = TestViewController;
+			path = ../TestViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +533,7 @@
 				TargetAttributes = {
 					F70AE9AB1BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = V4SYMZQA29;
 					};
 					F70AE9C41BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -518,33 +586,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70AE9DC1BD0A018008F817D /* KCAnnotation.m in Sources */,
-				F774BCB91BDA1C46002A5CC1 /* SectionHeader.m in Sources */,
-				F755A3231BD8B30000803182 /* MainTableViewController.m in Sources */,
-				F777FCAA1BDB23E800C5CBEA /* AffineViewController.m in Sources */,
-				F755A35F1BD8B43C00803182 /* NewRecordViewController.m in Sources */,
-				F774BCB01BDA0A9D002A5CC1 /* FolderTableViewController.m in Sources */,
-				F755A35E1BD8B43C00803182 /* TimerButton.m in Sources */,
-				F755A31C1BD8B2D300803182 /* LabelHeightViewController.m in Sources */,
-				F72C06BE1BDE0C1000221DFA /* AlertControllerViewController.m in Sources */,
-				F70AE9D81BD084C9008F817D /* MapViewController.m in Sources */,
-				F774BCAC1BD9C97B002A5CC1 /* TestViewController.m in Sources */,
-				F755A34B1BD8B40D00803182 /* CustomCalendarViewController.m in Sources */,
-				F755A35D1BD8B43C00803182 /* TimerShaftCell.m in Sources */,
-				F755A3521BD8B41A00803182 /* UICheckBox.m in Sources */,
+				F7438A9E1BEAFC93001CBF6D /* OpenWebViewController.m in Sources */,
+				F722DBD91BE20DDF00D5EC1F /* ESTabBarController.m in Sources */,
+				F7438AC41BEAFCB2001CBF6D /* MyScheduleListTableViewController.m in Sources */,
+				F7438ABF1BEAFCB2001CBF6D /* KCAnnotation.m in Sources */,
+				F7438ACE1BEAFCE3001CBF6D /* UIAlertView+DIY.m in Sources */,
+				F722DBE51BE213F200D5EC1F /* UIBarButtonItem+Extension.m in Sources */,
+				F7438AA51BEAFC93001CBF6D /* AlertControllerViewController.m in Sources */,
+				F7438ACD1BEAFCE3001CBF6D /* TestViewController.m in Sources */,
+				F7438AC81BEAFCB2001CBF6D /* TimerShaftTableViewController.m in Sources */,
+				F7438A9F1BEAFC93001CBF6D /* FolderTableViewController.m in Sources */,
+				F7438A9D1BEAFC93001CBF6D /* AffineViewController.m in Sources */,
+				F7438AC21BEAFCB2001CBF6D /* CustomCalendarViewController.m in Sources */,
+				F7960CFC1BE33A1A004BA408 /* UIView+Extension.m in Sources */,
+				F7438AA01BEAFC93001CBF6D /* SectionHeader.m in Sources */,
+				F7438A9C1BEAFC93001CBF6D /* LabelHeightViewController.m in Sources */,
+				F7438AD11BEB4DE0001CBF6D /* MyDemoViewController.m in Sources */,
+				F7438AA11BEAFC93001CBF6D /* SectionHeaderView.m in Sources */,
+				F7438AC61BEAFCB2001CBF6D /* TimerButton.m in Sources */,
 				F755A3251BD8B32600803182 /* main.m in Sources */,
-				F755A34C1BD8B40D00803182 /* MyCalenderView.m in Sources */,
-				F78375991BDF56250055457B /* PickerViewController.m in Sources */,
-				F755A34D1BD8B40D00803182 /* MyScheduleListTableViewController.m in Sources */,
+				F722DBDC1BE20DDF00D5EC1F /* ESTabBar.m in Sources */,
+				F7438AA61BEAFC93001CBF6D /* PickerViewController.m in Sources */,
+				F7438AA41BEAFC93001CBF6D /* AlertViewController.m in Sources */,
+				F722DBD81BE20DDF00D5EC1F /* ESNavigationController.m in Sources */,
+				F722DBDD1BE20DDF00D5EC1F /* ESTabBarButton.m in Sources */,
+				F7438AA31BEAFC93001CBF6D /* UICheckBox.m in Sources */,
+				F7438AC71BEAFCB2001CBF6D /* TimerShaftCell.m in Sources */,
+				F7438AC31BEAFCB2001CBF6D /* MyCalenderView.m in Sources */,
 				F755A3221BD8B30000803182 /* AppDelegate.m in Sources */,
-				F72C06C71BDE1A7600221DFA /* UIDIYAlertView.m in Sources */,
-				F72C06CA1BDE21A300221DFA /* JXHAlertView.m in Sources */,
-				F722DAC01BE0751200D5EC1F /* UIAlertView+DIY.m in Sources */,
-				F755A35C1BD8B43C00803182 /* TimerShaftTableViewController.m in Sources */,
-				F755A3531BD8B41A00803182 /* CheckBoxViewController.m in Sources */,
-				F755A3651BD8B45500803182 /* OpenWebViewController.m in Sources */,
-				F774BCBC1BDA1E96002A5CC1 /* SectionHeaderView.m in Sources */,
-				F755A3621BD8B44A00803182 /* AlertViewController.m in Sources */,
+				F7438AD41BEB4DFD001CBF6D /* FoundationViewController.m in Sources */,
+				F7438AA21BEAFC93001CBF6D /* CheckBoxViewController.m in Sources */,
+				F7438AC01BEAFCB2001CBF6D /* MapViewController.m in Sources */,
+				F722DBE01BE20F3C00D5EC1F /* UIImage+Extension.m in Sources */,
+				F7438AC11BEAFCB2001CBF6D /* SplitTableViewController.m in Sources */,
+				F7438AC51BEAFCB2001CBF6D /* NewRecordViewController.m in Sources */,
+				F722DBDB1BE20DDF00D5EC1F /* NewFeatureViewController.m in Sources */,
+				F7438A9B1BEAFC93001CBF6D /* MainTableViewController.m in Sources */,
 				F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,15 +751,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/ESKit",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 				);
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -691,15 +772,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/ESKit",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
+					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 				);
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
