@@ -37,7 +37,7 @@
  */
 + (UIImage *)imageWithName:(NSString *)name
 {
-    if (iOS7)
+    if (IOS7)
     {
         NSString *newName = [name stringByAppendingString:@"_os7"];
         UIImage *image = [UIImage imageNamed:newName];

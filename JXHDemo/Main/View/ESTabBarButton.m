@@ -9,12 +9,12 @@
 // 图标的比例
 CGFloat const ESTabBarButtonImageRatio = 0.6;
 // 按钮的默认文字颜色
-#define  ESTabBarButtonTitleColor (iOS7 ?  RGBColor(151, 151, 151): [UIColor whiteColor])
+#define  ESTabBarButtonTitleColor (IOS7 ?  RGBColor(151, 151, 151): [UIColor whiteColor])
 // 按钮的选中文字颜色
-#define  ESTabBarButtonTitleSelectedColor (iOS7 ? RGBColor(100, 156, 33) : RGBColor(97, 154, 30))
+#define  ESTabBarButtonTitleSelectedColor (IOS7 ? RGBColor(100, 156, 33) : RGBColor(97, 154, 30))
 
 #import "ESTabBarButton.h"
-#import <ESKit/ESBadgeView.h>
+#import "ESBadgeView.h"
 
 @interface ESTabBarButton()
 
@@ -89,7 +89,7 @@ CGFloat const ESTabBarButtonImageRatio = 0.6;
     [self setTitleColor:ESTabBarButtonTitleColor forState:UIControlStateNormal];
     [self setTitleColor:ESTabBarButtonTitleSelectedColor forState:UIControlStateSelected];
     // 5. 非iOS7下,设置按钮选中时的背景
-    if (!iOS7)
+    if (!IOS7)
     {
         [self setBackgroundImage:[UIImage imageWithName:@"tabbar_slider"] forState:UIControlStateSelected];
     }

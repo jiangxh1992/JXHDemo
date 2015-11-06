@@ -13,7 +13,7 @@
  *  添加子视图
  */
 - (void) addUIView: (UIView *)view {
-    if (iOS7) {
+    if (IOS7) {
         [self setValue:view forKey:@"accessoryView"];
     }else{
         [self addSubview:view];
@@ -70,7 +70,7 @@
  *  添加一个完全自定义的UILabel
  */
 - (void) addLabel:(UILabel *)label {
-    if (iOS7) {
+    if (IOS7) {
         [self setValue:label forKey:@"accessoryView"];
     }else{
         [self addSubview:label];

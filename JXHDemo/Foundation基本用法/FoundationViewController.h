@@ -6,8 +6,6 @@
 //  Copyright © 2015 Jiangxh. All rights reserved.
 //
 
-#import <ESKit/ESKit.h>
-
 @interface FoundationViewController : ESListViewController
 
 @end

@@ -5,7 +5,6 @@
 //  Created by 919575700@qq.com on 11/5/15.
 //  Copyright © 2015 Jiangxh. All rights reserved.
 //
-
 #import "MyDemoViewController.h"
 #import "TimerShaftTableViewController.h"
 #import "CustomCalendarViewController.h"
@@ -33,7 +32,7 @@
 /**
  *  cell点击
  */
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // 1.时间轴
     TimerShaftTableViewController *timeVC = [[TimerShaftTableViewController alloc] init];
     // 2.日历

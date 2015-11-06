@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 //自定义静态工具库
-#import <ESKit/ESKit.h>
 @interface SplitTableViewController : UIViewController
 
 @end

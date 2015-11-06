@@ -166,7 +166,7 @@
     UIImage *selectedImage = [UIImage imageWithName:selectedImageName];
     
     // 如果是iOS7不渲染选中图片
-    if (iOS7)
+    if (IOS7)
     {
         childVc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }

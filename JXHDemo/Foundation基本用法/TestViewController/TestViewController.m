@@ -86,7 +86,7 @@
  */
 - (void)autoSetLabelFrame: (UILabel *)label {
     CGSize size = [label.text sizeWithFont:label.font maxW:240];
-    [label setFrame:CGRectMake(margin, 0, size.width, size.height)];
+    [label setFrame:CGRectMake(CellMargin, 0, size.width, size.height)];
     //文字换行模式
     label.lineBreakMode = NSLineBreakByWordWrapping;
     //行数

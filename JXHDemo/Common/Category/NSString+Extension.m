@@ -19,7 +19,7 @@
     attrs[NSFontAttributeName] = font;
     CGSize maxSize = CGSizeMake(maxW, MAXFLOAT);
     // 获得系统版本
-    if (iOS7) {
+    if (IOS7) {
         NSStringDrawingOptions options =  NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
         return [self boundingRectWithSize:maxSize options:options attributes:attrs context:nil].size;
     } else {

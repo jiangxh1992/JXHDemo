@@ -39,7 +39,7 @@ NSInteger ESTabBarTagStart = 200;
  */
 - (void)setup
 {
-    if (!iOS7)
+    if (!IOS7)
     {
          // 非iOS7下,设置tabbar的背景
         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithName:@"tabbar_background"]];

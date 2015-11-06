@@ -33,7 +33,7 @@
     UINavigationBar *navBar = [UINavigationBar appearance];
     
     // 2. 设置背景
-    if (!iOS7)
+    if (!IOS7)
     {
         [navBar setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
@@ -57,7 +57,7 @@
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     
     // 2. 设置背景
-    if (!iOS7)
+    if (!IOS7)
     {
         [item setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
         [item setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background_pushed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
@@ -66,14 +66,14 @@
     
     // 3. 设置文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = iOS7 ? [UIColor blackColor] : [UIColor grayColor];
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:iOS7 ? 16 : 12];
+    textAttrs[NSForegroundColorAttributeName] = IOS7 ? [UIColor blackColor] : [UIColor grayColor];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:IOS7 ? 16 : 12];
     [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:textAttrs forState:UIControlStateHighlighted];
     // Disabled下的文字属性
     NSMutableDictionary *textAttrsDisabled = [NSMutableDictionary dictionary];
-    textAttrsDisabled[NSForegroundColorAttributeName] = iOS7 ? [UIColor grayColor] : [UIColor grayColor];
-    textAttrsDisabled[NSFontAttributeName] = [UIFont systemFontOfSize:iOS7 ? 16 : 12];
+    textAttrsDisabled[NSForegroundColorAttributeName] = IOS7 ? [UIColor grayColor] : [UIColor grayColor];
+    textAttrsDisabled[NSFontAttributeName] = [UIFont systemFontOfSize:IOS7 ? 16 : 12];
     [item setTitleTextAttributes:textAttrsDisabled forState:UIControlStateDisabled];
 }
 
@@ -86,7 +86,7 @@
 //    viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithIcon:@"navigationbar_back" target:self action:@selector(back)];
     
     // 2. 自定义返回按钮和ios7手势返回冲突
-    if (iOS7)
+    if (IOS7)
     {
         self.interactivePopGestureRecognizer.enabled = YES;
         self.interactivePopGestureRecognizer.delegate = nil;
@@ -122,7 +122,7 @@
     viewController.view.backgroundColor = RGBColor(230, 230, 230);
 
     // 3. edgesForExtendedLayout属性
-    if (iOS7)
+    if (IOS7)
     {
         if ([viewController isMemberOfClass:[UITableViewController class]])
         {
