@@ -8,7 +8,14 @@
 
 #import "FoundationViewController.h"
 
+#import "TestViewController.h"
+
 @interface FoundationViewController ()
+
+/**
+ *  类名数组
+ */
+@property (nonatomic, strong)NSArray *classNames;
 
 @end
 
@@ -16,22 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // cell的名称
+    _classNames = @[@"TestViewController"];
+    //设置模型数据
+    NSMutableArray *mulItems = [[NSMutableArray alloc] init];
+    for (NSString *name in _classNames) {
+        ESListItem *item = [[ESListItem alloc] init];
+        item.title = name;
+        [mulItems addObject:item];
+    }
+    // 设置数据源
+    self.items = mulItems;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

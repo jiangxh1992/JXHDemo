@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTableViewController : UITableViewController
-/**
- *  子视图数组
- */
-@property (nonatomic)NSMutableArray *viewVCArray;
-/**
- *  子视图名称
- */
-@property (nonatomic)NSArray *viewNames;
+@interface MainTableViewController : ESListViewController
 
 @end

@@ -27,11 +27,6 @@
 @property (nonatomic, readonly) CGRect titleFrame;
 
 /**
- *  子标题frame
- */
-@property (nonatomic, readonly) CGRect subtitleFrame;
-
-/**
  *  创建ESListCellFrame
  */
 + (instancetype)cellFrameWithItem:(ESListItem *)item;

@@ -22,17 +22,4 @@
     return _titleFont;
 }
 
-/**
- *  子标题font
- */
-- (UIFont *)subtitleFont
-{
-    if (!_subtitleFont)
-    {
-        _subtitleFont = [UIFont systemFontOfSize:14];
-    }
-    return _subtitleFont;
-}
-
-
 @end

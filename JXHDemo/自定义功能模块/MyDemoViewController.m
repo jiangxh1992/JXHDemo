@@ -11,6 +11,11 @@
 
 @interface MyDemoViewController ()
 
+/**
+ *  类名数组
+ */
+@property (nonatomic, strong)NSArray *classNames;
+
 @end
 
 @implementation MyDemoViewController
@@ -19,8 +24,8 @@
     [super viewDidLoad];
     NSMutableArray *mulNames = [[NSMutableArray alloc] init];
     // cell的名称
-    NSArray *names = @[@"时间轴", @"日历"];
-    for (NSString *name in names) {
+    _classNames = @[@"TimerShaftTableViewController", @"CustomCalendarViewController"];
+    for (NSString *name in _classNames) {
         ESListItem *item = [[ESListItem alloc] init];
         item.title = name;
         [mulNames addObject:item];
@@ -30,23 +35,13 @@
 }
 
 /**
- *  cell点击
+ *  cell点击跳转到控制器
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // 1.时间轴
-    TimerShaftTableViewController *timeVC = [[TimerShaftTableViewController alloc] init];
-    // 2.日历
-    CustomCalendarViewController *calendarVC = [[CustomCalendarViewController alloc] init];
-    switch (indexPath.row) {
-        case 0:
-            [self.navigationController pushViewController:timeVC animated:YES];
-            break;
-        case 1:
-            [self.navigationController pushViewController:calendarVC animated:YES];
-            
-        default:
-            break;
-    }
+    // 取出类名
+    Class ClassName = NSClassFromString(_classNames[indexPath.row]);
+    // 跳转到控制器
+    [self.navigationController pushViewController:[[ClassName alloc] init] animated:YES];
 }
 
 @end

@@ -21,16 +21,6 @@
 @property (nonatomic, strong) UIFont *titleFont;
 
 /**
- *  子标题
- */
-@property (nonatomic, copy) NSString *subtitle;
-
-/**
- *  子标题font
- */
-@property (nonatomic, strong) UIFont *subtitleFont;
-
-/**
  *  原始数据模型
  */
 @property (nonatomic, strong) id original;

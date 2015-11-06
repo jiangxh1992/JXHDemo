@@ -7,21 +7,28 @@
 //
 
 #import "MainTableViewController.h"
-#import "MapViewController.h"
+#import "PinYin4Objc.h"
+
 #import "LabelHeightViewController.h"
 #import "OpenWebViewController.h"
 #import "CheckBoxViewController.h"
 #import "AlertViewController.h"
-#import "CustomCalendarViewController.h"
-#import "TimerShaftTableViewController.h"
-#import "TestViewController.h"
 #import "FolderTableViewController.h"
 #import "AffineViewController.h"
 #import "AlertControllerViewController.h"
 #import "PickerViewController.h"
-#import "SplitTableViewController.h"
 
-@interface MainTableViewController ()
+@interface MainTableViewController ()<UISearchBarDelegate>
+
+/**
+ *  定义搜索框
+ */
+@property (nonatomic, strong)UISearchBar *searchBar;
+
+/**
+ *  子视图名称
+ */
+@property (nonatomic, strong)NSArray *classNames;
 
 @end
 
@@ -29,136 +36,124 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 导航栏设置
-    [self setNav];
-    // table设置
-    [self setTableView];
+    // 添加搜索框到表格头部视图
+    [self setHeaderSearchBar];
+    // 设置数据
+    [self setData];
+}
+
+/**
+ *  添加搜索框到表格头部视图
+ */
+- (void)setHeaderSearchBar {
+    _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, 40)];
+    // 搜索框提示文字
+    _searchBar.placeholder = @"ClassName";
+    // 键盘return类型
+    _searchBar.returnKeyType = UIReturnKeySearch;
+    // 设置代理
+    _searchBar.delegate = self;
+    // 头部视图
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, 40)];
+    [headerView addSubview:_searchBar];
+    self.tableView.tableHeaderView = headerView;
+}
+
+/**
+ * 设置数据
+ */
+- (void)setData {
     //视图名称
-    _viewNames = [[NSArray alloc] initWithObjects:@"地图", @"Label高度计算", @"UIWebView", @"复选框", @"左对齐alertview", @"日历", @"时间轴", @"测试ViewController", @"可展开的TableView", @"UIView二维图形Affine几何变换", @"提示框与操作表UIAlertController", @"选择框PickerView", @"分栏表格", nil];
-}
-/**
- *  导航栏设置
- */
-- (void)setNav {
-    // 导航条按钮组件
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selector)];
-    // 导航栏背景色
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    // 导航栏按钮组件的颜色
-    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
-}
-/**
- *  tableview设置
- */
-- (void)setTableView {
-    // tableview背景色
-    self.tableView.backgroundColor = RGBColor(230, 230, 230);
-    //header高度
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, 20)];
-    // tableview尾部视图设置，这样用一个不占空间的UIView初始化可以清除尾部多余空格
-    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-}
-#pragma mark - Table view data source
-/**
- *  行数
- */
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return _viewNames.count;
-}
-/**
- *  cell
- */
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"identifier";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    // 1.cell名字
-    cell.textLabel.text = [_viewNames objectAtIndex:indexPath.row];
-    // 2.分割线清偏移
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsZero];
+    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AlertControllerViewController", @"PickerViewController"];
+    //设置模型数据
+    NSMutableArray *mulItems = [[NSMutableArray alloc] init];
+    for (NSString *name in _classNames) {
+        // 定义封装组件并把classname封装进去
+        ESListItem *item = [[ESListItem alloc] init];
+        item.title = name;
+        [mulItems addObject:item];
     }
-    //分割线清边界
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
-    //清除父边界
-    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
-        [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-    // 3.cell颜色
-    cell.backgroundColor = [UIColor whiteColor];
-    return cell;
+    self.items = mulItems;
 }
+
 /**
  *  点击cell跳转
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        // 地图
-        MapViewController *mapVC = [[MapViewController alloc] init];
-        [self.navigationController pushViewController:mapVC animated:YES];
+    // 取出类名
+    Class ClassName = NSClassFromString(_classNames[indexPath.row]);
+    // 跳转到控制器
+    [self.navigationController pushViewController:[[ClassName alloc] init] animated:NO];
     }
-    if (indexPath.row == 1) {
-        // NSString高度计算
-        LabelHeightViewController *labelVC = [[LabelHeightViewController alloc] init];
-        [self.navigationController pushViewController:labelVC animated:YES];
+#pragma mark - 搜索框代理监听
+/**
+ *   搜索框的内容发生变化
+ *
+ *  @param searchBar  searchBar
+ *  @param searchText 搜索框当前的内容
+ */
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    NSLog(@"搜索框的内容发生变化");
+    // 如果搜索文本为大写字母则转化为小写
+    searchText = [searchText lowercaseString];
+    // 没有输入内容
+    if (!searchText.length) return;
+    // 搜索更新前恢复全部原始数据
+    [self setData];
+    // 拼音输出格式
+    HanyuPinyinOutputFormat *outputFormat = [[HanyuPinyinOutputFormat alloc] init];
+    [outputFormat setToneType:ToneTypeWithoutTone];
+    [outputFormat setVCharType:VCharTypeWithV];
+    [outputFormat setCaseType:CaseTypeLowercase];
+    // 可变数组存储筛选后的数据模型
+    NSMutableArray *arrayM = [NSMutableArray array];
+    // 遍历筛选
+    for (ESListItem *item in self.items)
+    {
+        // 标题转化为拼音
+        NSString *pinyin = [PinyinHelper toHanyuPinyinStringWithNSString:item.title withHanyuPinyinOutputFormat:outputFormat withNSString:@"#"];
+        // 标题首字母
+        NSMutableString *pinyinHeader = [NSMutableString string];
+        NSArray *words = [pinyin componentsSeparatedByString:@"#"];
+        for (NSString *word in words)
+        {
+            [pinyinHeader appendString:[word substringToIndex:0]];
+        }
+        // 去掉"#"
+        pinyin = [pinyin stringByReplacingOccurrencesOfString:@"#" withString:@""];
+        // 中文中包含搜索文字 // 拼音全称中包含搜索文字 // 拼音缩写中包含搜索文字
+        if ([item.title rangeOfString:searchText].location != NSNotFound || [pinyin rangeOfString:searchText].location != NSNotFound || [pinyinHeader rangeOfString:searchText].location != NSNotFound)
+        {
+            [arrayM addObject:item];
+        }
     }
-    if (indexPath.row == 2) {
-        // 打开网页
-        OpenWebViewController *webVC = [[OpenWebViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    }
-    if (indexPath.row == 3) {
-        // 复选框
-        CheckBoxViewController *checkBoxVC = [[CheckBoxViewController alloc] init];
-        [self.navigationController pushViewController:checkBoxVC animated:YES];
-    }
-    if (indexPath.row == 4) {
-        // 左对齐alertveiw
-        AlertViewController *alertVC = [[AlertViewController alloc] init];
-        [self.navigationController pushViewController:alertVC animated:YES];
-    }
-    if (indexPath.row == 5) {
-        // 日历
-        CustomCalendarViewController *calendar = [[CustomCalendarViewController alloc] init];
-        [self.navigationController pushViewController:calendar animated:YES];
-    }
-    if (indexPath.row == 6) {
-        // 时间轴
-        TimerShaftTableViewController *timerVC = [[TimerShaftTableViewController alloc] init];
-        [self.navigationController pushViewController:timerVC animated:YES];
-    }
-    if (indexPath.row == 7) {
-        //测试
-        TestViewController *testVC = [[TestViewController alloc] init];
-        [self.navigationController pushViewController:testVC animated:YES];
-    }
-    if (indexPath.row == 8) {
-        //可折叠的表格
-        FolderTableViewController *folderVC = [[FolderTableViewController alloc] init];
-        [self.navigationController pushViewController:folderVC animated:YES];
-    }
-    if (indexPath.row == 9) {
-        //UIView二维图形Affine几何变换
-        AffineViewController *affineVC = [[AffineViewController alloc] init];
-        [self.navigationController pushViewController:affineVC animated:YES];
-    }
-    if (indexPath.row ==10) {
-        //提示框与操作表UIAlertController
-        AlertControllerViewController *alertcontrollerVC = [[AlertControllerViewController alloc] init];
-        [self.navigationController pushViewController:alertcontrollerVC animated:YES];
-    }
-    if (indexPath.row == 11) {
-        //选择框PickerView
-        PickerViewController *pickerVC = [[PickerViewController alloc] init];
-        [self.navigationController pushViewController:pickerVC animated:YES];
-    }
-    if (indexPath.row == 12) {
-        //分栏表格
-        SplitTableViewController *splitTableVC = [[SplitTableViewController alloc] init];
-        [self.navigationController pushViewController:splitTableVC animated:YES];
-    }
+    //设置过滤后的模型数组
+    self.items = arrayM;
+}
+/**
+ *  点击了键盘的搜索按钮
+ */
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"点击了键盘的搜索按钮");
+    // 退出键盘
+    [self.view endEditing:YES];
+}
+/**
+ *  输入内容结束
+ */
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    NSLog(@"输入内容结束");
+    // 退出键盘
+    [self.view endEditing:YES];
 }
 
+- (void)searchBarBookmarkButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"searchBarBookmarkButtonClicked");
+}
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"searchBarCancelButtonClicked");
+}
+- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"searchBarResultsListButtonClicked");
+}
 @end

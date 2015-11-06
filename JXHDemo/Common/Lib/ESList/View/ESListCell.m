@@ -18,11 +18,6 @@
 @property (nonatomic, weak) UILabel *titleLabel;
 
 /**
- *  子标题label
- */
-@property (nonatomic, weak) UILabel *subtitleLabel;
-
-/**
  *  箭头视图
  */
 @property (nonatomic, strong) UIImageView *arrowView;
@@ -62,26 +57,6 @@
     self.titleLabel.text = item.title;
     self.titleLabel.frame = cellFrame.titleFrame;
     self.titleLabel.font = item.titleFont;
-    // 子标题
-    self.subtitleLabel.text = item.subtitle;
-    self.subtitleLabel.frame = cellFrame.subtitleFrame;
-    self.subtitleLabel.font = item.subtitleFont;
-}
-
-/**
- *  获取子标题label
- */
-- (UILabel *)subtitleLabel
-{
-    if (!_subtitleLabel)
-    {
-        // 创建
-        UILabel *subtitleLabel = [UILabel yhlabel];
-        // 添加到cell中
-        [self.contentView addSubview:subtitleLabel];
-        _subtitleLabel = subtitleLabel;
-    }
-    return _subtitleLabel;
 }
 
 /**
@@ -101,23 +76,19 @@
 /**
  *  创建cell
  */
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self)
-    {
-        // 设置cell样式
+    if (self){
+        // 设置cell指示箭头
         [self setup];
     }
     return self;
 }
 
-#pragma mark - private
 /**
- *  设置cell样式
+ *  设置cell指示箭头
  */
-- (void)setup
-{
+- (void)setup {
     // 设置accessoryView
     self.accessoryView = self.arrowView;
 }
