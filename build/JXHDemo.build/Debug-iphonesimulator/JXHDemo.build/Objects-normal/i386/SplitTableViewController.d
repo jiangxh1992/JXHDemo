@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/带搜索框的分栏表格/SplitTableViewController.m \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/带搜索框的分栏表格/SplitTableViewController.m \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIImage+Extension.h \
@@ -26,4 +26,4 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListCellFrame.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESSearch/ESSearchBar.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESToolView/ESToolView.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/带搜索框的分栏表格/SplitTableViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/带搜索框的分栏表格/SplitTableViewController.h

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/MainTableViewController.m \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/MainTableViewController.m \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIImage+Extension.h \
@@ -24,18 +24,15 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListItem.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/View/ESListCell.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListCellFrame.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/MainTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/地图/MapViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/NSString高度/LabelHeightViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/UIWebView/OpenWebViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/复选框/CheckBoxViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/左对齐alertview/AlertViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/日历/CustomCalendarViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/日历/MyCalenderView.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/时间轴/TimerShaftTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation基本用法/TestViewController/TestViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/可以展开的TableView/FolderTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/UIView二维图形Affine变换/AffineViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/提示框与操作表UIAlertController/AlertControllerViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/选择框PickerView/PickerViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/带搜索框的分栏表格/SplitTableViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/MainTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/PinYin4Objc/Classes/PinYin4Objc.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/PinYin4Objc/Classes/HanyuPinyinOutputFormat.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/PinYin4Objc/Classes/PinyinHelper.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/NSString高度/LabelHeightViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/UIWebView/OpenWebViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/复选框/CheckBoxViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/左对齐alertview/AlertViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/可以展开的TableView/FolderTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/UIView二维图形Affine变换/AffineViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/提示框与操作表UIAlertController/AlertControllerViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/选择框PickerView/PickerViewController.h

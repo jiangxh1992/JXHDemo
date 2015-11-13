@@ -28,6 +28,6 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/Controller/ESNavigationController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/View/ESTabBar.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/View/ESTabBarButton.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/MainTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/MyDemoViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation基本用法/FoundationViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/MainTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/MyDemoViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Foundation/FoundationViewController.h

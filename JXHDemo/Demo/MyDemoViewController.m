@@ -6,8 +6,9 @@
 //  Copyright © 2015 Jiangxh. All rights reserved.
 //
 #import "MyDemoViewController.h"
-#import "TimerShaftTableViewController.h"
 #import "CustomCalendarViewController.h"
+#import "SplitTableViewController.h"
+#import "MapViewController.h"
 
 @interface MyDemoViewController ()
 
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     NSMutableArray *mulNames = [[NSMutableArray alloc] init];
     // cell的名称
-    _classNames = @[@"TimerShaftTableViewController", @"CustomCalendarViewController"];
+    _classNames = @[@"CustomCalendarViewController", @"SplitTableViewController", @"MapViewController"];
     for (NSString *name in _classNames) {
         ESListItem *item = [[ESListItem alloc] init];
         item.title = name;

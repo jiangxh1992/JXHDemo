@@ -24,7 +24,7 @@
 }
 
 - (void) alertBtnTapped {
-    NSString *msg = @"1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的";
+    //NSString *msg = @"1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的";
     //[self showAlertWithMessage:msg Title:@"title"];
 }
 /**
@@ -82,8 +82,8 @@
                                                      otherButtonTitles:@"知道了", nil];
         //如果你的系统大于等于7.0
         if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-            CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:CGSizeMake(240, 1000) lineBreakMode:NSLineBreakByTruncatingTail];
-            UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 240, size.height)];
+            CGFloat height = [message sizeWithFont:[UIFont systemFontOfSize:15.0] maxW:240].height;
+            UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 240, height)];
             textLabel.font = [UIFont systemFontOfSize:15];
             textLabel.textColor = [UIColor blackColor];
             textLabel.backgroundColor = [UIColor clearColor];

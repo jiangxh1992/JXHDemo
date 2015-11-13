@@ -25,6 +25,6 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/View/ESListCell.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListCellFrame.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/AppDelegate.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit测试/MainTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/UIKit/MainTableViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/Controller/ESTabBarController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Main/Controller/NewFeatureViewController.h

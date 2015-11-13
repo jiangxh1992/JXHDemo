@@ -36,7 +36,7 @@
     // 打印计算的高度看一下
     NSLog(@"文字段落高度为：%f",labelH);
     //实际行数
-    NSInteger lineNum = labelH/fontSize;
+    //NSInteger lineNum = labelH/fontSize;
     //设置label的高度
     [label setFrame:CGRectMake(0, 0, 300, labelH+20)];
     //行数设置为0

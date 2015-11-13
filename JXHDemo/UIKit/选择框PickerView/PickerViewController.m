@@ -105,7 +105,7 @@
 //}
 //选择了某行某列,每次滚动改变数据都会触发
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    NSLog(@"选择了第%li列第%li行",component,row);
+    NSLog(@"选择了第%li列第%li行",(long)component,(long)row);
 }
 
 /**

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/时间轴/TimerShaftTableViewController.m \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/时间轴/TimerShaftTableViewController.m \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIImage+Extension.h \
@@ -24,6 +24,6 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListItem.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/View/ESListCell.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListCellFrame.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/时间轴/TimerShaftTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/时间轴/TimerShaftCell.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/自定义功能模块/时间轴/TimerButton.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/时间轴/TimerShaftTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/时间轴/TimerShaftCell.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/时间轴/TimerButton.h

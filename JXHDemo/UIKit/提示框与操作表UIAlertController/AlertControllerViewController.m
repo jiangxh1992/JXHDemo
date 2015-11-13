@@ -75,42 +75,42 @@
     NSString *btnTitle = [actionSheet buttonTitleAtIndex:0];
     NSLog(@"第一个按钮为:%@",btnTitle);
     //取消按钮的下标
-    NSLog(@"取消按钮的下标:%li",[actionSheet cancelButtonIndex]);
+    NSLog(@"取消按钮的下标:%d",[actionSheet cancelButtonIndex]);
     //确定按钮的下标
-    NSLog(@"确定按钮的下标:%li",[actionSheet destructiveButtonIndex]);
+    NSLog(@"确定按钮的下标:%d",[actionSheet destructiveButtonIndex]);
     //第一个其他按钮的下标
-    NSLog(@"第一个其他按钮的下标:%li",[actionSheet firstOtherButtonIndex]);
+    NSLog(@"第一个其他按钮的下标:%d",[actionSheet firstOtherButtonIndex]);
     //设置代理
     actionSheet.delegate = self;
     // 弹出操作表
     [actionSheet showInView:self.view];
 }
 #pragma mark - actionSheet状态监视代理
-//操作表显示前调用
-- (void)willPresentActionSheet:(UIActionSheet *)actionSheet {
-    NSLog(@"操作表显示前");
-}
-//操作表显示后调用
-- (void)didPresentActionSheet:(UIActionSheet *)actionSheet {
-    NSLog(@"操作表显示后");
-}
-//操作表被意外强制关闭时调用，不是触摸取消按钮时调用
-- (void)actionSheetCancel:(UIActionSheet *)actionSheet {
-    NSLog(@"操作表被意外强制关闭");
-}
-//点击操作表的按钮时调用
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSString *btnTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
-    NSLog(@"点击了按钮:%@",btnTitle);
-}
-//操作表关闭前调用
-- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"操作表关闭前");
-}
-//操作表关闭后调用以及程序进入睡眠状态时调用
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"操作表关闭或者程序进入睡眠状态");
-}
+////操作表显示前调用
+//- (void)willPresentActionSheet:(UIActionSheet *)actionSheet {
+//    NSLog(@"操作表显示前");
+//}
+////操作表显示后调用
+//- (void)didPresentActionSheet:(UIActionSheet *)actionSheet {
+//    NSLog(@"操作表显示后");
+//}
+////操作表被意外强制关闭时调用，不是触摸取消按钮时调用
+//- (void)actionSheetCancel:(UIActionSheet *)actionSheet {
+//    NSLog(@"操作表被意外强制关闭");
+//}
+////点击操作表的按钮时调用
+//- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+//    NSString *btnTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+//    NSLog(@"点击了按钮:%@",btnTitle);
+//}
+////操作表关闭前调用
+//- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex {
+//    NSLog(@"操作表关闭前");
+//}
+////操作表关闭后调用以及程序进入睡眠状态时调用
+//- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+//    NSLog(@"操作表关闭或者程序进入睡眠状态");
+//}
 
 /**
  UIAlertView用来弹出与用户交互的信息框以及输入框

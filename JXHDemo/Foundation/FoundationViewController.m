@@ -36,4 +36,14 @@
     self.items = mulItems;
 }
 
+/**
+ *  点击cell跳转
+ */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 取出类名
+    Class ClassName = NSClassFromString(_classNames[indexPath.row]);
+    // 跳转到控制器
+    [self.navigationController pushViewController:[[ClassName alloc] init] animated:NO];
+}
+
 @end
