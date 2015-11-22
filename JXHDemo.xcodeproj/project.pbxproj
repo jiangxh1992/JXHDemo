@@ -52,6 +52,7 @@
 		F72F04891BF02FF9008E6FB4 /* XHPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F04881BF02FF9008E6FB4 /* XHPickerView.m */; };
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
 		F755A3251BD8B32600803182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3241BD8B32600803182 /* main.m */; };
+		F75679F01C01C9A800EF35C3 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75679EF1C01C9A800EF35C3 /* PlistViewController.m */; };
 		F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F777FCAB1BDB636B00C5CBEA /* icon.png */; };
 		F7960CFC1BE33A1A004BA408 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7960CFB1BE33A1A004BA408 /* UIView+Extension.m */; };
 		F7FA92A11BEC3AD000CA97CD /* ESTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FA92541BEC3AD000CA97CD /* ESTableViewController.m */; };
@@ -218,6 +219,8 @@
 		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F755A31F1BD8B30000803182 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F755A3241BD8B32600803182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F75679EE1C01C9A800EF35C3 /* PlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
+		F75679EF1C01C9A800EF35C3 /* PlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistViewController.m; sourceTree = "<group>"; };
 		F777FCAB1BDB636B00C5CBEA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F7960CFA1BE33A1A004BA408 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		F7960CFB1BE33A1A004BA408 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -608,6 +611,7 @@
 		F72F04421BF02579008E6FB4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F75679ED1C01C98600EF35C3 /* Plist */,
 				F72F04431BF02579008E6FB4 /* FoundationViewController.h */,
 				F72F04441BF02579008E6FB4 /* FoundationViewController.m */,
 				F72F04451BF02579008E6FB4 /* TestViewController */,
@@ -747,6 +751,15 @@
 				F755A31F1BD8B30000803182 /* AppDelegate.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F75679ED1C01C98600EF35C3 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				F75679EE1C01C9A800EF35C3 /* PlistViewController.h */,
+				F75679EF1C01C9A800EF35C3 /* PlistViewController.m */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 		F7FA92511BEC3AD000CA97CD /* ESCell */ = {
@@ -1209,6 +1222,7 @@
 				F72F04701BF02579008E6FB4 /* MyCalenderView.m in Sources */,
 				F7FA92E41BEC3D5800CA97CD /* AFHTTPRequestOperation.m in Sources */,
 				F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */,
+				F75679F01C01C9A800EF35C3 /* PlistViewController.m in Sources */,
 				F7FA92E51BEC3D5800CA97CD /* AFHTTPRequestOperationManager.m in Sources */,
 				F7FA92A11BEC3AD000CA97CD /* ESTableViewController.m in Sources */,
 			);
