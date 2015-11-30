@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 获取已经创建的沙盒plist文件路径
+    NSString *filepath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"/demo.plist"];
+    // 获取此路径下的我们需要的数据
+    NSDictionary *testDic = [[NSDictionary alloc] initWithContentsOfFile:filepath];
+    // 打印之前存入沙盒的新数据
+    NSLog(@"d:%@", [testDic objectForKey:@"d"]);
+    
     self.view.backgroundColor = RGBColor(230, 230, 230);
     
     // 1.测试sizeToFit

@@ -50,6 +50,7 @@
 		F72F04831BF02579008E6FB4 /* AlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F04671BF02579008E6FB4 /* AlertControllerViewController.m */; };
 		F72F04841BF02579008E6FB4 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F046A1BF02579008E6FB4 /* PickerViewController.m */; };
 		F72F04891BF02FF9008E6FB4 /* XHPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F04881BF02FF9008E6FB4 /* XHPickerView.m */; };
+		F752FA511C02AE2600E5201C /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F752FA501C02AE2600E5201C /* test.plist */; };
 		F755A3221BD8B30000803182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A31F1BD8B30000803182 /* AppDelegate.m */; };
 		F755A3251BD8B32600803182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F755A3241BD8B32600803182 /* main.m */; };
 		F75679F01C01C9A800EF35C3 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75679EF1C01C9A800EF35C3 /* PlistViewController.m */; };
@@ -216,6 +217,7 @@
 		F72F046A1BF02579008E6FB4 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		F72F04871BF02FF9008E6FB4 /* XHPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPickerView.h; sourceTree = "<group>"; };
 		F72F04881BF02FF9008E6FB4 /* XHPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPickerView.m; sourceTree = "<group>"; };
+		F752FA501C02AE2600E5201C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 		F755A31E1BD8B30000803182 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F755A31F1BD8B30000803182 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F755A3241BD8B32600803182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 		F70AE9AF1BD08343008F817D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F752FA4F1C02AE0700E5201C /* resources */,
 				F777FCAB1BDB636B00C5CBEA /* icon.png */,
 				F70AE9B91BD08343008F817D /* Main.storyboard */,
 				F70AE9BC1BD08343008F817D /* Images.xcassets */,
@@ -739,6 +742,14 @@
 				F72F04881BF02FF9008E6FB4 /* XHPickerView.m */,
 			);
 			path = "PickerView封装";
+			sourceTree = "<group>";
+		};
+		F752FA4F1C02AE0700E5201C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F752FA501C02AE2600E5201C /* test.plist */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 		F755A31D1BD8B30000803182 /* Main */ = {
@@ -1100,6 +1111,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F752FA511C02AE2600E5201C /* test.plist in Resources */,
 				6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */,
 				F777FCAC1BDB636B00C5CBEA /* icon.png in Resources */,
 				F70AE9BB1BD08343008F817D /* Main.storyboard in Resources */,

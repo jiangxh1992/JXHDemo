@@ -9,6 +9,7 @@
 #import "FoundationViewController.h"
 
 #import "TestViewController.h"
+#import "PlistViewController.h"
 
 @interface FoundationViewController ()
 
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // cell的名称
-    _classNames = @[@"TestViewController"];
+    _classNames = @[@"TestViewController", @"PlistViewController"];
     //设置模型数据
     NSMutableArray *mulItems = [[NSMutableArray alloc] init];
     for (NSString *name in _classNames) {
