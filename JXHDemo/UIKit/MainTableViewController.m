@@ -17,6 +17,7 @@
 #import "AffineViewController.h"
 #import "AlertControllerViewController.h"
 #import "PickerViewController.h"
+#import "AnimationViewController.h"
 
 @interface MainTableViewController ()<UISearchBarDelegate>
 
@@ -64,7 +65,7 @@
  */
 - (void)setData {
     //视图名称
-    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AlertControllerViewController", @"PickerViewController"];
+    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AnimationViewController", @"AlertControllerViewController", @"PickerViewController"];
     //设置模型数据
     NSMutableArray *mulItems = [[NSMutableArray alloc] init];
     for (NSString *name in _classNames) {
@@ -84,7 +85,27 @@
     Class ClassName = NSClassFromString(_classNames[indexPath.row]);
     // 跳转到控制器
     [self.navigationController pushViewController:[[ClassName alloc] init] animated:NO];
+    // 保证显示导航栏
+    [self.navigationController.navigationBar setHidden:NO];
     }
+
+/**
+ *  监听下滑事件隐藏导航栏
+ */
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    // 当向上滑动偏移大于导航栏高度的时候隐藏导航栏
+    if (scrollView.contentOffset.y > 64) {
+        // 隐藏导航栏
+        [self.navigationController.navigationBar setHidden:YES];
+        // 将表格原点移到屏幕顶端
+        self.tableView.frame = CGRectMake(0, 0, ApplicationW, ApplicationH - 50);
+    } else if(scrollView.contentOffset.y < -64){
+        // 当向下滑动偏移大于导航栏高度的时候显示导航栏
+        [self.navigationController.navigationBar setHidden:NO];
+        // 表格原点移回到导航栏下面
+        self.tableView.frame = CGRectMake(0, 64, ApplicationW, ApplicationH - 64 - 50);
+    }
+}
 #pragma mark - 搜索框代理监听
 /**
  *   搜索框的内容发生变化

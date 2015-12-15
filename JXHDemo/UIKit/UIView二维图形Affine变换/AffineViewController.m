@@ -129,13 +129,21 @@
     _imageView.contentMode = UIViewContentModeCenter;
     //显示
     [self.view addSubview:_imageView];
-    //逆时针旋转90度按钮
+    // 变换按钮正
     UIButton *btn_transform = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn_transform setCenter:CGPointMake(ApplicationW/2, ApplicationH-100)];
-    [btn_transform setTitle:@"上下翻转缩放" forState:UIControlStateNormal];
+    [btn_transform setTitle:@"翻转缩放正向" forState:UIControlStateNormal];
     [btn_transform sizeToFit];
+    [btn_transform setCenter:CGPointMake(btn_transform.frame.size.width/2, ApplicationH-100)];
     [btn_transform addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_transform];
+    
+    // 变换按钮逆
+    UIButton *btn_transform2 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn_transform2 setTitle:@"翻转缩放逆向" forState:UIControlStateNormal];
+    [btn_transform2 sizeToFit];
+    [btn_transform2 setCenter:CGPointMake(ApplicationW - btn_transform2.frame.size.width/2, ApplicationH-100)];
+    [btn_transform2 addTarget:self action:@selector(click2) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn_transform2];
 }
 /**
  *  按钮点击事件
@@ -147,11 +155,21 @@
     //CGAffineTransform move = CGAffineTransformMakeTranslation(20.0, -30.0);
     //宽度缩小一倍，高度两倍
     CGAffineTransform scale = CGAffineTransformMakeScale(0.5, 2.0);
-    //上下翻转
-    CGAffineTransform upsideDown = CGAffineTransformScale(_imageView.transform, 1.0, -1.0);
+    //上下翻转,左右翻转
+    CGAffineTransform upsideDown = CGAffineTransformScale(_imageView.transform, -1.0, -1.0);
     //上下翻转缩放
     CGAffineTransform contact = CGAffineTransformConcat(upsideDown, scale);
     //变换
+    _imageView.transform = contact;
+}
+- (void)click2 {
+    // 宽度两倍，高度缩小一倍
+    CGAffineTransform scale = CGAffineTransformMakeScale(2.0, 0.5);
+    // 上下翻转,左右翻转
+    CGAffineTransform upsideDown = CGAffineTransformScale(_imageView.transform, -1.0, -1.0);
+    // 上下翻转缩放
+    CGAffineTransform contact = CGAffineTransformConcat(upsideDown, scale);
+    // 变换
     _imageView.transform = contact;
 }
 

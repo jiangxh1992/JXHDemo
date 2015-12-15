@@ -11,7 +11,9 @@
 
 @protocol ESToolViewDelegate <NSObject>
 
+// 按钮选择切换协议
 @optional
+
 /**
  *  选中ESToolView中的第几个按钮
  */

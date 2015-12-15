@@ -25,7 +25,7 @@
      * UITextFeild的用法
      ***********************/
     //1.输入框
-    _inputFeild = [[UITextField alloc] initWithFrame:CGRectMake(5, 70, ApplicationW - btnSize - 10, btnSize)];
+    _inputFeild = [[UITextField alloc] initWithFrame:CGRectMake(5, 5, ApplicationW - btnSize - 10, btnSize)];
     //边框
     //_inputFeild.layer.borderWidth = 1;
     //_inputFeild.layer.borderColor = [UIColor orangeColor].CGColor;
@@ -70,7 +70,7 @@
     // 3.webview
     _webView = [[UIWebView alloc] init];
     //frame
-    [_webView setFrame:CGRectMake(5, 105, ApplicationW-10, ApplicationH - 110)];
+    [_webView setFrame:CGRectMake(5, btnSize + 10, ApplicationW-10, ApplicationH - btnSize - 10)];
     //边框
     _webView.layer.borderWidth = 1;
     _webView.layer.borderColor = (__bridge CGColorRef)([UIColor orangeColor]);

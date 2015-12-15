@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A6B9035F784889D05295DD8107B6979DF1622E5F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : 0,
+    "A6B9035F784889D05295DD8107B6979DF1622E5F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE55FA30-392E-42BE-8527-AA91E86AA1D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : "JXHDemo\/JXHDemo\/Common\/Lib\/MJExtension\/",
+    "A6B9035F784889D05295DD8107B6979DF1622E5F" : "JXHDemo"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JXHDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JXHDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/albertsgithub\/JXHDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A6B9035F784889D05295DD8107B6979DF1622E5F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.100\/demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451"
+    }
+  ]
+}

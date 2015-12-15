@@ -50,7 +50,7 @@
  */
 - (void)setMapView {
     //设置地图位置
-    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 30, ApplicationW, ApplicationH - 30)];
+    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, ApplicationH - 64)];
     //设置代理
     //_mapView.delegate = self;
     //设置地图可缩放

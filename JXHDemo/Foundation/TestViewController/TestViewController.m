@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "UIAlertView+DIY.h"
+#import "TestParam.h"
 @interface TestViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end
@@ -29,7 +30,10 @@
     //[self sizeToFit];
     
     // 2.测试DIY alertView
-    [self alertViewTest];
+    //[self alertViewTest];
+    
+    // 3.服务器请求
+    [self request];
 }
 /**
  *  1.测试sizeToFit
@@ -56,7 +60,7 @@
     [self.view addSubview:label];
 }
 /**
- *  2.测试DIY alertView
+ * 2.测试DIY alertView
  */
 - (void)alertViewTest {
     //定一个提示框
@@ -89,7 +93,7 @@
     [alert show];
 }
 /**
- *  自动设置UILabel的段落尺寸并居左
+ * 自动设置UILabel的段落尺寸并居左
  */
 - (void)autoSetLabelFrame: (UILabel *)label {
     CGSize size = [label.text sizeWithFont:label.font maxW:240];
@@ -102,12 +106,30 @@
     label.textAlignment = NSTextAlignmentLeft;
 }
 /**
- *  自动根据上一个视图设置下一个视图的原点
+ * 自动根据上一个视图设置下一个视图的原点
  */
 - (void)autoSetNextOriginFromView: (UIView *)preView toView:(UIView *)nextView {
     CGRect preRect = preView.frame;
     CGSize nextSize = nextView.frame.size;
     nextView.frame = CGRectMake(preRect.origin.x, preRect.origin.y + preRect.size.height, nextSize.width, nextSize.height);
+}
+
+/**
+ *  3.服务器请求测试
+ */
+- (void)request {
+    TestParam *param = [[TestParam alloc] init];
+    param.hospital = @"1034";
+    param.doctorNumber = @"Test";
+    param.diseaseId = @"";
+    param.patientId = @"2";
+    param.selectedDiseaseId = @"3";
+    
+    [[AFHTTPRequestOperationManager manager] POST:@"http://192.168.0.80:8080/section/1034/Disease/addPatient.jsp" parameters:param.keyValues success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"更改成功！");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"request error!");
+    }];
 }
 
 @end
