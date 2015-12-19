@@ -1,0 +1,114 @@
+//
+//  Prefix.pch
+//  JXHDemo
+//
+//  Created by 919575700@qq.com on 10/16/15.
+//  Copyright (c) 2015 Jiangxh. All rights reserved.
+//
+#ifndef JXHDemo_Prefix_pch
+#define JXHDemo_Prefix_pch
+
+// 系统扩展类头文件
+#import "NSString+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "NSString+Crypt.h"
+#import "UITableViewCell+YH.h"
+#import "UILabel+YH.h"
+#import "UIButton+YH.h"
+#import "NSDate+YH.h"
+#import "AFNetworking.h"
+#import "ESImageTool.h"
+#import "MJExtension.h"
+// ESKit组件
+// 1.表格
+#import "ESListViewController.h"
+#import "ESListItem.h"
+#import "ESListCell.h"
+#import "ESListCellFrame.h"
+
+// cell边距
+#define CellMargin 10
+
+// 自定义Log
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define ESLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define ESLog(...)
+#endif
+
+/**
+ *通过RGB创建颜色
+ */
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 创建UIAlertView并且显示
+#define SLAlert(msg) [[[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+// 纯文本信息提示
+#define SLAlertWithOnlyMsg(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+// 纯标题信息提示
+#define SLAlertWithOnlyTitle(title) [[[UIAlertView alloc] initWithTitle:title message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+
+/**
+ *获取屏幕尺寸
+ */
+// 屏幕高度
+#define ApplicationH [UIScreen mainScreen].bounds.size.height
+// 屏幕宽度
+#define ApplicationW [UIScreen mainScreen].bounds.size.width
+
+// 判断是否为iOS7以上版本
+#define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 设备类型
+// iPhone4
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+// iPhone5
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568.0)
+// iPhone6
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667.0)
+// iPhone6p
+#define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736.0)
+
+// 加粗字体
+#define boldFont [UIFont boldSystemFontOfSize:15]
+// 一般字体
+#define SLFontSmall [UIFont systemFontOfSize:15.0]
+// 常规字体,6p调大
+#define SLFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
+
+//导航栏高度
+#define ESNavH 44
+//内容页面左右边距
+#define SLMargin 30
+
+/**
+ * 时间轴常量
+ */
+//最小的cell高度
+#define minCellHeight ApplicationW/4
+//最大的cell高度
+#define maxCellHeight ApplicationW/2
+//三角的宽度
+#define arrrowWidth 6
+//三角的高度
+#define arrrowHeight 13
+//node的尺寸
+#define nodeSize 20
+//日期按钮与内容按钮之间的空隙
+#define btnDistance 1
+//时间轴与屏幕左边的边距
+#define LMargin ApplicationW/3
+//按钮与屏幕左边间隔
+#define leftBtnMargin 10
+//时间轴按钮组件高度
+#define timerBtnHeight minCellHeight
+//日期按钮高度
+#define dateBtnHeight 20
+
+// .时间轴结点数据缓存沙盒路径
+#define SLNodeRecordsDomainPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) lastObject] stringByAppendingPathComponent:@"/nodes.plist"]
+// .时间轴新建结点就诊类型数据沙盒路径
+#define SLDignoseTypeDomainPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingString:@"/dignoseType.plist"]
+
+#endif

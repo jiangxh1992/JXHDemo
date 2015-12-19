@@ -1,6 +1,6 @@
 dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/MyDemoViewController.m \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Prefix.pch \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting\ Files/Prefix.pch \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/NSString+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIImage+Extension.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Category/UIView+Extension.h \
@@ -36,4 +36,7 @@ dependencies: \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Common/Lib/ESList/Model/ESListCellFrame.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/MyDemoViewController.h \
   /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/带搜索框的分栏表格/SplitTableViewController.h \
-  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/地图/MapViewController.h
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/地图/MapViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/时间轴/Controller/TimerShaftTableViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/日历/Controller/CustomCalendarViewController.h \
+  /Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Demo/日历/View/MyCalenderView.h

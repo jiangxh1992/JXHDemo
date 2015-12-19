@@ -13,15 +13,15 @@
 /**
  *  创建Label
  */
-+ (instancetype)yhlabel
++ (instancetype)label
 {
-    return [self yhlabelWithFont:nil];
+    return [self labelWithFont:nil];
 }
 
 /**
  *  根据字体创建Label
  */
-+ (instancetype)yhlabelWithFont:(UIFont *)font
++ (instancetype)labelWithFont:(UIFont *)font
 {
     // 创建
     UILabel *label = [[UILabel alloc] init];

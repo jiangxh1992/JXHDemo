@@ -13,11 +13,11 @@
 /**
  *  创建Label
  */
-+ (instancetype)yhlabel;
++ (instancetype)label;
 
 /**
  *  根据字体创建Label
  */
-+ (instancetype)yhlabelWithFont:(UIFont *)font;
++ (instancetype)labelWithFont:(UIFont *)font;
 
 @end

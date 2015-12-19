@@ -8,6 +8,8 @@
 #import "MyDemoViewController.h"
 #import "SplitTableViewController.h"
 #import "MapViewController.h"
+#import "TimerShaftTableViewController.h"
+#import "CustomCalendarViewController.h"
 
 @interface MyDemoViewController ()
 
@@ -24,7 +26,7 @@
     [super viewDidLoad];
     NSMutableArray *mulNames = [[NSMutableArray alloc] init];
     // cell的名称
-    _classNames = @[@"SplitTableViewController", @"MapViewController"];
+    _classNames = @[@"SplitTableViewController", @"MapViewController", @"TimerShaftTableViewController", @"CustomCalendarViewController"];
     for (NSString *name in _classNames) {
         ESListItem *item = [[ESListItem alloc] init];
         item.title = name;

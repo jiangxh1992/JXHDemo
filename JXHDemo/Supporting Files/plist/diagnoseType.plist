@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>门诊</string>
+	<string>复诊</string>
+	<string>手术</string>
+	<string>化疗</string>
+	<string>住院</string>
+	<string>随访</string>
+	<string>体检</string>
+</array>
+</plist>

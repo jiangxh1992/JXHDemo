@@ -35,7 +35,7 @@
     if (!_titleLabel)
     {
         // 创建
-        UILabel *titleLabel = [UILabel yhlabel];
+        UILabel *titleLabel = [UILabel label];
         // 添加到cell中
         [self.contentView addSubview:titleLabel];
         _titleLabel = titleLabel;

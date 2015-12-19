@@ -106,12 +106,10 @@
         self.tableView.frame = CGRectMake(0, 64, ApplicationW, ApplicationH - 64 - 50);
     }
 }
+
 #pragma mark - 搜索框代理监听
 /**
  *   搜索框的内容发生变化
- *
- *  @param searchBar  searchBar
- *  @param searchText 搜索框当前的内容
  */
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     NSLog(@"搜索框的内容发生变化");

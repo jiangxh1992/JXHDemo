@@ -163,7 +163,7 @@
     if (!_titleLabel)
     {
         // 创建
-        UILabel *titleLabel = [UILabel yhlabel];
+        UILabel *titleLabel = [UILabel label];
         // 添加到cell中
         [self.contentView addSubview:titleLabel];
         titleLabel.backgroundColor = [UIColor clearColor];
@@ -180,7 +180,7 @@
     if (!_subtitleLabel)
     {
         // 创建
-        UILabel *subtitleLabel = [UILabel yhlabel];
+        UILabel *subtitleLabel = [UILabel label];
         // 添加到cell中
         [self.contentView addSubview:subtitleLabel];
         subtitleLabel.backgroundColor = [UIColor clearColor];

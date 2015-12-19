@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>date</key>
+		<string>2015-08-20</string>
+		<key>type</key>
+		<string>化疗1</string>
+		<key>detail</key>
+		<string>经过第一疗程病人无不良反应</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-06-20</string>
+		<key>type</key>
+		<string>随访3</string>
+		<key>detail</key>
+		<string>疗理结果为低分化度癌,建议手术</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-03-20</string>
+		<key>type</key>
+		<string>随访1</string>
+		<key>detail</key>
+		<string>首次随访了解，病人病情无明显变化</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-02-13</string>
+		<key>type</key>
+		<string>门诊</string>
+		<key>detail</key>
+		<string>结合体检结果分析,建议进行后期随访</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-09-26</string>
+		<key>type</key>
+		<string>化疗2</string>
+		<key>detail</key>
+		<string>经化疗第二阶段,肺癌指数明显下降,基本恢复正常</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-06-10</string>
+		<key>type</key>
+		<string>随访2</string>
+		<key>detail</key>
+		<string>肿瘤长大至两公分,建议穿刺活检,送疗理化验</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2015-01-10</string>
+		<key>type</key>
+		<string>体检</string>
+		<key>detail</key>
+		<string>发现肺部小结节,肿瘤1公分大</string>
+	</dict>
+</array>
+</plist>
