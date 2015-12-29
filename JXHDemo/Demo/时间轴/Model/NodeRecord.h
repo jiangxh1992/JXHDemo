@@ -4,7 +4,7 @@
 //
 //  Created by jiangxh on 10/27/15.
 //  Copyright (c) 2015 eeesysmini2. All rights reserved.
-//  时间结点就诊记录模型
+//  时间结点数据模型
 
 #import <Foundation/Foundation.h>
 
@@ -21,10 +21,17 @@
 @property (nonatomic, copy)NSString *type;
 
 /**
- *  就诊内容详情
+ *  就诊过程
  */
-@property (nonatomic, copy)NSString *detail;
+@property (nonatomic, copy)NSString *treat_progress;
 
+/**
+ *  就诊评估
+ */
+@property (nonatomic, copy)NSString *treat_estimate;
+
+
+/////////////////////////////////////////////////////
 /**
  *  结点高度
  */
@@ -44,11 +51,5 @@
  *  箭头资源
  */
 @property (nonatomic, copy)NSString *arrowName;
-
-/**
- *  构造函数
- */
--(id)initWithDic:(NSDictionary *)dic;
-+(id)initWithDic:(NSDictionary *)dic;
 
 @end

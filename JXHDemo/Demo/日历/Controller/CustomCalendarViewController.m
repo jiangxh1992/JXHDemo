@@ -137,7 +137,7 @@
         BOOL deleteResult=[[NSFileManager defaultManager] removeItemAtPath:filename error:nil];
         // 提示
         if (deleteResult) {
-            SLAlert(@"已删除所有事务!");
+            XHAlertWithOnlyMsg(@"已删除所有事务!");
         }
         // 重置本月日历
         [self updateCurrentMonth];

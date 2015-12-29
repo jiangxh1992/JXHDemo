@@ -12,11 +12,11 @@
 #import "NSString+Extension.h"
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
+#import "UILabel+Extension.h"
+#import "NSDate+Extension.h"
+#import "UITableViewCell+Extension.h"
+#import "UIButton+Extension.h"
 #import "NSString+Crypt.h"
-#import "UITableViewCell+YH.h"
-#import "UILabel+YH.h"
-#import "UIButton+YH.h"
-#import "NSDate+YH.h"
 #import "AFNetworking.h"
 #import "ESImageTool.h"
 #import "MJExtension.h"
@@ -38,19 +38,19 @@
 #endif
 
 /**
- *通过RGB创建颜色
+ *  通过RGB创建颜色
  */
 #define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 // 创建UIAlertView并且显示
-#define SLAlert(msg) [[[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+#define XHAlert(title,msg) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
 // 纯文本信息提示
-#define SLAlertWithOnlyMsg(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+#define XHAlertWithOnlyMsg(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
 // 纯标题信息提示
-#define SLAlertWithOnlyTitle(title) [[[UIAlertView alloc] initWithTitle:title message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
+#define XHAlertWithOnlyTitle(title) [[[UIAlertView alloc] initWithTitle:title message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
 
 /**
- *获取屏幕尺寸
+ *  获取屏幕尺寸
  */
 // 屏幕高度
 #define ApplicationH [UIScreen mainScreen].bounds.size.height
@@ -71,11 +71,11 @@
 #define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736.0)
 
 // 加粗字体
-#define boldFont [UIFont boldSystemFontOfSize:15]
+#define XHFontBold [UIFont boldSystemFontOfSize:15]
 // 一般字体
-#define SLFontSmall [UIFont systemFontOfSize:15.0]
+#define XHFontSmall [UIFont systemFontOfSize:15.0]
 // 常规字体,6p调大
-#define SLFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
+#define XHFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
 
 //导航栏高度
 #define ESNavH 44

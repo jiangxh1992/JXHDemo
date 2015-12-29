@@ -80,7 +80,7 @@
 {
     // 创建cell
     static NSString *CellIdentifier = @"ArticleCell";
-    ArticleCell *cell = [ArticleCell yhcellWithTableView:tableView classString:CellIdentifier];
+    ArticleCell *cell = [ArticleCell cellWithTableView:tableView classString:CellIdentifier];
     
     // 取出对应的模型
     cell.cellFrame = self.cellFrames[indexPath.row];

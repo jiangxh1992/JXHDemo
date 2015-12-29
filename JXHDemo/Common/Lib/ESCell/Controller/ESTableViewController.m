@@ -89,14 +89,14 @@
 {
     // 1. 创建cell
     static NSString *CellIdentifier = @"ESCell";
-    ESCell *cell = (ESCell *)[UITableViewCell yhcellWithTableView:tableView classString:CellIdentifier];
+    ESCell *cell = (ESCell *)[UITableViewCell cellWithTableView:tableView classString:CellIdentifier];
     
     // 2. 传递模型
     ESGroup *group = self.groups[indexPath.section];
     cell.cellFrame = group.items[indexPath.row];
     
     // 3. 设置背景
-    [cell yhsetBgAtIndexPath:indexPath countInSection:group.items.count];
+    [cell setBgAtIndexPath:indexPath countInSection:group.items.count];
     
     // 4. 设置代理（如果是日期选择控件或下拉选择控件）
     ESItem *item = cell.cellFrame.item;

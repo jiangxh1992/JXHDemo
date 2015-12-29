@@ -67,7 +67,7 @@
     for (NSInteger i = 0; i < ESImageCount; i++)
     {
         // 3.1 图片名
-        NSString *imageName = [NSString stringWithFormat:@"new_feature_%d",i + 1];
+        NSString *imageName = [NSString stringWithFormat:@"new_feature_%ld",i + 1];
         // 3.2 创建图像
         UIImage *image = [UIImage fullscreenImageWithName:imageName];
         // 3.3 创建图像视图

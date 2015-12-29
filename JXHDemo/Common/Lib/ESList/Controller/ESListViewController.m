@@ -87,7 +87,7 @@
 {
     // 1. 创建cell
     static NSString *CellIdentifier = @"ESListCell";
-    ESListCell *cell = [ESListCell yhcellWithTableView:tableView classString:CellIdentifier];
+    ESListCell *cell = [ESListCell cellWithTableView:tableView classString:CellIdentifier];
     // 2. 传递模型
     cell.cellFrame = self.cellFrames[indexPath.row];
     // 3. 分割线清偏移

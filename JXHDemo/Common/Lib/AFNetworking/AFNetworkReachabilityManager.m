@@ -217,8 +217,6 @@ static void AFNetworkReachabilityReleaseCallback(const void *info) {
 
                     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
                     [notificationCenter postNotificationName:AFNetworkingReachabilityDidChangeNotification object:nil userInfo:@{ AFNetworkingReachabilityNotificationStatusItem: @(status) }];
-
-
                 });
             });
         }

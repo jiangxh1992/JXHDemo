@@ -478,8 +478,8 @@
     if ([self.cellFrame.item isKindOfClass:[ESDateItem class]]) // 日期选择
     {
         ESDateItem *dateItem = (ESDateItem *)self.cellFrame.item;
-        if (![NSDate yhdateWithString:self.cellFrame.item.subtitle format:dateItem.format]) return;
-        self.datePicker.date = [NSDate yhdateWithString:self.cellFrame.item.subtitle format:dateItem.format];
+        if (![NSDate dateWithString:self.cellFrame.item.subtitle format:dateItem.format]) return;
+        self.datePicker.date = [NSDate dateWithString:self.cellFrame.item.subtitle format:dateItem.format];
     }
     else if ([self.cellFrame.item isKindOfClass:[ESPickerItem class]]) // 下拉选择
     {
@@ -527,7 +527,7 @@
     
     ESDateItem *dateItem = (ESDateItem *)self.cellFrame.item;
     // 1. 当前日期控件文字
-    NSString *text = [NSDate yhstringWithDate:self.datePicker.date format:dateItem.format];
+    NSString *text = [NSDate stringWithDate:self.datePicker.date format:dateItem.format];
     
     // 2. 改变模型数据
     self.cellFrame.item.subtitle = text;

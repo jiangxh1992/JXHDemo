@@ -8,7 +8,6 @@
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "KCAnnotation.h"
 /**
  *  宏定义常量
  */

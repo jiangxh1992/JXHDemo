@@ -13,7 +13,7 @@
 @implementation TimerShaftCell
 
 /**
- * 构造方法（初始化对象的时候会调用）
+ * 构造方法（初始化对象的时候会调用,传进来结点数据模型）
  * 添加所需要的控件
  */
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifer:(NSString *)reuseIdentifer nodeRecord:(NodeRecord *)nodeRecord{

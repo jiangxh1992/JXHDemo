@@ -61,7 +61,7 @@ const CGFloat ESInputAccessoryViewH = 40;
     ESAccessoryView *view = [[self alloc] init];
     
     // 1. 取消按钮
-    UIButton *cancleButton = [UIButton yhbuttonWithTitle:@"取消" target:target action:action];
+    UIButton *cancleButton = [UIButton buttonWithTitle:@"取消" target:target action:action];
     cancleButton.frame = CGRectMake(ESInputAccessoryViewDictance, 0, ESInputAccessoryViewButtonW, ESInputAccessoryViewH);
     [view addSubview:cancleButton];
     
@@ -76,7 +76,7 @@ const CGFloat ESInputAccessoryViewH = 40;
     view.titleLabel = label;
     
     // 3. 确定按钮
-    UIButton *okButton = [UIButton yhbuttonWithTitle:@"确定" target:target action:action];
+    UIButton *okButton = [UIButton buttonWithTitle:@"确定" target:target action:action];
     okButton.frame = CGRectMake(view.width - ESInputAccessoryViewDictance - ESInputAccessoryViewButtonW, 0, ESInputAccessoryViewButtonW, ESInputAccessoryViewH);
     [view addSubview:okButton];
     

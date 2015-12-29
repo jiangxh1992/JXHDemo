@@ -24,10 +24,9 @@
 //scrollview的高度,如果实际高度小于屏幕高度则设置为屏幕高度
 #define realH 480 /*这个根据具体内容调整，保证scrollview里面的内容都可以显示出来*/
 #define scrollH realH > ApplicationH ? realH : ApplicationH
-//日期选择框的高度
-#define datePickerHeight ApplicationH/4
 //日期选择框追加按钮的高度
 #define btnHeight 35
+#define datePickerHeight 200
 
 @interface NewRecordViewController ()<UITextViewDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
@@ -95,6 +94,7 @@
 
 @implementation NewRecordViewController
 
+#pragma mark -lifecycle
 /**
  * 视图加载
  */
@@ -119,20 +119,25 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
+#pragma mark -private methods
 /**
- *  0.视图导航栏设置
+ *  视图导航栏设置
  */
 - (void)setNav {
     //页面标题
     self.title = @"添加时间轴节点";
     //导航栏右侧发送按钮
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(sendRecord)];
+    if ([_action isEqualToString:@"create"]) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(commitNodeRecord)];
+    } else {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"更新" style:UIBarButtonItemStylePlain target:self action:@selector(commitNodeRecord)];
+    }
     //页面背景色
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
 /**
- * 1.初始化视图元素
+ * 初始化视图元素
  */
 - (void)viewInit {
     _recordScrollView = [[UIScrollView alloc] init];
@@ -146,15 +151,19 @@
 }
 
 /**
- * 2.将新节点加入时间轴
+ * 添加或者更新时间轴结点
  */
-- (void)sendRecord {
-    // 制作新结点
+- (void)commitNodeRecord {
+    // 制作最新结点
     NodeRecord *newNode = [[NodeRecord alloc] init];
     newNode.type = _typeString;// 结点类型
     newNode.date = _dateString;// 结点时间戳
-    newNode.detail = [NSString stringWithFormat:@"治疗过程：%@\n过程评估：%@",_medicineTextView.text,_feedbackTextView.text];// 详情
-    // 添加结点
+    newNode.treat_progress = _medicineTextView.text;
+    newNode.treat_estimate = _feedbackTextView.text;
+    /* 告诉服务器添加或者更新结点 */
+    // ... ...
+    
+    /* 本地数据只可以添加不可以编辑结点 */
     NSMutableArray *nodes;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:SLNodeRecordsDomainPath]) {
@@ -177,7 +186,7 @@
 }
 
 /**
- * 3.初始化可滑动的scsrollview
+ * 初始化可滑动的scsrollview
  */
 - (void)setScrollView {
     // 初始化frame
@@ -201,16 +210,16 @@
     [_recordScrollView addSubview:_buttonInvisible];
 }
 
-#pragma mark 设置内容
 /**
- * 4.设置内容
+ * 设置内容
  */
 - (void)setContent {
     // 1.1就诊类型标签
     UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(SLMargin, marginTop, 5*txtH, txtH)];
-    typeLabel.font = SLFontNormal;
+    typeLabel.font = XHFontNormal;
     [typeLabel setText:@"诊断类型:"];
     [self.recordScrollView addSubview:typeLabel];
+    
     // 1.2选择就诊类型按钮
     [_typeBtn setFrame:CGRectMake(SLMargin+typeLabel.frame.size.width, marginTop, 6*txtH, txtH)];
     //按钮占位文字
@@ -222,6 +231,7 @@
     //打开类型选择框
     [_typeBtn addTarget:self action:@selector(openPickerView) forControlEvents:UIControlEventTouchUpInside];
     [_recordScrollView addSubview:_typeBtn];
+    
     // 1.3添加编辑就诊类型按钮
     UIButton *editButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     // 设置中心位置
@@ -234,19 +244,19 @@
     
     // 2.1时间标签
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(SLMargin, typeLabel.frame.origin.y+typeLabel.frame.size.height+padding, 3*txtH, txtH)];
-    dateLabel.font = SLFontNormal;
+    dateLabel.font = XHFontNormal;
     [dateLabel setText:@"日期:"];
     [self.recordScrollView addSubview:dateLabel];
-#pragma mark 设置日期选择框
+    
     // 2.2时间选择框picker
     //datepicker位置
-    [_datePicker setFrame:CGRectMake(0, ApplicationH, ApplicationW, datePickerHeight)];
+    [_datePicker setFrame:CGRectMake(0, ApplicationH + btnHeight, ApplicationW, 0)];
     //日期选择框的背景颜色
     _datePicker.backgroundColor = [UIColor whiteColor];
     //添加到view上
     [self.view addSubview:_datePicker];
     //追加确定按钮
-    _btnConfirm= [[UIButton alloc] initWithFrame:CGRectMake(0, _datePicker.frame.origin.y+_datePicker.frame.size.height, ApplicationW, btnHeight)];
+    _btnConfirm= [[UIButton alloc] initWithFrame:CGRectMake(0, ApplicationH, ApplicationW, btnHeight)];
     //按钮背景
     [_btnConfirm setBackgroundColor:RGBColor(200, 200, 200)];
     //按钮文字颜色
@@ -280,9 +290,10 @@
     
     // 3.1使用药物标签
     UILabel *medicineLabel = [[UILabel alloc] initWithFrame:CGRectMake(SLMargin, dateLabel.frame.origin.y+dateLabel.frame.size.height+padding, 5*txtH, txtH)];
-    medicineLabel.font = SLFontNormal;
+    medicineLabel.font = XHFontNormal;
     [medicineLabel setText:@"治疗过程:"];
     [self.recordScrollView addSubview:medicineLabel];
+    
     // 3.2使用药物输入框
     //诊断内容输入框的上边界线
     UIImageView *lineViewDignoseTop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line"]];
@@ -302,9 +313,10 @@
     
     // 4.1过程评估标签
     UILabel *feedbackLabel = [[UILabel alloc] initWithFrame:CGRectMake(SLMargin, _medicineTextView.frame.origin.y+_medicineTextView.frame.size.height+padding, 5*txtH, txtH)];
-    feedbackLabel.font = SLFontNormal;
+    feedbackLabel.font = XHFontNormal;
     [feedbackLabel setText:@"过程评估:"];
     [self.recordScrollView addSubview:feedbackLabel];
+    
     // 4.2过程评估输入框
     //诊断内容输入框的上边界线
     UIImageView *lineViewFeedbackTop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line"]];
@@ -323,9 +335,8 @@
     [_recordScrollView addSubview:lineViewFeedbackDown];
 }
 
-#pragma mark -public methods
 /**
- *  1.编辑就诊类型选择框选项内容
+ *  编辑就诊类型选择框选项内容
  */
 - (void)editTypeSheet {
     // 跳转到编辑类型视图控制器
@@ -334,30 +345,30 @@
 }
 
 /**
- *  2.选择日期打开日期选择器
+ *  选择日期打开日期选择器
  */
 - (void)openDatePciker {
     //计算页面的偏移量
-    CGFloat offset = 74+_feedbackTextView.frame.origin.y+_feedbackTextView.frame.size.height + 10 + btnHeight + datePickerHeight - ApplicationH;
+    CGFloat offset = 74+_feedbackTextView.y+_feedbackTextView.height + 10 + btnHeight + datePickerHeight - ApplicationH;
     // 矫正不能为负
     if (offset<0) offset = 0;
     //datepicker从底部动画滑进屏幕
     [UIView animateWithDuration:0.5 animations:^{
         _recordScrollView.frame = CGRectMake(0, -offset, ApplicationW, scrollH);
-        _datePicker.frame = CGRectMake(0, ApplicationH - datePickerHeight - btnHeight, ApplicationW, datePickerHeight);
-        _btnConfirm.frame = CGRectMake(0, ApplicationH - btnHeight, ApplicationW, btnHeight);
+        _btnConfirm.frame = CGRectMake(0, ApplicationH - datePickerHeight - btnHeight, ApplicationW, btnHeight);
+        _datePicker.frame = CGRectMake(0, ApplicationH - datePickerHeight, ApplicationW, datePickerHeight);
     }];
 }
 
 /**
- *  3.关闭日期选择器
+ *  关闭日期选择器
  */
 - (void)closeDatePicker {
     //datepicker从屏幕滑出
     [UIView animateWithDuration:0.5 animations:^{
         _recordScrollView.frame = CGRectMake(0, 0, ApplicationW, scrollH);
-        _datePicker.frame = CGRectMake(0, ApplicationH, ApplicationW, datePickerHeight);
-        _btnConfirm.frame = CGRectMake(0, _datePicker.frame.origin.y+_datePicker.frame.size.height, ApplicationW, btnHeight);
+        _datePicker.frame = CGRectMake(0, ApplicationH+btnHeight, ApplicationW, 0);
+        _btnConfirm.frame = CGRectMake(0, ApplicationH, ApplicationW, btnHeight);
     }];
     //取时间
     _dateString = [_dateFormatter stringFromDate:_datePicker.date];
@@ -365,7 +376,7 @@
 }
 
 /**
- *  4.打开类型选择器
+ *  打开类型选择器
  */
 - (void)openPickerView {
     // 文件管理器实例
@@ -390,7 +401,7 @@
 }
 
 /**
- *  5.关闭键盘
+ *  关闭键盘
  */
 - (void)withdrawKeyboard {
     //隐藏键盘

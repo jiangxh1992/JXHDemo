@@ -29,9 +29,9 @@
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 /**
- * 要删除的结点下标
+ * 要删除或者修改的结点下标
  */
-@property (nonatomic)NSInteger delNodeIndex;
+@property (nonatomic)NSInteger nodeIndex;
 
 /**
  * 颜色库：用数组保存自定义的颜色，备用
@@ -47,6 +47,7 @@
 
 @implementation TimerShaftTableViewController
 
+#pragma mark -lifecycle
 /**
  *  判断是否刷新
  */
@@ -85,13 +86,16 @@
     [self request];
 }
 
+#pragma mark -private methods
 /**
  * 请求数据
  */
 - (void)request {
-    // 获取应用程序沙盒的Documents目录,完整的文件名
-    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // 取得的时间结点字典数据
     NSMutableArray *nodeRecords;
+    
+    /* 此处从本地取nodeRecords，可换成服务器取 */
+    NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:SLNodeRecordsDomainPath]) {
         // 沙盒路径存在则从沙盒读取数据
         NSMutableArray *nodesDic = [[NSMutableArray alloc] initWithContentsOfFile:SLNodeRecordsDomainPath];
@@ -101,6 +105,8 @@
         // 如果是第一次结点数据沙盒为空，则取本地工程plist数据
         nodeRecords = [NodeRecord objectArrayWithFilename:@"nodeRecord.plist"];
     }
+    
+    /* 取得数据后的处理 */
     // 结点数据按照时间顺序降序排序
     [self nodesOrderDecend:nodeRecords];
     _nodeRecords = nodeRecords;
@@ -109,6 +115,80 @@
     // 初始化节点数据
     [self initDate];
     [self.tableView reloadData];
+}
+
+/**
+ * 导航栏设置
+ */
+- (void)setNav {
+    //页面标题
+    self.title = @"时间轴";
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    //导航栏右侧发送按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNode)];
+    //取消竖直滚动条
+    self.tableView.showsVerticalScrollIndicator = NO;
+}
+
+/**
+ * 设置表格的头部视图和尾部视图
+ */
+- (void)setHeaderAndFooter {
+    /* 1.自定义头部视图 */
+    UIView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, maxCellHeight)];
+    //患者头像
+    CGFloat avatarSize = 60;// 头像尺寸
+    UIImageView *patientImageView = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin-avatarSize/2, maxCellHeight-50, avatarSize, avatarSize)];
+    // 网络图片资源转化成UIImage显示
+    //NSURL *imageUrl = [NSURL URLWithString:_patientDataItem.avatar];
+    //UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
+    [patientImageView setImage:[UIImage imageNamed:@"male"]];
+    // 边框颜色
+    [patientImageView.layer setBorderColor:RGBColor(206, 206, 206).CGColor];//96, 135, 8
+    // 边框宽度
+    [patientImageView.layer setBorderWidth:2];
+    // 边框圆角
+    [patientImageView.layer setCornerRadius:avatarSize/2];
+    // 将layer下面的layer遮住
+    [patientImageView.layer setMasksToBounds:YES];
+    [headerView addSubview:patientImageView];
+    
+    //患者名字
+    UIButton *patientName = [[UIButton alloc] initWithFrame:CGRectMake(patientImageView.frame.origin.x-60, patientImageView.centerY, 60, 20)];
+    [patientName setTitle:@"李天一" forState:UIControlStateNormal];
+    [patientName setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [headerView addSubview:patientName];
+    //小鸟装饰图
+    UIImageView *birdImageView = [[UIImageView alloc] initWithFrame:CGRectMake(160, 60, 72, 87)];
+    [birdImageView setImage:[UIImage imageNamed:@"bird"]];
+    [headerView addSubview:birdImageView];
+    
+    [self.tableView setTableHeaderView:headerView];
+    
+    /* 2.自定义底部视图 */
+    UIView *footerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
+    // 延长的竖轴线
+    UIImageView *footerLine = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin, 0, 2, 200)];
+    [footerLine setImage:[UIImage imageNamed:@"time_vertical_line"]];
+    [footerView addSubview:footerLine];
+    // 镶边笑脸
+    UIImageView *footerImage = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin-25, footerLine.frame.size.height, 50, 50)];
+    [footerImage setImage:[UIImage imageNamed:@"smiling"]];
+    [footerImage.layer setBorderColor:RGBColor(206, 206, 206).CGColor];
+    [footerImage.layer setBorderWidth:2];
+    [footerImage.layer setCornerRadius:25];
+    [footerImage.layer setMasksToBounds:YES];
+    [footerView addSubview:footerImage];
+    // 问候文字
+    UILabel *footerLabel = [UILabel labelWithFont:XHFontSmall];
+    [footerLabel setText:@"我是底部～"];
+    footerLabel.textColor = [UIColor grayColor];
+    // UILabel的宽和高
+    CGFloat width = ApplicationW-LMargin-30;
+    CGFloat height = [footerLabel.text sizeWithFont:XHFontSmall maxW:width].height;
+    [footerLabel setFrame:CGRectMake(LMargin+30, footerImage.frame.origin.y, width, height)];
+    [footerView addSubview:footerLabel];
+    [self.tableView setTableFooterView:footerView];
 }
 
 /**
@@ -188,21 +268,7 @@
 }
 
 /**
- * 导航栏设置
- */
-- (void)setNav {
-    //页面标题
-    self.title = @"时间轴";
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    //导航栏右侧发送按钮
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNode)];
-    //取消竖直滚动条
-    self.tableView.showsVerticalScrollIndicator = NO;
-}
-
-/**
- * 自定义函数
- * 1.初始化元素
+ * 初始化元素
  */
 - (void)initElement {
     _dateFormatter   = [[NSDateFormatter alloc] init];
@@ -211,8 +277,7 @@
 }
 
 /**
- * 自定义函数
- * 2.初始化节点数据
+ * 初始化节点数据
  */
 - (void)initDate {
     // 计算日期节点之间距离即cell的高度
@@ -237,8 +302,7 @@
 }
 
 /**
- * 自定义函数
- * 3.计算日期节点之间的相差天数
+ * 计算日期节点之间的相差天数
  */
 - (int)dateDistance:(NSDate*)currentDate from:(NSDate*)preDate {
     //计算时间相差的秒数
@@ -248,8 +312,7 @@
 }
 
 /**
- * 自定义函数
- * 4.计算cell高度算法
+ * 计算cell高度算法
  */
 - (CGFloat)cellHeightAlgrithm:(int)d {
     CGFloat cellH = ((minCellHeight + speed * d) > maxCellHeight ? maxCellHeight : (minCellHeight + speed * d));
@@ -257,8 +320,7 @@
 }
 
 /**
- * 自定义函数
- * 5.设置基本单元格格式
+ * 设置基本单元格格式
  */
 - (void)setCell {
     /*去掉单元格样式，去背景，去边框*/
@@ -274,12 +336,14 @@
  * 添加新建节点界面
  */
 - (void)addNode {
-    //创建编辑界面
+    // 创建编辑界面
     NewRecordViewController *newRecordVC = [[NewRecordViewController alloc] init];
+    // 编辑状态为添加
+    newRecordVC.action = @"create";
     [self.navigationController pushViewController:newRecordVC animated:YES];
 }
 
-#pragma mark - 表格cell数据设置
+#pragma mark - tableview datasource
 /**
  * 1.table的分区个数, 这里不是group类型，暂时就一个分区
  */
@@ -332,7 +396,7 @@
     return cellH;
 }
 
-#pragma mark 日期组件按钮的代理事件
+#pragma mark timerbtn delegate
 /**
  * .响应日期内容按钮的代理事件
  */
@@ -342,7 +406,10 @@
     // 取模型中的数据
     NodeRecord *dataModel = [_nodeRecords objectAtIndex:sender.tag];
     // 定义一个扩展了的UIAlertView
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:btnText message:dataModel.detail delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil];
+    // 结点详情
+    NSString *treatDetail = [NSString stringWithFormat:@"治疗过程：%@\n过程评估：%@",dataModel.treat_progress,dataModel.treat_estimate];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:btnText message:treatDetail delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:@"编辑", nil];
+    alertView.tag = Tag_AlertView_NodeDetail;
     //弹出提示框
     [alertView show];
 }
@@ -352,119 +419,54 @@
  */
 - (void)btnNodeDidClicked:(UIButton *)sender {
     //更新删除结点下标
-    _delNodeIndex = sender.tag;
-    NSLog(@"删除结点：%ld", _delNodeIndex);
+    _nodeIndex = sender.tag;
     //提示询问用户是否确定删除
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@" " message:@"确定删除就诊记录吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    //设置代理
-    alertView.delegate = self;
+    alertView.tag = Tag_AlertView_DeleteNode;
     [alertView show];
 }
 
-#pragma mark AlertView的监听代理
+#pragma mark AlertView delegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    //如果选择确定则删除cell
-    if (buttonIndex == 1) {
-        // 删除结点数据
-        [_nodeRecords removeObjectAtIndex:_delNodeIndex];
-        [self.tableView reloadData];
-        // 删除沙盒结点数据
-        // 读取字典数据
-        NSMutableArray *nodesDic = [[NSMutableArray alloc] initWithContentsOfFile:SLNodeRecordsDomainPath];
-        // 转换成模型数据
-        NSMutableArray *nodes = [NodeRecord objectArrayWithKeyValuesArray:nodesDic];
-        // 排序
-        [self nodesOrderDecend:nodes];
-        // 移除
-        [nodes removeObjectAtIndex:_delNodeIndex];
-        // 转回字典
-        NSMutableArray *newNodes = [NSMutableArray keyValuesArrayWithObjectArray:nodes];
-        [newNodes writeToFile:SLNodeRecordsDomainPath atomically:YES];
+    // 1.打开结点内容alertview
+    if (alertView.tag == Tag_AlertView_NodeDetail) {
+        if (buttonIndex == 1) {
+            // 创建编辑界面
+            NewRecordViewController *newRecordVC = [[NewRecordViewController alloc] init];
+            // 传入患者id
+            // ... ...
+            // 传入已有数据
+            newRecordVC.nodeRecord = [_nodeRecords objectAtIndex:_nodeIndex];
+            // 传入动作
+            newRecordVC.action = @"update";
+            [self.navigationController pushViewController:newRecordVC animated:YES];
+        }
+    }else if (alertView.tag == Tag_AlertView_DeleteNode) {
+        // 2.删除结点alertview
+        //如果选择确定则删除cell
+        if (buttonIndex == 1) {
+            // 1.请求服务器删除结点
+            // ... ...
+            
+            /* 服务器删除成功后 */
+            // 删除结点数据并刷新显示
+            [_nodeRecords removeObjectAtIndex:_nodeIndex];
+            [self.tableView reloadData];
+            
+            // 删除沙盒结点数据
+            // 读取字典数据
+            NSMutableArray *nodesDic = [[NSMutableArray alloc] initWithContentsOfFile:SLNodeRecordsDomainPath];
+            // 转换成模型数据
+            NSMutableArray *nodes = [NodeRecord objectArrayWithKeyValuesArray:nodesDic];
+            // 排序
+            [self nodesOrderDecend:nodes];
+            // 移除
+            [nodes removeObjectAtIndex:_nodeIndex];
+            // 转回字典
+            NSMutableArray *newNodes = [NSMutableArray keyValuesArrayWithObjectArray:nodes];
+            [newNodes writeToFile:SLNodeRecordsDomainPath atomically:YES];
+        }
     }
-}
-
-#pragma mark 设置表格的头部视图和尾部视图
-/**
- * 设置表格的头部视图和尾部视图
- */
-- (void)setHeaderAndFooter {
-    //自定义头部视图
-    UIView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, maxCellHeight)];
-    //患者头像
-    CGFloat avatarSize = 60;// 头像尺寸
-    UIImageView *patientImageView = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin-avatarSize/2, maxCellHeight-50, avatarSize, avatarSize)];
-    //NSURL *imageUrl = [NSURL URLWithString:_patientDataItem.avatar];
-    //UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
-    [patientImageView setImage:[UIImage imageNamed:@"male"]];
-    // 边框颜色
-    [patientImageView.layer setBorderColor:RGBColor(206, 206, 206).CGColor];//96, 135, 8
-    // 边框宽度
-    [patientImageView.layer setBorderWidth:2];
-    // 边框圆角
-    [patientImageView.layer setCornerRadius:avatarSize/2];
-    // 将layer下面的layer遮住
-    [patientImageView.layer setMasksToBounds:YES];
-    [headerView addSubview:patientImageView];
-    //患者名字
-    UIButton *patientName = [[UIButton alloc] initWithFrame:CGRectMake(patientImageView.frame.origin.x-60, patientImageView.centerY, 60, 20)];
-    [patientName setTitle:@"李天一" forState:UIControlStateNormal];
-    [patientName setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [headerView addSubview:patientName];
-    //小鸟装饰图
-    UIImageView *birdImageView = [[UIImageView alloc] initWithFrame:CGRectMake(160, 60, 72, 87)];
-    [birdImageView setImage:[UIImage imageNamed:@"bird"]];
-    [headerView addSubview:birdImageView];
-    
-    [self.tableView setTableHeaderView:headerView];
-    
-    // 自定义底部视图
-    UIView *footerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
-    // 延长的竖轴线
-    UIImageView *footerLine = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin, 0, 2, 200)];
-    [footerLine setImage:[UIImage imageNamed:@"time_vertical_line"]];
-    [footerView addSubview:footerLine];
-    // 镶边笑脸
-    UIImageView *footerImage = [[UIImageView alloc] initWithFrame:CGRectMake(LMargin-25, footerLine.frame.size.height, 50, 50)];
-    [footerImage setImage:[UIImage imageNamed:@"smiling"]];
-    [footerImage.layer setBorderColor:RGBColor(206, 206, 206).CGColor];
-    [footerImage.layer setBorderWidth:2];
-    [footerImage.layer setCornerRadius:25];
-    [footerImage.layer setMasksToBounds:YES];
-    [footerView addSubview:footerImage];
-    // 问候文字
-    UILabel *footerLabel = [UILabel labelWithFont:SLFontSmall];
-    [footerLabel setText:@"您是无聊了才把我拖出来解闷儿，请注意休息哦～"];
-    footerLabel.textColor = [UIColor grayColor];
-    // UILabel的宽和高
-    CGFloat width = ApplicationW-LMargin-30;
-    CGFloat height = [footerLabel.text sizeWithFont:SLFontSmall maxW:width].height;
-    [footerLabel setFrame:CGRectMake(LMargin+30, footerImage.frame.origin.y, width, height)];
-    [footerView addSubview:footerLabel];
-    [self.tableView setTableFooterView:footerView];
-}
-
-/**
- * 表格的header视图
- */
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    //自定义头部视图
-    UIView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
-    UIImageView *headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
-    [headerImageView setImage:[UIImage imageNamed:@"header"]];
-    [headerView addSubview:headerImageView];
-    return headerView;
-}
-
-/**
- * 表格的footer视图
- */
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    //自定义底部视图
-    UIView *footerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
-    UIImageView *footerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ApplicationW, minCellHeight)];
-    [footerImageView setImage:[UIImage imageNamed:@"header"]];
-    [footerView addSubview:footerImageView];
-    return footerView;
 }
 
 @end

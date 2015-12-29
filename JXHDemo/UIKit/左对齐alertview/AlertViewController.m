@@ -16,17 +16,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    UIButton *alertBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, 320, 40)];
-    [alertBtn setTitle:@"点我啊，我会alert" forState:UIControlStateNormal];
-    alertBtn.backgroundColor = [UIColor redColor];
+    // 触发按钮
+    UIButton *alertBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, ApplicationW, 40)];
+    [alertBtn setTitle:@"左对齐alert" forState:UIControlStateNormal];
+    alertBtn.backgroundColor = [UIColor orangeColor];
     [alertBtn addTarget:self action:@selector(alertBtnTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:alertBtn];
 }
 
+/**
+ *  触发alert
+ */
 - (void) alertBtnTapped {
-    //NSString *msg = @"1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的";
-    //[self showAlertWithMessage:msg Title:@"title"];
+    NSString *msg = @"1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的1.第一行我是3个子\n2.第二行我是好几个字反正目的是为了和第一行区分开来\n3.哈哈我是陪衬的";
+    [self showAlertWithMessage:msg Title:@"title"];
 }
+
 /**
  * 用标题和内容显示提示框
  */

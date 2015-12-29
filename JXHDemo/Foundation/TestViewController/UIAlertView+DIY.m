@@ -55,9 +55,9 @@
     //左对齐
     paragraphStyle.alignment = NSTextAlignmentJustified;
     //属性字典
-    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraphStyle};
+    //NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraphStyle};
     //定义格式化属性文字
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:label.text attributes:attributes];
+    //NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:label.text attributes:attributes];
     //设置label的attributedText
     //label.attributedText = attributedString;
     //把原普通text清空

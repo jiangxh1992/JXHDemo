@@ -37,11 +37,6 @@
 - (NSString *)localizedString;
 
 /**
- *  多少分钟前
- */
-- (NSString *)minutesAgo;
-
-/**
  *  手机号码验证
  */
 - (BOOL)validateMobile;

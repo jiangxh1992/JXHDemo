@@ -4,7 +4,7 @@
 //
 //  Created by jiangxh on 15/9/26.
 //  Copyright © 2015年 txbydev3. All rights reserved.
-//
+//  时间轴结点样式
 #import <UIKit/UIKit.h>
 
 /**
@@ -12,7 +12,7 @@
  */
 @protocol TimerButtonDelegate <NSObject>
 
-// 内容按钮点击事件
+// 结点内容按钮点击事件
 - (void)btnContentDidClicked:(UIButton *)sender;
 
 // 删除结点按钮点击事件

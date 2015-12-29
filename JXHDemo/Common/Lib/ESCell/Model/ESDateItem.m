@@ -17,7 +17,7 @@
 {
     if (!_minimumDate)
     {
-        _minimumDate = [NSDate yhdateWithString:@"1900-01-01" format:self.format];
+        _minimumDate = [NSDate dateWithString:@"1900-01-01" format:self.format];
     }
     return _minimumDate;
 }

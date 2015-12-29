@@ -29,16 +29,16 @@ CGFloat const ESToolButtonSpace = 10;
  */
 - (void)setButtonNames:(NSArray *)buttonNames
 {
+    // 传入按钮名数组
     _buttonNames = buttonNames;
-    
     // 按钮个数
     NSInteger count = buttonNames.count;
+    // 按钮y
+    CGFloat buttonY = 8;
     // 每个按钮宽度
     CGFloat buttonW = (self.width - (count + 1) * ESToolButtonSpace) / count;
-    CGFloat buttonY = 8;
     // 按钮高度(view高度减去一定距离)
     CGFloat buttonH = self.height - 12;
-    
     // 创建按钮
     for (int i = 0; i < count; i++)
     {
@@ -55,13 +55,12 @@ CGFloat const ESToolButtonSpace = 10;
         [button setTitle:title forState:UIControlStateNormal];
         // 点击事件
         [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
-        
-        if (i == 0) // 默认选中第一个
+        // 默认选中第一个
+        if (i == 0)
         {
             button.selected = YES;
             self.selectedButton = button;
         }
-        
         // 添加到view中
         [self addSubview:button];
     }

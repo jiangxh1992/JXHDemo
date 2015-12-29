@@ -10,18 +10,4 @@
 
 @implementation NodeRecord
 
-/**
- * 用字典初始化数据
- */
--(id)initWithDic:(NSDictionary *)dic {
-    if (self = [self init]) {
-        [self setValuesForKeysWithDictionary:dic];
-    }
-    return self;
-}
-
-+(id)initWithDic:(NSDictionary *)dic {
-    return [[self alloc] initWithDic:dic];
-}
-
 @end

@@ -90,14 +90,14 @@
 {
     // 1. 创建cell
     static NSString *CellIdentifier = @"ESSettingCell";
-    ESSettingCell *cell = (ESSettingCell *)[UITableViewCell yhcellWithTableView:tableView classString:CellIdentifier];
+    ESSettingCell *cell = (ESSettingCell *)[UITableViewCell cellWithTableView:tableView classString:CellIdentifier];
     
     // 2. 传递模型
     ESSettingGroup *group = self.groups[indexPath.section];
     cell.item = group.items[indexPath.row];
     
     // 3. 设置背景
-    [cell yhsetBgAtIndexPath:indexPath countInSection:group.items.count];
+    [cell setBgAtIndexPath:indexPath countInSection:group.items.count];
     
     return cell;
 }
