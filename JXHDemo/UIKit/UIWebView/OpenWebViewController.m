@@ -43,7 +43,7 @@
     _inputFeild.font = [UIFont fontWithName:@"Times New Roman" size:20];
     //文字自适应
     _inputFeild.adjustsFontSizeToFitWidth = YES;
-    //请文字清除按钮
+    //文字清除按钮
     _inputFeild.clearsOnBeginEditing =YES;
     
     //左边view
@@ -55,6 +55,9 @@
     //_inputFeild.delegate = self;
     //显示
     [self.view addSubview:_inputFeild];
+    /***********************
+     * UIButton的用法
+     ***********************/
     // 2.go按钮
     _goButton = [[UIButton alloc] initWithFrame:CGRectMake(_inputFeild.frame.origin.x + _inputFeild.frame.size.width+2, _inputFeild.frame.origin.y, btnSize, btnSize)];
     //按钮文字

@@ -15,6 +15,8 @@
 		6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311D1BEC803F00DB73AF /* PinyinFormatter.m */; };
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
+		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
+		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
 		F7056C341C1D62F1003FBF9D /* TestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056C331C1D62F1003FBF9D /* TestParam.m */; };
 		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
 		F71D5B5E1C250126000D9133 /* AddAgencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D5B521C250126000D9133 /* AddAgencyViewController.m */; };
@@ -180,6 +182,10 @@
 		6CD4311E1BEC803F00DB73AF /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelectViewController.h; sourceTree = "<group>"; };
+		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
+		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
+		F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewController.m; sourceTree = "<group>"; };
 		F7056C321C1D62F1003FBF9D /* TestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestParam.h; sourceTree = "<group>"; };
 		F7056C331C1D62F1003FBF9D /* TestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestParam.m; sourceTree = "<group>"; };
 		F70AE9AC1BD08343008F817D /* JXHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -520,6 +526,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F3ECD7A11D06B7DE001F9831 /* 账号选择框 */ = {
+			isa = PBXGroup;
+			children = (
+				F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */,
+				F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */,
+				F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */,
+				F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */,
+			);
+			path = "账号选择框";
+			sourceTree = "<group>";
+		};
 		F70AE9A31BD08343008F817D = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +795,7 @@
 		F72F044A1BF02579008E6FB4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F3ECD7A11D06B7DE001F9831 /* 账号选择框 */,
 				F72F044B1BF02579008E6FB4 /* MainTableViewController.h */,
 				F72F044C1BF02579008E6FB4 /* MainTableViewController.m */,
 				F72F044D1BF02579008E6FB4 /* NSString高度 */,
@@ -1400,6 +1418,7 @@
 				F7FA92BE1BEC3AD000CA97CD /* ArticleCellFrame.m in Sources */,
 				F72F047C1BF02579008E6FB4 /* OpenWebViewController.m in Sources */,
 				F7FA92A51BEC3AD000CA97CD /* ESGroup.m in Sources */,
+				F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */,
 				F7FA92BD1BEC3AD000CA97CD /* ArticleCell.m in Sources */,
 				F7D256351C32200500E27130 /* UILabel+Extension.m in Sources */,
 				F722DBD91BE20DDF00D5EC1F /* ESTabBarController.m in Sources */,
@@ -1462,6 +1481,7 @@
 				F7FA92E71BEC3D5800CA97CD /* AFNetworkReachabilityManager.m in Sources */,
 				F7FA93101BEC43D500CA97CD /* MKAnnotationView+WebCache.m in Sources */,
 				F7D2562F1C321FD800E27130 /* NSDate+Extension.m in Sources */,
+				F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */,
 				6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */,
 				6CD4313F1BEC803F00DB73AF /* ChineseToPinyinResource.m in Sources */,
 				F755A3251BD8B32600803182 /* main.m in Sources */,
@@ -1660,7 +1680,7 @@
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 				);
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/albeeert/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1682,7 +1702,7 @@
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib/GDMap",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 				);
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/albeeert/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
