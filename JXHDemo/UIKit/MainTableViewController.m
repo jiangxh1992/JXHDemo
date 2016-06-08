@@ -9,16 +9,6 @@
 #import "MainTableViewController.h"
 #import "PinYin4Objc.h"
 
-#import "LabelHeightViewController.h"
-#import "OpenWebViewController.h"
-#import "CheckBoxViewController.h"
-#import "AlertViewController.h"
-#import "FolderTableViewController.h"
-#import "AffineViewController.h"
-#import "AlertControllerViewController.h"
-#import "PickerViewController.h"
-#import "AnimationViewController.h"
-
 @interface MainTableViewController ()<UISearchBarDelegate>
 
 /**
@@ -65,7 +55,7 @@
  */
 - (void)setData {
     //视图名称
-    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AnimationViewController", @"AlertControllerViewController", @"PickerViewController", @"AccountSelectViewController"];
+    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AnimationViewController", @"AlertControllerViewController", @"PickerViewController", @"AccountSelectViewController", @"InputAjustViewController"];
     //设置模型数据
     NSMutableArray *mulItems = [[NSMutableArray alloc] init];
     for (NSString *name in _classNames) {

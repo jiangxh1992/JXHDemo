@@ -15,6 +15,7 @@
 		6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311D1BEC803F00DB73AF /* PinyinFormatter.m */; };
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
+		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
 		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
 		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
 		F7056C341C1D62F1003FBF9D /* TestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056C331C1D62F1003FBF9D /* TestParam.m */; };
@@ -182,6 +183,8 @@
 		6CD4311E1BEC803F00DB73AF /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
+		F33262491D07C0F400BB5C0D /* InputAjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAjustViewController.m; sourceTree = "<group>"; };
 		F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelectViewController.h; sourceTree = "<group>"; };
 		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
 		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
@@ -526,6 +529,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F33262471D07C03800BB5C0D /* 输入框防键盘遮挡 */ = {
+			isa = PBXGroup;
+			children = (
+				F33262481D07C0F400BB5C0D /* InputAjustViewController.h */,
+				F33262491D07C0F400BB5C0D /* InputAjustViewController.m */,
+			);
+			path = "输入框防键盘遮挡";
+			sourceTree = "<group>";
+		};
 		F3ECD7A11D06B7DE001F9831 /* 账号选择框 */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,6 +807,7 @@
 		F72F044A1BF02579008E6FB4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F33262471D07C03800BB5C0D /* 输入框防键盘遮挡 */,
 				F3ECD7A11D06B7DE001F9831 /* 账号选择框 */,
 				F72F044B1BF02579008E6FB4 /* MainTableViewController.h */,
 				F72F044C1BF02579008E6FB4 /* MainTableViewController.m */,
@@ -1439,6 +1452,7 @@
 				F7258CDD1C1E645400851AE9 /* MJDictionaryCache.m in Sources */,
 				F71D5B5F1C250126000D9133 /* CustomCalendarViewController.m in Sources */,
 				F757B0F41C2A6A2A003A836F /* UIScrollView+MJExtension.m in Sources */,
+				F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */,
 				F757B0F61C2A6A2A003A836F /* UIView+MJExtension.m in Sources */,
 				F757B0F01C2A6A2A003A836F /* MJRefreshGifHeader.m in Sources */,
 				F784503F1C24ED6600B7B305 /* NewRecordViewController.m in Sources */,
