@@ -16,6 +16,11 @@
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
 		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
+		F332624E1D08153800BB5C0D /* AFNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F332624D1D08153800BB5C0D /* AFNetworkTest.m */; };
+		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
+		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
+		F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262531D0817C200BB5C0D /* SystemConfiguration.framework */; };
+		F33262561D081DC300BB5C0D /* accounts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33262551D081DC300BB5C0D /* accounts.plist */; };
 		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
 		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
 		F7056C341C1D62F1003FBF9D /* TestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056C331C1D62F1003FBF9D /* TestParam.m */; };
@@ -185,6 +190,12 @@
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
 		F33262491D07C0F400BB5C0D /* InputAjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAjustViewController.m; sourceTree = "<group>"; };
+		F332624C1D08153800BB5C0D /* AFNetworkTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkTest.h; sourceTree = "<group>"; };
+		F332624D1D08153800BB5C0D /* AFNetworkTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkTest.m; sourceTree = "<group>"; };
+		F332624F1D08179F00BB5C0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F33262531D0817C200BB5C0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F33262551D081DC300BB5C0D /* accounts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = accounts.plist; sourceTree = "<group>"; };
 		F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelectViewController.h; sourceTree = "<group>"; };
 		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
 		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
@@ -470,6 +481,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */,
+				F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */,
+				F33262501D08179F00BB5C0D /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +552,16 @@
 			path = "输入框防键盘遮挡";
 			sourceTree = "<group>";
 		};
+		F332624B1D0813F500BB5C0D /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				F332624C1D08153800BB5C0D /* AFNetworkTest.h */,
+				F332624D1D08153800BB5C0D /* AFNetworkTest.m */,
+				F33262551D081DC300BB5C0D /* accounts.plist */,
+			);
+			path = "网络请求";
+			sourceTree = "<group>";
+		};
 		F3ECD7A11D06B7DE001F9831 /* 账号选择框 */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +576,9 @@
 		F70AE9A31BD08343008F817D = {
 			isa = PBXGroup;
 			children = (
+				F33262531D0817C200BB5C0D /* SystemConfiguration.framework */,
+				F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */,
+				F332624F1D08179F00BB5C0D /* Security.framework */,
 				F70AE9AE1BD08343008F817D /* JXHDemo */,
 				F70AE9C81BD08343008F817D /* JXHDemoTests */,
 				F70AE9AD1BD08343008F817D /* Products */,
@@ -783,6 +810,7 @@
 		F72F04421BF02579008E6FB4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F332624B1D0813F500BB5C0D /* 网络请求 */,
 				F75679ED1C01C98600EF35C3 /* Plist */,
 				F72F04431BF02579008E6FB4 /* FoundationViewController.h */,
 				F72F04441BF02579008E6FB4 /* FoundationViewController.m */,
@@ -1400,6 +1428,7 @@
 				F78450191C24E9F800B7B305 /* LaunchScreen.xib in Resources */,
 				6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */,
 				F784501E1C24E9F800B7B305 /* test.plist in Resources */,
+				F33262561D081DC300BB5C0D /* accounts.plist in Resources */,
 				F757B0EB1C2A6A2A003A836F /* MJRefresh.bundle in Resources */,
 				F7AC2A971C24F34900D72437 /* nodeRecord.plist in Resources */,
 			);
@@ -1461,6 +1490,7 @@
 				F72F04771BF02579008E6FB4 /* TestViewController.m in Sources */,
 				F7258CE41C1E645400851AE9 /* NSObject+MJCoding.m in Sources */,
 				F7FA93181BEC43D500CA97CD /* SDWebImagePrefetcher.m in Sources */,
+				F332624E1D08153800BB5C0D /* AFNetworkTest.m in Sources */,
 				F72F047B1BF02579008E6FB4 /* AffineViewController.m in Sources */,
 				F757B0F51C2A6A2A003A836F /* UIScrollView+MJRefresh.m in Sources */,
 				F757B0F11C2A6A2A003A836F /* MJRefreshHeader.m in Sources */,
