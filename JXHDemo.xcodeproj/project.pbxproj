@@ -21,6 +21,8 @@
 		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
 		F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262531D0817C200BB5C0D /* SystemConfiguration.framework */; };
 		F33262561D081DC300BB5C0D /* accounts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33262551D081DC300BB5C0D /* accounts.plist */; };
+		F372698B1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */; };
+		F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */; };
 		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
 		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
 		F7056C341C1D62F1003FBF9D /* TestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056C331C1D62F1003FBF9D /* TestParam.m */; };
@@ -196,6 +198,10 @@
 		F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F33262531D0817C200BB5C0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F33262551D081DC300BB5C0D /* accounts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = accounts.plist; sourceTree = "<group>"; };
+		F37269891D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Extension.h"; sourceTree = "<group>"; };
+		F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Extension.m"; sourceTree = "<group>"; };
+		F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSingleton.h; sourceTree = "<group>"; };
+		F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSingleton.m; sourceTree = "<group>"; };
 		F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelectViewController.h; sourceTree = "<group>"; };
 		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
 		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
@@ -558,6 +564,10 @@
 				F332624C1D08153800BB5C0D /* AFNetworkTest.h */,
 				F332624D1D08153800BB5C0D /* AFNetworkTest.m */,
 				F33262551D081DC300BB5C0D /* accounts.plist */,
+				F37269891D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.h */,
+				F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */,
+				F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */,
+				F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -1458,6 +1468,7 @@
 				F7D256381C32201600E27130 /* UITableViewCell+Extension.m in Sources */,
 				F7258CE21C1E645400851AE9 /* MJPropertyType.m in Sources */,
 				F7FA92BE1BEC3AD000CA97CD /* ArticleCellFrame.m in Sources */,
+				F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */,
 				F72F047C1BF02579008E6FB4 /* OpenWebViewController.m in Sources */,
 				F7FA92A51BEC3AD000CA97CD /* ESGroup.m in Sources */,
 				F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */,
@@ -1484,6 +1495,7 @@
 				F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */,
 				F757B0F61C2A6A2A003A836F /* UIView+MJExtension.m in Sources */,
 				F757B0F01C2A6A2A003A836F /* MJRefreshGifHeader.m in Sources */,
+				F372698B1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m in Sources */,
 				F784503F1C24ED6600B7B305 /* NewRecordViewController.m in Sources */,
 				F72F047F1BF02579008E6FB4 /* SectionHeaderView.m in Sources */,
 				F7FA92B11BEC3AD000CA97CD /* ESBaseSettingViewController.m in Sources */,

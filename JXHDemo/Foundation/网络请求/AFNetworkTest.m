@@ -7,19 +7,19 @@
 //
 
 #import "AFNetworkTest.h"
+#import "RequestSingleton.h"
 
 @implementation AFNetworkTest
 
 - (void)viewDidLoad {
     
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[[NSURL alloc] initWithString:@"http://192.168.10.33/test.php"]];
-    [manager GET:@"http://192.168.10.33/test.php" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"%@",responseObject);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@", error);
-        
-    }];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[[NSURL alloc] initWithString:@"hostname"]];
     
+    [[RequestSingleton Ins].commonManager POST:testURL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"result: %@",responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"result: %@",error);
+    }];
 }
 
 @end

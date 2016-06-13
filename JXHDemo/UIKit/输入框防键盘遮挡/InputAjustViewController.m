@@ -7,8 +7,7 @@
 //
 #define inputW 200     // 输入框宽高
 #define inputH 40
-#define minDistance 10 // 键盘与输入框调整的最小间距
-#define navH 64        // 如果当前页面有导航栏的话要加入导航栏高度的考虑
+#define minDistance 5  // 键盘与输入框调整的最小间距
 
 #import "InputAjustViewController.h"
 
@@ -24,12 +23,19 @@
  */
 @property (nonatomic)CGFloat offset;
 
+/*
+ * 视图原frame,用于恢复视图位置
+ */
+@property (nonatomic) CGRect originalFrame;
+
 @end
 
 @implementation InputAjustViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 保存view初始位置尺寸
+    _originalFrame = self.view.frame;
     // 设置输入框
     [self setInputFeild];
     
@@ -74,12 +80,18 @@
     NSDictionary *keyboardInfo = [notificationShow userInfo];
     // 获取键盘高度
     CGFloat keyboardH = [[keyboardInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
+    // 获取键盘动画时间
+    double duration = [[notificationShow.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     // 计算遮挡的offset
-    _offset = _inputFeild.frame.origin.y + _inputFeild.frame.size.height + keyboardH + minDistance + navH - ApplicationH;
+    _offset = _inputFeild.frame.origin.y + _inputFeild.frame.size.height + keyboardH + minDistance - ApplicationH;
     if(_offset > 0) {
         // 将当前view往上移动offset距离
-        CGRect frame = self.view.frame;
-        self.view.frame = CGRectMake(0, frame.origin.y-_offset, frame.size.width, frame.size.height);
+        CGRect frame = _originalFrame;
+        [UIView animateWithDuration:duration animations:^{
+            self.view.frame = CGRectMake(0, frame.origin.y-_offset, frame.size.width, frame.size.height);
+        } completion:^(BOOL finished) {
+            
+        }];
     }
 }
 
@@ -87,10 +99,15 @@
  * 键盘即将隐藏
  */
 - (void)keyboardWillHide:(NSNotification*)notificationHide {
+    // 获取键盘动画时间
+    double duration = [[notificationHide.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     // 将当前view移回
     if(_offset > 0) {
-        CGRect frame = self.view.frame;
-        self.view.frame = CGRectMake(0, frame.origin.y+_offset, frame.size.width, frame.size.height);
+        [UIView animateWithDuration:duration animations:^{
+            self.view.frame = _originalFrame;
+        } completion:^(BOOL finished) {
+            
+        }];
     }
 }
 
