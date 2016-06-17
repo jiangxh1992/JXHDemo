@@ -1,17 +1,36 @@
 //
 //  UIButton+Extension.m
-//  smh
+//  JXHDemo
 //
-//  Created by yh on 15/3/1.
-//  Copyright (c) 2015年 eeesys. All rights reserved.
+//  Created by 919575700@qq.com on 11/5/15.
+//  Copyright © 2015 Jiangxh. All rights reserved.
 //
 
 #import "UIButton+Extension.h"
+#import <objc/runtime.h>
+
+typedef void (^ActionBlock)();
 
 @implementation UIButton (Extension)
 
 /**
- *  快速创建一个button
+ *  使用代码块响应按钮事件
+ */
+static char overviewKey;
+@dynamic event;
+- (void)handleControlEvent:(UIControlEvents)event withBlock:(ActionBlock)block {
+    objc_setAssociatedObject(self, &overviewKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self addTarget:self action:@selector(callActionBlock:) forControlEvents:event];
+}
+- (void)callActionBlock:(id)sender {
+    ActionBlock block = (ActionBlock)objc_getAssociatedObject(self, &overviewKey);
+    if (block) {
+        block();
+    }
+}
+
+/**
+ *  快速创建一个button：按钮文字／按钮target事件
  */
 + (instancetype)buttonWithTitle:(NSString *)title target:(id)target action:(SEL)action
 {
@@ -19,7 +38,7 @@
 }
 
 /**
- *  快速创建一个button
+ *  快速创建一个button：按钮名称／常态和高亮图片／按钮target事件
  */
 + (instancetype)buttonWithTitle:(NSString *)title bg:(NSString *)bg target:(id)target action:(SEL)action
 {
@@ -28,7 +47,7 @@
 }
 
 /**
- *  快速创建一个button
+ *  快速创建一个button：按钮名称／常态图片／高亮图片／按钮target事件
  */
 + (instancetype)buttonWithTitle:(NSString *)title normalBg:(NSString *)normalBg highlightedBg:(NSString *)highlightedBg target:(id)target action:(SEL)action
 {

@@ -1,10 +1,10 @@
 //
 //  UIView+Extension.h
-//  smh
+//  JXHDemo
 //
-//  Created by yh on 15/1/17.
-//  Copyright (c) 2015年 eeesys. All rights reserved.
-//  UIView扩展
+//  Created by 919575700@qq.com on 11/5/15.
+//  Copyright © 2015 Jiangxh. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 

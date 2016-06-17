@@ -13,6 +13,7 @@
 #import "MainTableViewController.h"
 #import "MyDemoViewController.h"
 #import "FoundationViewController.h"
+#import "FloatingViewController.h"
 
 @interface ESTabBarController () <ESTabBarDelegate>
 
@@ -132,6 +133,11 @@
     // 3. 我的自定义功能
     MyDemoViewController *demo = [[MyDemoViewController alloc] init];
     [self setupChildViewController:demo title:@"Demo" imageName:@"tabbar_home"];
+    
+    // 4.悬浮窗口
+    FloatingViewController *floatVC = [[FloatingViewController alloc]init];
+    [self addChildViewController:floatVC];
+    [self.view addSubview:floatVC.view];
 }
 
 /**

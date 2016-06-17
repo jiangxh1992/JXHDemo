@@ -1,9 +1,9 @@
 //
 //  NSString+Extension.m
-//  smh
+//  JXHDemo
 //
-//  Created by hj on 15/10/19.
-//  Copyright (c) 2015年 eeesys. All rights reserved.
+//  Created by 919575700@qq.com on 11/5/15.
+//  Copyright © 2015 Jiangxh. All rights reserved.
 //
 
 #import "NSString+Extension.h"

@@ -23,6 +23,8 @@
 		F33262561D081DC300BB5C0D /* accounts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33262551D081DC300BB5C0D /* accounts.plist */; };
 		F372698B1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */; };
 		F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */; };
+		F382B9031D13D53000E8C272 /* UIDragButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F382B9021D13D53000E8C272 /* UIDragButton.m */; };
+		F382B9061D13D6DE00E8C272 /* FloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F382B9051D13D6DE00E8C272 /* FloatingViewController.m */; };
 		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
 		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
 		F7056C341C1D62F1003FBF9D /* TestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056C331C1D62F1003FBF9D /* TestParam.m */; };
@@ -202,6 +204,10 @@
 		F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Extension.m"; sourceTree = "<group>"; };
 		F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSingleton.h; sourceTree = "<group>"; };
 		F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSingleton.m; sourceTree = "<group>"; };
+		F382B9011D13D53000E8C272 /* UIDragButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDragButton.h; sourceTree = "<group>"; };
+		F382B9021D13D53000E8C272 /* UIDragButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDragButton.m; sourceTree = "<group>"; };
+		F382B9041D13D6DE00E8C272 /* FloatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingViewController.h; sourceTree = "<group>"; };
+		F382B9051D13D6DE00E8C272 /* FloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingViewController.m; sourceTree = "<group>"; };
 		F3ECD7A21D06B7F9001F9831 /* AccountSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelectViewController.h; sourceTree = "<group>"; };
 		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
 		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
@@ -572,6 +578,17 @@
 			path = "网络请求";
 			sourceTree = "<group>";
 		};
+		F350E2951D0FC14700063466 /* 悬浮窗 */ = {
+			isa = PBXGroup;
+			children = (
+				F382B9041D13D6DE00E8C272 /* FloatingViewController.h */,
+				F382B9051D13D6DE00E8C272 /* FloatingViewController.m */,
+				F382B9011D13D53000E8C272 /* UIDragButton.h */,
+				F382B9021D13D53000E8C272 /* UIDragButton.m */,
+			);
+			path = "悬浮窗";
+			sourceTree = "<group>";
+		};
 		F3ECD7A11D06B7DE001F9831 /* 账号选择框 */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +803,7 @@
 		F72F04271BF02579008E6FB4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F350E2951D0FC14700063466 /* 悬浮窗 */,
 				F72F04281BF02579008E6FB4 /* MyDemoViewController.h */,
 				F72F04291BF02579008E6FB4 /* MyDemoViewController.m */,
 				F7A882211C2A27D500A26674 /* 二维码 */,
@@ -1478,6 +1496,7 @@
 				F7FA92E61BEC3D5800CA97CD /* AFHTTPSessionManager.m in Sources */,
 				F7FA92A81BEC3AD000CA97CD /* ESPickerItem.m in Sources */,
 				F7258CE61C1E645400851AE9 /* NSObject+MJProperty.m in Sources */,
+				F382B9031D13D53000E8C272 /* UIDragButton.m in Sources */,
 				F7FA92A71BEC3AD000CA97CD /* ESLabelItem.m in Sources */,
 				F72F046B1BF02579008E6FB4 /* MyDemoViewController.m in Sources */,
 				F7FA92B71BEC3AD000CA97CD /* ESSettingSwitchItem.m in Sources */,
@@ -1489,6 +1508,7 @@
 				F7FA92A21BEC3AD000CA97CD /* ESCellFrame.m in Sources */,
 				F7FA92AB1BEC3AD000CA97CD /* ESCell.m in Sources */,
 				F7FA92B91BEC3AD000CA97CD /* ESSettingCell.m in Sources */,
+				F382B9061D13D6DE00E8C272 /* FloatingViewController.m in Sources */,
 				F7258CDD1C1E645400851AE9 /* MJDictionaryCache.m in Sources */,
 				F71D5B5F1C250126000D9133 /* CustomCalendarViewController.m in Sources */,
 				F757B0F41C2A6A2A003A836F /* UIScrollView+MJExtension.m in Sources */,
