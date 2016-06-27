@@ -9,25 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface OpenWebViewController : UIViewController
-/**
- *  网址输入框
- */
-@property (nonatomic, strong)UITextField *inputFeild;
+
 /**
  *  webview
  */
 @property (nonatomic, strong)UIWebView *webView;
+
 /**
- *  go按钮
+ *  url
  */
-@property (nonatomic, strong)UIButton *goButton;
-/**
- *  点击了go按钮的触发函数
- */
-- (void)goButtonPressed;
-/**
- *  加载网址页面
- */
-- (void)loadWebViewWithString: (NSString *)urlStr;
+@property (nonatomic, copy)NSString *url;
 
 @end

@@ -5,7 +5,7 @@
 //  Created by Xinhou Jiang on 6/13/16.
 //
 //
-#define floatSize 60
+#define floatSize 40
 #import "FloatingViewController.h"
 #import "UIDragButton.h"
 

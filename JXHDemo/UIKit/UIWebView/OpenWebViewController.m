@@ -5,10 +5,20 @@
 //  Created by 919575700@qq.com on 10/15/15.
 //  Copyright (c) 2015 Jiangxh. All rights reserved.
 //
-#define btnSize 30 //按钮尺寸
+#define btnSize 30
 #import "OpenWebViewController.h"
 
 @interface OpenWebViewController ()<UIWebViewDelegate, UITextInputTraits>
+
+/**
+ *  网址输入框
+ */
+@property(nonatomic, strong)UITextField *inputFeild;
+
+/**
+ *  按钮
+ */
+@property(nonatomic, strong)UIButton *goButton;
 
 @end
 
@@ -18,9 +28,14 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //0.背景色，标题
-    self.view.backgroundColor = RGBColor(230, 230, 230);
     self.title = @"WEB浏览器";
+    
+    // uibuttonitem
+    UIBarButtonItem *Pre = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"right"] style:UIBarButtonItemStylePlain target:self action:@selector(prePage)];
+    UIBarButtonItem *Next = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"left"] style:UIBarButtonItemStylePlain target:self action:@selector(nextPage)];
+    UIBarButtonItem *Refresh = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh)];
+    self.navigationItem.rightBarButtonItems = @[Pre,Next,Refresh];
+    
     /***********************
      * UITextFeild的用法
      ***********************/
@@ -55,6 +70,7 @@
     //_inputFeild.delegate = self;
     //显示
     [self.view addSubview:_inputFeild];
+    
     /***********************
      * UIButton的用法
      ***********************/
@@ -90,11 +106,37 @@
  */
 - (void)goButtonPressed {
     //取输入框的网址
-    NSString *urlStr = _inputFeild.text;
-    NSLog(@"输入的网址：%@",urlStr);
+    _url = _inputFeild.text;
+    NSLog(@"输入的网址：%@",_url);
     //打开网址页面
-    [self loadWebViewWithString:urlStr];
+    [self loadWebViewWithString:_url];
 }
+
+/**
+ *  上一页
+ */
+- (void)prePage {
+    if ([_webView canGoForward]) {
+        [_webView goForward];
+    }
+}
+
+/**
+ * 下一页
+ */
+- (void)nextPage {
+    if ([_webView canGoBack]) {
+        [_webView goBack];
+    }
+}
+
+/**
+ *  重新加载
+ */
+- (void)refresh {
+    [_webView reload];
+}
+
 /**
  *  加载网址页面
  */
