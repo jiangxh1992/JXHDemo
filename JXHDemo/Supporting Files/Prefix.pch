@@ -29,7 +29,7 @@
 #import "ESListCellFrame.h"
 
 // 测试接口
-#define testURL @"http://192.168.10.33/test.php"
+#define testURL @"http://192.168.10.110:81/"
 
 // cell边距
 #define CellMargin 10

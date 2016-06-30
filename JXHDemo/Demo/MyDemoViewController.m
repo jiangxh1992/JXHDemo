@@ -11,6 +11,7 @@
 #import "TimerShaftTableViewController.h"
 #import "CustomCalendarViewController.h"
 #import "QRCodeViewController.h"
+#import "PopMenuViewController.h"
 
 @interface MyDemoViewController ()
 
@@ -39,7 +40,7 @@
     // 子视图类名
     NSMutableArray *mulNames = [[NSMutableArray alloc] init];
     // cell的名称
-    _classNames = @[@"SplitTableViewController", @"MapViewController", @"TimerShaftTableViewController", @"CustomCalendarViewController"];
+    _classNames = @[@"SplitTableViewController", @"MapViewController", @"TimerShaftTableViewController", @"CustomCalendarViewController", @"PopMenuViewController"];
     for (NSString *name in _classNames) {
         ESListItem *item = [[ESListItem alloc] init];
         item.title = name;

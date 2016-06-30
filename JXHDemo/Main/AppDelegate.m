@@ -27,12 +27,6 @@
     // 设置底部导航根控制器
     [self setupRootViewController];
     
-//    // 表格菜单
-//    MainTableViewController *mainVC = [[MainTableViewController alloc] init];
-//    // 根导航
-//    UINavigationController *rootNavVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
-//    // 跟导航作为window的跟控制器
-//    self.window.rootViewController = rootNavVC;
     return YES;
 }
 
@@ -61,6 +55,44 @@
         // 第一次登录(显示新特性欢迎界面)
         self.window.rootViewController = [[NewFeatureViewController alloc] init];
     }
+}
+
+/**
+ *  注册远程通知服务
+ */
+- (void)setupRegisterForRemoteNotification
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) // iOS8和以后
+    {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
+                                                                                                              categories:nil]];
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else
+    {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert |UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
+    }
+}
+
+/**
+ *  获取DeviceToken
+ */
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    NSString *device = [deviceToken description];
+    device = [device stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    device = [device stringByReplacingOccurrencesOfString:@" " withString:@""];
+    // 存储token
+    [[NSUserDefaults standardUserDefaults] setObject: device forKey:@"deviceToken"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+
+/**
+ *  接收到远程通知时会调用
+ */
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
 }
 
 @end

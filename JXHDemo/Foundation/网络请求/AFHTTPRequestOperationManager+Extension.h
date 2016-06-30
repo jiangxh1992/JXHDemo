@@ -31,4 +31,15 @@
  */
 - (void)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
 
+#pragma mark - 服务端返回加密JSON用下面两个方法
+/**
+ *  发送一个GET请求
+ */
+- (void)compoundGetWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
+
+/**
+ *  发送一个POST请求
+ */
+- (void)compoundPostWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
+
 @end

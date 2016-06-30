@@ -60,12 +60,12 @@
     _inputFeild.adjustsFontSizeToFitWidth = YES;
     //文字清除按钮
     _inputFeild.clearsOnBeginEditing =YES;
-    
+    //禁止首字母大写
+    [_inputFeild setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     //左边view
     //_inputFeild.leftView = UIImageView;
     //_inputFeild.leftViewMode = UITextFieldViewModeAlways;
     //右边view同理
-    
     //代理
     //_inputFeild.delegate = self;
     //显示
@@ -86,13 +86,12 @@
     [_goButton addTarget:self action:@selector(goButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     //显示
     [self.view addSubview:_goButton];
+    
     // 3.webview
     _webView = [[UIWebView alloc] init];
+    //_webView.scrollView.zoomScale = 1.0;
     //frame
     [_webView setFrame:CGRectMake(5, btnSize + 10, ApplicationW-10, ApplicationH - btnSize - 10)];
-    //边框
-    _webView.layer.borderWidth = 1;
-    _webView.layer.borderColor = (__bridge CGColorRef)([UIColor orangeColor]);
     //自适应
     _webView.autoresizingMask = UIViewAutoresizingFlexibleHeight |UIViewAutoresizingFlexibleWidth;
     _webView.scalesPageToFit = YES;
@@ -106,7 +105,8 @@
  */
 - (void)goButtonPressed {
     //取输入框的网址
-    _url = _inputFeild.text;
+    NSString *prefix = @"http://";
+    _url = [prefix stringByAppendingString:_inputFeild.text];
     NSLog(@"输入的网址：%@",_url);
     //打开网址页面
     [self loadWebViewWithString:_url];

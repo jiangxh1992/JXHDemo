@@ -7,19 +7,25 @@
 //
 
 #import "AFNetworkTest.h"
-#import "RequestSingleton.h"
+#import "XXRequestIns.h"
 
 @implementation AFNetworkTest
 
 - (void)viewDidLoad {
     
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[[NSURL alloc] initWithString:@"hostname"]];
+    // 制作参数列表
+    NSMutableDictionary *p = [[NSMutableDictionary alloc]init];
+    [p setObject:@"jxh" forKey:@"username"];
+    [p setObject:@"123" forKey:@"id"];
     
-    [[RequestSingleton Ins].commonManager POST:testURL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"result: %@",responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"result: %@",error);
+    // 发送post请求
+    [[XXRequestIns Ins] postAPIWithM:@"User" A:@"Register" P:p success:^(id json) {
+        
+        NSLog(@"%@",json);
+    } failure:^(NSError *error) {
+        
     }];
+
 }
 
 @end
