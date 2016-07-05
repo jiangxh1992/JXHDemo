@@ -8,13 +8,14 @@
 #define floatSize 40
 #import "FloatingViewController.h"
 #import "UIDragButton.h"
+#import "FloatWindow.h"
 
 @interface FloatingViewController ()<UIDragButtonDelegate>
 
 /**
  *  悬浮的window
  */
-@property(strong,nonatomic)UIWindow *window;
+@property(strong,nonatomic) FloatWindow *window;
 
 /**
  *  悬浮的按钮
@@ -55,7 +56,8 @@
     _button.imageView.alpha = 0.8;
     
     // 悬浮窗
-    _window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 100, floatSize, floatSize)];
+    _window = [[FloatWindow alloc]init];
+    _window.floatFrame = CGRectMake(0, 100, floatSize, floatSize);
     _window.windowLevel = UIWindowLevelAlert+1;
     _window.backgroundColor = [UIColor clearColor];
     _window.layer.cornerRadius = floatSize/2;

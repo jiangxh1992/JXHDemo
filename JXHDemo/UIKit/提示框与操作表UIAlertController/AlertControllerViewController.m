@@ -80,8 +80,6 @@
     NSLog(@"确定按钮的下标:%ld",(long)[actionSheet destructiveButtonIndex]);
     //第一个其他按钮的下标
     NSLog(@"第一个其他按钮的下标:%ld",(long)[actionSheet firstOtherButtonIndex]);
-    //设置代理
-    actionSheet.delegate = self;
     // 弹出操作表
     [actionSheet showInView:self.view];
 }

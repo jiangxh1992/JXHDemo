@@ -4,10 +4,10 @@
     "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : {
 
     },
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6223" : {
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : {
 
     },
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : {
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6223" : {
 
     },
     "a3ff8903-71d9-4ae6-a88a-75719b15ca31++8808" : {
@@ -18,21 +18,21 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6390" : 0,
-    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : 0,
     "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6223" : 0,
+    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : 0,
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : 0,
     "A6B9035F784889D05295DD8107B6979DF1622E5F" : 0,
     "a3ff8903-71d9-4ae6-a88a-75719b15ca31++8808" : 0,
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : 0
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6390" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE55FA30-392E-42BE-8527-AA91E86AA1D6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6390" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%B6%E9%97%B4%E8%BD%B4\/Model\/",
-    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : "JXHDemo\/JXHDemo\/Common\/Lib\/MJExtension\/",
     "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6223" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%B6%E9%97%B4%E8%BD%B4\/View\/",
+    "be3a8f56-bea3-4e7e-809e-ac7b0d84787b++4451" : "JXHDemo\/JXHDemo\/Common\/Lib\/MJExtension\/",
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%A5%E5%8E%86\/Controller\/",
     "A6B9035F784889D05295DD8107B6979DF1622E5F" : "JXHDemo",
     "a3ff8903-71d9-4ae6-a88a-75719b15ca31++8808" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%A5%E5%8E%86\/View\/",
-    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++9682" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%A5%E5%8E%86\/Controller\/"
+    "a3ff8903-71d9-4ae6-a88a-75719b15ca31++6390" : "JXHDemo\/JXHDemo\/Demo\/%E6%97%B6%E9%97%B4%E8%BD%B4\/Model\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "JXHDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

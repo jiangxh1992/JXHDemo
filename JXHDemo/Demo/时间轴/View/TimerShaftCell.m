@@ -5,6 +5,14 @@
 //  Created by jiangxh on 15/9/26.
 //  Copyright © 2015年 txbydev3. All rights reserved.
 //
+//node的尺寸
+#define nodeSize 20
+//时间轴与屏幕左边的边距
+#define LMargin ApplicationW/3
+//按钮与屏幕左边间隔
+#define leftBtnMargin 10
+#define minCellHeight 80
+#define maxCellHeight 160
 
 #import "TimerShaftCell.h"
 #import "TimerButton.h"
@@ -30,7 +38,7 @@
         [timeHorizontalLine setImage:[UIImage imageNamed:@"time_horizontal_line"]];
         [self.contentView addSubview:timeHorizontalLine];
         // 3.按钮组件
-        _timerBtn = [[TimerButton alloc] initWithFrame:CGRectMake(leftBtnMargin, timeHorizontalLine.frame.origin.y-arrrowHeight/2, LMargin-leftBtnMargin, 70) nodeRecord:nodeRecord];
+        _timerBtn = [[TimerButton alloc] initWithFrame:CGRectMake(leftBtnMargin, timeHorizontalLine.frame.origin.y-13/2, LMargin-leftBtnMargin, 70) nodeRecord:nodeRecord];
         [self.contentView addSubview:_timerBtn];
         //为按钮组件中的内容按钮打上tag
         _timerBtn.tag = nodeRecord.row;

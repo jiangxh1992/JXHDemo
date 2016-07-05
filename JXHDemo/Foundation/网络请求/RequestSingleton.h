@@ -20,4 +20,9 @@
  */
 + (RequestSingleton *)Ins;
 
+/**
+ * 原生POST请求(最基础的请求参数是字符串，这里原生的请求参数是一个json字符串)
+ */
+- (void) POST: (NSString *)url form: (NSString *)param success:(void(^)(id json))success failure: (void(^)(NSError *error))flaiure;
+
 @end

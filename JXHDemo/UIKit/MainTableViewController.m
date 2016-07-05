@@ -34,6 +34,13 @@
 }
 
 /**
+ * 横屏时布局调整
+ */
+- (void)viewWillLayoutSubviews {
+    _searchBar.frame = CGRectMake(0, 0, ApplicationW, 40);
+}
+
+/**
  *  添加搜索框到表格头部视图
  */
 - (void)setHeaderSearchBar {

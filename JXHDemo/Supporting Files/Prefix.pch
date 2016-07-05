@@ -21,6 +21,7 @@
 #import "ESImageTool.h"
 #import "MJExtension.h"
 #import "MBProgressHUD.h"
+#import "JXHConst.h"
 // ESKit组件
 // 1.表格
 #import "ESListViewController.h"
@@ -28,13 +29,10 @@
 #import "ESListCell.h"
 #import "ESListCellFrame.h"
 
-// 测试接口
-#define testURL @"http://192.168.10.110:81/"
-
 // cell边距
 #define CellMargin 10
 
-// 自定义Log
+// 自定义Log, 在release版本中清除所有的NSLOG
 #ifdef DEBUG // 调试状态, 打开LOG功能
 #define ESLog(...) NSLog(__VA_ARGS__)
 #else // 发布状态, 关闭LOG功能
@@ -81,34 +79,6 @@
 // 常规字体,6p调大
 #define XHFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
 
-//导航栏高度
-#define ESNavH 44
-//内容页面左右边距
-#define SLMargin 30
-
-/**
- * 时间轴常量
- */
-//最小的cell高度
-#define minCellHeight ApplicationW/4
-//最大的cell高度
-#define maxCellHeight ApplicationW/2
-//三角的宽度
-#define arrrowWidth 6
-//三角的高度
-#define arrrowHeight 13
-//node的尺寸
-#define nodeSize 20
-//日期按钮与内容按钮之间的空隙
-#define btnDistance 1
-//时间轴与屏幕左边的边距
-#define LMargin ApplicationW/3
-//按钮与屏幕左边间隔
-#define leftBtnMargin 10
-//时间轴按钮组件高度
-#define timerBtnHeight minCellHeight
-//日期按钮高度
-#define dateBtnHeight 20
 
 // .时间轴结点数据缓存沙盒路径
 #define SLNodeRecordsDomainPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) lastObject] stringByAppendingPathComponent:@"/nodes.plist"]

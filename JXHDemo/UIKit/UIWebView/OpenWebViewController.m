@@ -99,6 +99,10 @@
     _webView.delegate = self;
     //添加到页面
     [self.view addSubview:_webView];
+    
+    // 默认页面
+    _url = @"http://www.baidu.com";
+    [self loadWebViewWithString:_url];
 }
 /**
  *  点击了go按钮的触发函数

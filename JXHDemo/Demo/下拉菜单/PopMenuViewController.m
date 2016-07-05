@@ -65,7 +65,7 @@
     
     // 1.1帐号选择框
     _curAccount = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, inputW, inputH)];
-    _curAccount.center = CGPointMake(self.view.center.x, 200);
+    _curAccount.center = CGPointMake(self.view.center.x, 20);
     // 默认当前账号为已有账号的第一个
     Account *acc = _dataSource[0];
     [_curAccount setTitle:acc.account forState:UIControlStateNormal];

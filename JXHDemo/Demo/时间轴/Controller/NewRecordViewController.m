@@ -27,6 +27,10 @@
 //日期选择框追加按钮的高度
 #define btnHeight 35
 #define datePickerHeight 200
+//内容页面左右边距
+#define SLMargin 30
+//内容页面左右边距
+#define SLMargin 30
 
 @interface NewRecordViewController ()<UITextViewDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 

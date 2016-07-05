@@ -13,6 +13,10 @@
 #import "TimerButton.h"
 #import "NewRecordViewController.h"
 #import "NodeRecord.h"
+//时间轴与屏幕左边的边距
+#define LMargin ApplicationW/3
+#define minCellHeight 80
+#define maxCellHeight 160
 // 横轴长度随天数差的增长速度
 #define speed 1
 /****************************************************************************************************************

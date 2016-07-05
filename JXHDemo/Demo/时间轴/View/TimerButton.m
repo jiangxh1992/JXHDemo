@@ -5,6 +5,12 @@
 //  Created by jiangxh on 15/9/27.
 //  Copyright © 2015年 txbydev3. All rights reserved.
 //
+//三角的宽度
+#define arrrowWidth 6
+//三角的高度
+#define arrrowHeight 13
+//日期按钮与内容按钮之间的空隙
+#define btnDistance 1
 
 #import "TimerButton.h"
 #import "NodeRecord.h"

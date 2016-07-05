@@ -5,6 +5,8 @@
 //  Created by 919575700@qq.com on 10/30/15.
 //  Copyright (c) 2015 Jiangxh. All rights reserved.
 //
+//导航栏高度
+#define ESNavH 44
 #import "ESSearchBar.h"
 #import "ESToolView.h"
 #import "SplitTableViewController.h"
