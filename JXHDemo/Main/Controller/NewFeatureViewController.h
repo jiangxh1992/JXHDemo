@@ -1,10 +1,10 @@
 //
 //  NewFeatureViewController.h
-//  smh
+//  JXHDemo
 //
-//  Created by yh on 14-5-30.
-//  Copyright (c) 2014年 com.eeesys. All rights reserved.
-//  版本新特性
+//  Created by Xinhou Jiang on 6/7/16.
+//  Copyright © 2016 Jiangxh. All rights reserved.
+//  SCROLLVIEW展示新版本特性
 
 #import <UIKit/UIKit.h>
 

@@ -32,10 +32,42 @@
     //[self alertViewTest];
     
     // 4.NSString
-    [self stringTest];
+    //[self stringTest];
+    
+    // 字符串与json的相互转换
+    [self testJson];
 }
+
 /**
- *  1.测试sizeToFit
+ *  字符串与json的相互转换
+ */
+- (void)testJson {
+    //获取标准函数对象
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    // 读取字符串数据
+    NSString *data;
+    NSMutableArray *users = [[NSMutableArray alloc]init];
+    
+    //制作新账户数据
+    NSMutableDictionary *newUser = [[NSMutableDictionary alloc]init];
+    [newUser setObject:@"919575700" forKey:@"username"];
+    [newUser setObject:@"123456" forKey:@"paswword"];
+    [users addObject:newUser];
+    NSString *s = [users JSONString];
+    NSLog(@"存入的json字符串：%@",s);
+    [defaults setObject:s forKey:@"sdkUsers"];
+    
+    // 读取字符串数据
+    data = [defaults objectForKey:@"sdkUsers"];
+    // 字符串转json
+    if (data) {
+        users = [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
+    }
+    NSLog(@"读取的json对象：%@",users);
+}
+
+/**
+ *  测试sizeToFit
  */
 - (void)sizeToFit {
     /**
@@ -59,7 +91,7 @@
     [self.view addSubview:label];
 }
 /**
- * 2.测试DIY alertView
+ * 测试DIY alertView
  */
 - (void)alertViewTest {
     //定一个提示框

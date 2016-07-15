@@ -79,10 +79,4 @@
 // 常规字体,6p调大
 #define XHFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
 
-
-// .时间轴结点数据缓存沙盒路径
-#define SLNodeRecordsDomainPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) lastObject] stringByAppendingPathComponent:@"/nodes.plist"]
-// .时间轴新建结点就诊类型数据沙盒路径
-#define SLDignoseTypeDomainPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingString:@"/dignoseType.plist"]
-
 #endif

@@ -50,8 +50,8 @@
     else
     {
         // 保存版本号
-        [[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        //[[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
+        //[[NSUserDefaults standardUserDefaults] synchronize];
         // 第一次登录(显示新特性欢迎界面)
         self.window.rootViewController = [[NewFeatureViewController alloc] init];
     }
