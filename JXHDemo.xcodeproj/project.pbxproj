@@ -16,10 +16,10 @@
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
 		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
-		F332624E1D08153800BB5C0D /* AFNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F332624D1D08153800BB5C0D /* AFNetworkTest.m */; };
 		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
 		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
 		F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262531D0817C200BB5C0D /* SystemConfiguration.framework */; };
+		F338E1A91D388A5A0075B93C /* AFRequestSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F338E1A81D388A5A0075B93C /* AFRequestSingleton.m */; };
 		F372698B1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */; };
 		F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */; };
 		F382B9031D13D53000E8C272 /* UIDragButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F382B9021D13D53000E8C272 /* UIDragButton.m */; };
@@ -188,11 +188,11 @@
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
 		F33262491D07C0F400BB5C0D /* InputAjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAjustViewController.m; sourceTree = "<group>"; };
-		F332624C1D08153800BB5C0D /* AFNetworkTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkTest.h; sourceTree = "<group>"; };
-		F332624D1D08153800BB5C0D /* AFNetworkTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkTest.m; sourceTree = "<group>"; };
 		F332624F1D08179F00BB5C0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F33262531D0817C200BB5C0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F338E1A71D388A5A0075B93C /* AFRequestSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRequestSingleton.h; sourceTree = "<group>"; };
+		F338E1A81D388A5A0075B93C /* AFRequestSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRequestSingleton.m; sourceTree = "<group>"; };
 		F37269891D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Extension.h"; sourceTree = "<group>"; };
 		F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Extension.m"; sourceTree = "<group>"; };
 		F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSingleton.h; sourceTree = "<group>"; };
@@ -549,12 +549,12 @@
 		F332624B1D0813F500BB5C0D /* 网络请求 */ = {
 			isa = PBXGroup;
 			children = (
-				F332624C1D08153800BB5C0D /* AFNetworkTest.h */,
-				F332624D1D08153800BB5C0D /* AFNetworkTest.m */,
 				F37269891D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.h */,
 				F372698A1D0D19E400FE1B31 /* AFHTTPRequestOperationManager+Extension.m */,
 				F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */,
 				F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */,
+				F338E1A71D388A5A0075B93C /* AFRequestSingleton.h */,
+				F338E1A81D388A5A0075B93C /* AFRequestSingleton.m */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -1417,7 +1417,6 @@
 				F72F04771BF02579008E6FB4 /* TestViewController.m in Sources */,
 				F7258CE41C1E645400851AE9 /* NSObject+MJCoding.m in Sources */,
 				F7FA93181BEC43D500CA97CD /* SDWebImagePrefetcher.m in Sources */,
-				F332624E1D08153800BB5C0D /* AFNetworkTest.m in Sources */,
 				F72F047B1BF02579008E6FB4 /* AffineViewController.m in Sources */,
 				F757B0F51C2A6A2A003A836F /* UIScrollView+MJRefresh.m in Sources */,
 				F757B0F11C2A6A2A003A836F /* MJRefreshHeader.m in Sources */,
@@ -1508,6 +1507,7 @@
 				F39AA75D1D2523E400285B43 /* FloatWindow.m in Sources */,
 				F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */,
 				F7258CE11C1E645400851AE9 /* MJPropertyKey.m in Sources */,
+				F338E1A91D388A5A0075B93C /* AFRequestSingleton.m in Sources */,
 				F75679F01C01C9A800EF35C3 /* PlistViewController.m in Sources */,
 				F7FA92E51BEC3D5800CA97CD /* AFHTTPRequestOperationManager.m in Sources */,
 				F7FA92A11BEC3AD000CA97CD /* ESTableViewController.m in Sources */,

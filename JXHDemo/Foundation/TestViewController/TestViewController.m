@@ -8,6 +8,8 @@
 
 #import "TestViewController.h"
 #import "UIAlertView+DIY.h"
+
+#import "RequestSingleton.h"
 @interface TestViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end
@@ -16,13 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 获取已经创建的沙盒plist文件路径
-    NSString *filepath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"/demo.plist"];
-    // 获取此路径下的我们需要的数据
-    NSDictionary *testDic = [[NSDictionary alloc] initWithContentsOfFile:filepath];
-    // 打印之前存入沙盒的新数据
-    NSLog(@"d:%@", [testDic objectForKey:@"d"]);
-    
     self.view.backgroundColor = RGBColor(230, 230, 230);
     
     // 1.测试sizeToFit
@@ -35,8 +30,32 @@
     //[self stringTest];
     
     // 字符串与json的相互转换
-    [self testJson];
+    //[self testJson];
+    
+    // 测试原生网络请求
+    
 }
+
+/**
+ * 原生网络请求测试示例
+ */
+- (void)request {
+    // 1.服务器url接口
+    NSString *url = @"";
+    // 2.制作参数
+    NSMutableDictionary *paramDic = [[NSMutableDictionary alloc]init];
+    [paramDic setObject:@"919575700@qq.com" forKey:@"username"];
+    [paramDic setObject:@"jxh123" forKey:@"password"];
+    // 转成json字符串，用到MJExtension归档插件
+    NSString *param = [paramDic JSONString];
+    // post请求
+    [[RequestSingleton Ins] POST:url param:param success:^(id json) {
+        // 请求成功
+    } failure:^(NSError *error) {
+        // 请求错误
+    }];
+}
+
 
 /**
  *  字符串与json的相互转换
