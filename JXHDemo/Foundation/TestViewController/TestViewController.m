@@ -35,7 +35,7 @@
     // 测试原生网络请求
     
 }
-
+#import "RequestSingleton.h"
 /**
  * 原生网络请求测试示例
  */

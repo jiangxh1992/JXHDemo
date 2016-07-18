@@ -1,16 +1,16 @@
 //
 //  NewFeatureViewController.m
-//  smh
+//  JXHDemo
 //
-//  Created by yh on 14-5-30.
-//  Copyright (c) 2014年 com.eeesys. All rights reserved.
-//
+//  Created by Xinhou Jiang on 6/7/16.
+//  Copyright © 2016 Jiangxh. All rights reserved.
+//  SCROLLVIEW展示新版本特性
 
 #import "NewFeatureViewController.h"
 #import "ESTabBarController.h"
 
 // 滚动视图个数
-#define ESImageCount 3
+#define ImageNum 3
 
 @interface NewFeatureViewController ()<UIScrollViewDelegate>
 
@@ -18,47 +18,32 @@
 
 @implementation NewFeatureViewController
 
-#pragma mark - lifecycle
-- (void)loadView
-{
-    // 创建图像视图
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.image = [UIImage imageNamed:@"new_feature_background"];
-    // 开启交互
-    imageView.userInteractionEnabled = YES;
-    // 设置frame
-    imageView.frame = [UIScreen mainScreen].bounds;
-    
-    self.view = imageView;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // 添加UIScrollView
+    // 添加UIScrollView滚动视图
     [self setupScrollView];
 }
 
-#pragma mark - private
 /**
- *  添加UIScrollView
+ *  添加UIScrollView滚动视图
  */
 - (void)setupScrollView
 {
-    // 1 创建UIScrollView
+    // 创建UIScrollView
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     [self.view addSubview:scrollView];
     
-    // 2 设置属性
+    // 设置属性
     scrollView.delegate = self;
     scrollView.frame = self.view.bounds;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.pagingEnabled = YES;
     CGSize size = scrollView.frame.size;
-    scrollView.contentSize = CGSizeMake(ESImageCount * size.width, size.height);
+    scrollView.contentSize = CGSizeMake(ImageNum * size.width, size.height);
     
-    // 3 添加UIImageView
-    for (NSInteger i = 0; i < ESImageCount; i++)
+    // 添加UIImageView
+    for (NSInteger i = 0; i < ImageNum; i++)
     {
         NSString *imageName = [NSString stringWithFormat:@"new_feature_%ld",i + 1];
         UIImage *image = [UIImage fullscreenImageWithName:imageName];
@@ -67,9 +52,10 @@
         imageView.frame = CGRectMake(i * size.width, 0, size.width, size.height);
         [scrollView addSubview:imageView];
         
-        // 4 最后一张图片添加分享和立即体验按钮
-        if (i == (ESImageCount - 1))
+        // 最后一张图片添加启动按钮
+        if (i == (ImageNum - 1))
         {
+            // 开启交互
             imageView.userInteractionEnabled = YES;
             [self setupStartButton:imageView];
         }
@@ -77,31 +63,31 @@
 }
 
 /**
- *  添加立即体验
+ *  添加按钮
  */
 - (void)setupStartButton:(UIImageView*)inView
 {
-    // 1 创建按钮
+    // 创建按钮
     UIButton *startButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    // 2 设置属性
-    [startButton setBackgroundImage:[UIImage imageNamed:@"new_feature_finish_button"] forState:UIControlStateNormal];
-    [startButton setBackgroundImage:[UIImage imageNamed:@"new_feature_finish_button_highlighted"] forState:UIControlStateHighlighted];
-    startButton.bounds = CGRectMake(0, 0, 180, 50);
+    startButton.bounds = CGRectMake(0, 0, 150, 30);
+    [startButton setBackgroundColor:[UIColor yellowColor]];
+    [startButton setTitle:@"启动" forState:UIControlStateNormal];
+    [startButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     startButton.center = CGPointMake(self.view.center.x, self.view.frame.size.height * 0.9);
     [startButton addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
     startButton.adjustsImageWhenHighlighted = NO;
     startButton.selected = YES;
     
-    // 3 添加到最后一张图片上
+    // 添加到最后一张图片上
     [inView addSubview:startButton];
 }
 
 /**
- *  立即体验点击事件
+ *  启动
  */
 - (void)start
 {
+    // 进入主界面
     self.view.window.rootViewController = [[ESTabBarController alloc] init];
 }
 

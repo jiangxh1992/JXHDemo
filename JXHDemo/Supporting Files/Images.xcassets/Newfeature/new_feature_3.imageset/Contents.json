@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "iphone",
-      "filename" : "F3.png",
       "scale" : "1x"
     },
     {
       "idiom" : "iphone",
+      "filename" : "3.png",
       "scale" : "2x"
     },
     {
