@@ -44,6 +44,7 @@
     //地图设置
     [self setMapView];
 }
+
 /**
  *  地图设置
  */
@@ -80,8 +81,8 @@
 -(void)addAnnotation {
     MKPointAnnotation *annotation=[[MKPointAnnotation alloc]init];
     annotation.coordinate = _initLocation;
-    [annotation setTitle:@"苏大附一"];
-    [annotation setSubtitle:@"苏州大学附属医院"];
+    [annotation setTitle:@"当前位置"];
+    [annotation setSubtitle:@"当前位置描述"];
     [_mapView addAnnotation:annotation];
 }
 

@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Foundation";
     // cell的名称
     _classNames = @[@"TestViewController", @"PlistViewController"];
     //设置模型数据

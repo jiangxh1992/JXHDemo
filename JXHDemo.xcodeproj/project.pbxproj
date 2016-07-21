@@ -41,10 +41,10 @@
 		F3CA40271D2A33B50020C3F7 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3CA40261D2A33B50020C3F7 /* test.plist */; };
 		F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */; };
 		F3ECD7A71D06BD6D001F9831 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */; };
+		F3FA7E101D40C52C00248202 /* TabNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FA7E0F1D40C52C00248202 /* TabNavController.m */; };
+		F3FA7E131D40C82B00248202 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FA7E121D40C82B00248202 /* MainTabBarController.m */; };
 		F70AE9CC1BD08343008F817D /* JXHDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AE9CB1BD08343008F817D /* JXHDemoTests.m */; };
 		F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */; };
-		F722DBD81BE20DDF00D5EC1F /* ESNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */; };
-		F722DBD91BE20DDF00D5EC1F /* ESTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */; };
 		F722DBDB1BE20DDF00D5EC1F /* NewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */; };
 		F722DBDC1BE20DDF00D5EC1F /* ESTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD51BE20DDF00D5EC1F /* ESTabBar.m */; };
 		F722DBDD1BE20DDF00D5EC1F /* ESTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F722DBD71BE20DDF00D5EC1F /* ESTabBarButton.m */; };
@@ -232,16 +232,16 @@
 		F3ECD7A31D06B7F9001F9831 /* AccountSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelectViewController.m; sourceTree = "<group>"; };
 		F3ECD7A51D06BD6D001F9831 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
 		F3ECD7A61D06BD6D001F9831 /* AccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewController.m; sourceTree = "<group>"; };
+		F3FA7E0E1D40C52C00248202 /* TabNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabNavController.h; sourceTree = "<group>"; };
+		F3FA7E0F1D40C52C00248202 /* TabNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabNavController.m; sourceTree = "<group>"; };
+		F3FA7E111D40C82B00248202 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		F3FA7E121D40C82B00248202 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		F70AE9AC1BD08343008F817D /* JXHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70AE9C51BD08343008F817D /* JXHDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXHDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70AE9CA1BD08343008F817D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F70AE9CB1BD08343008F817D /* JXHDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHDemoTests.m; sourceTree = "<group>"; };
 		F722DBAE1BE0AAAF00D5EC1F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		F722DBAF1BE0AAAF00D5EC1F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		F722DBCA1BE20DDF00D5EC1F /* ESNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESNavigationController.h; sourceTree = "<group>"; };
-		F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESNavigationController.m; sourceTree = "<group>"; };
-		F722DBCC1BE20DDF00D5EC1F /* ESTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBarController.h; sourceTree = "<group>"; };
-		F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTabBarController.m; sourceTree = "<group>"; };
 		F722DBD01BE20DDF00D5EC1F /* NewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureViewController.h; sourceTree = "<group>"; };
 		F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureViewController.m; sourceTree = "<group>"; };
 		F722DBD41BE20DDF00D5EC1F /* ESTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBar.h; sourceTree = "<group>"; };
@@ -735,12 +735,12 @@
 		F722DBC91BE20DDF00D5EC1F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F722DBCA1BE20DDF00D5EC1F /* ESNavigationController.h */,
-				F722DBCB1BE20DDF00D5EC1F /* ESNavigationController.m */,
-				F722DBCC1BE20DDF00D5EC1F /* ESTabBarController.h */,
-				F722DBCD1BE20DDF00D5EC1F /* ESTabBarController.m */,
 				F722DBD01BE20DDF00D5EC1F /* NewFeatureViewController.h */,
 				F722DBD11BE20DDF00D5EC1F /* NewFeatureViewController.m */,
+				F3FA7E0E1D40C52C00248202 /* TabNavController.h */,
+				F3FA7E0F1D40C52C00248202 /* TabNavController.m */,
+				F3FA7E111D40C82B00248202 /* MainTabBarController.h */,
+				F3FA7E121D40C82B00248202 /* MainTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1373,12 +1373,12 @@
 				F7FA92BE1BEC3AD000CA97CD /* ArticleCellFrame.m in Sources */,
 				F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */,
 				F72F047C1BF02579008E6FB4 /* OpenWebViewController.m in Sources */,
+				F3FA7E131D40C82B00248202 /* MainTabBarController.m in Sources */,
 				F7FA92A51BEC3AD000CA97CD /* ESGroup.m in Sources */,
 				F3ECD7A41D06B7F9001F9831 /* AccountSelectViewController.m in Sources */,
 				F7FA92BD1BEC3AD000CA97CD /* ArticleCell.m in Sources */,
 				F7D256351C32200500E27130 /* UILabel+Extension.m in Sources */,
 				F39AA74C1D24E60F00285B43 /* PopMenuViewController.m in Sources */,
-				F722DBD91BE20DDF00D5EC1F /* ESTabBarController.m in Sources */,
 				F7FA92A81BEC3AD000CA97CD /* ESPickerItem.m in Sources */,
 				F7258CE61C1E645400851AE9 /* NSObject+MJProperty.m in Sources */,
 				F384CBBE1D390C7200C0D192 /* AFURLSessionManager.m in Sources */,
@@ -1433,6 +1433,7 @@
 				F7FA92B31BEC3AD000CA97CD /* ESSettingCheckItem.m in Sources */,
 				F384CBBA1D390C7200C0D192 /* AFSecurityPolicy.m in Sources */,
 				F7FA92B81BEC3AD000CA97CD /* ESBadgeView.m in Sources */,
+				F3FA7E101D40C52C00248202 /* TabNavController.m in Sources */,
 				F757B0F21C2A6A2A003A836F /* MJRefreshLegendFooter.m in Sources */,
 				F7FA92BF1BEC3AD000CA97CD /* ESArticleViewController.m in Sources */,
 				F757B0D11C2A346D003A836F /* QRCodeViewController.m in Sources */,
@@ -1459,7 +1460,6 @@
 				F7FA92F11BEC431200CA97CD /* GTMBase64.m in Sources */,
 				F7FA92B21BEC3AD000CA97CD /* ESSettingArrowItem.m in Sources */,
 				F7D256321C321FF000E27130 /* UIButton+Extension.m in Sources */,
-				F722DBD81BE20DDF00D5EC1F /* ESNavigationController.m in Sources */,
 				F722DBDD1BE20DDF00D5EC1F /* ESTabBarButton.m in Sources */,
 				F7FA93151BEC43D500CA97CD /* SDWebImageDownloader.m in Sources */,
 				F757B0EE1C2A6A2A003A836F /* MJRefreshFooter.m in Sources */,

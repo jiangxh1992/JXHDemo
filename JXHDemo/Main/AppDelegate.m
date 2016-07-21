@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainTableViewController.h"
-#import "ESTabBarController.h"
+#import "MainTabBarController.h"
 #import "NewFeatureViewController.h"
 
 @interface AppDelegate ()
@@ -45,13 +45,13 @@
     if ([version isEqualToString:savedVersion])
     {
         // 不是第一次(进入主界面)
-        self.window.rootViewController = [[ESTabBarController alloc] init];
+        self.window.rootViewController = [[MainTabBarController alloc] init];
     }
     else
     {
         // 保存版本号
-        //[[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
-        //[[NSUserDefaults standardUserDefaults] synchronize];
+        [[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         // 第一次登录(显示新特性欢迎界面)
         self.window.rootViewController = [[NewFeatureViewController alloc] init];
     }

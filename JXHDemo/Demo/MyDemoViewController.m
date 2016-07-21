@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Demo";
     // 扫描二维码按钮
     UIBarButtonItem *scanButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"scan"] style:UIBarButtonItemStylePlain target:self action:@selector(startScan)];
     self.navigationItem.rightBarButtonItem = scanButton;
