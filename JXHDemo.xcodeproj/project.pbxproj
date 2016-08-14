@@ -19,6 +19,7 @@
 		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
 		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
 		F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262531D0817C200BB5C0D /* SystemConfiguration.framework */; };
+		F36EE1BA1D4E33DD0001EC40 /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */; };
 		F372698E1D0D1CFB00FE1B31 /* RequestSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */; };
 		F382B9031D13D53000E8C272 /* UIDragButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F382B9021D13D53000E8C272 /* UIDragButton.m */; };
 		F382B9061D13D6DE00E8C272 /* FloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F382B9051D13D6DE00E8C272 /* FloatingViewController.m */; };
@@ -189,6 +190,8 @@
 		F332624F1D08179F00BB5C0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F33262531D0817C200BB5C0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F36EE1B81D4E33DD0001EC40 /* SingletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
+		F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
 		F372698C1D0D1CFB00FE1B31 /* RequestSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSingleton.h; sourceTree = "<group>"; };
 		F372698D1D0D1CFB00FE1B31 /* RequestSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSingleton.m; sourceTree = "<group>"; };
 		F382B9011D13D53000E8C272 /* UIDragButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDragButton.h; sourceTree = "<group>"; };
@@ -796,6 +799,8 @@
 				F7A882211C2A27D500A26674 /* 二维码 */,
 				F72F042A1BF02579008E6FB4 /* 地图 */,
 				F72F042F1BF02579008E6FB4 /* 带搜索框的分栏表格 */,
+				F36EE1B81D4E33DD0001EC40 /* SingletonClass.h */,
+				F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -1416,6 +1421,7 @@
 				F7FA92AE1BEC3AD000CA97CD /* ESListItem.m in Sources */,
 				F7FA92C31BEC3C6B00CA97CD /* NSString+Crypt.m in Sources */,
 				F7FA92AD1BEC3AD000CA97CD /* ESListCellFrame.m in Sources */,
+				F36EE1BA1D4E33DD0001EC40 /* SingletonClass.m in Sources */,
 				F72F046D1BF02579008E6FB4 /* MapViewController.m in Sources */,
 				6CD431411BEC803F00DB73AF /* NSString+PinYin4Cocoa.m in Sources */,
 				F7D2562C1C321A9C00E27130 /* NSObject+Extention.m in Sources */,
