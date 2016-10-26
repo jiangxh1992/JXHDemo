@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "add_rotate.png",
+      "filename" : "pay_method_app_store.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "pay_method_app_store-1.png",
       "scale" : "2x"
     },
     {

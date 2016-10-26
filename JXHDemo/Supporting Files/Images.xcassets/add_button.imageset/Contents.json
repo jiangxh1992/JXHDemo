@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "add_button.png",
+      "filename" : "xiaoxisdk_channel_acount.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "xiaoxisdk_channel_acount-1.png",
       "scale" : "2x"
     },
     {

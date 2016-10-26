@@ -6,6 +6,11 @@
     },
     {
       "idiom" : "iphone",
+      "subtype" : "retina4",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
       "filename" : "F.png",
       "scale" : "2x"
     },
@@ -16,6 +21,11 @@
     },
     {
       "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "subtype" : "retina4",
       "scale" : "3x"
     }
   ],

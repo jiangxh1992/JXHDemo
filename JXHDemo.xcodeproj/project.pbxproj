@@ -15,6 +15,7 @@
 		6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311D1BEC803F00DB73AF /* PinyinFormatter.m */; };
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
+		D2DAFB821DC09C5B00325282 /* CommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAFB811DC09C5B00325282 /* CommenViewController.m */; };
 		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
 		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
 		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
@@ -185,6 +186,8 @@
 		6CD4311E1BEC803F00DB73AF /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		D2DAFB801DC09C5B00325282 /* CommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommenViewController.h; sourceTree = "<group>"; };
+		D2DAFB811DC09C5B00325282 /* CommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommenViewController.m; sourceTree = "<group>"; };
 		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
 		F33262491D07C0F400BB5C0D /* InputAjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAjustViewController.m; sourceTree = "<group>"; };
 		F332624F1D08179F00BB5C0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -534,6 +537,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D2DAFB7F1DC09C1900325282 /* 知识点积累 */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAFB801DC09C5B00325282 /* CommenViewController.h */,
+				D2DAFB811DC09C5B00325282 /* CommenViewController.m */,
+			);
+			name = "知识点积累";
+			sourceTree = "<group>";
+		};
 		F33262471D07C03800BB5C0D /* 输入框防键盘遮挡 */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +859,7 @@
 		F72F044A1BF02579008E6FB4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D2DAFB7F1DC09C1900325282 /* 知识点积累 */,
 				F72F044B1BF02579008E6FB4 /* MainTableViewController.h */,
 				F72F044C1BF02579008E6FB4 /* MainTableViewController.m */,
 				F33262471D07C03800BB5C0D /* 输入框防键盘遮挡 */,
@@ -1306,12 +1319,11 @@
 		F70AE9A41BD08343008F817D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Jiangxh;
 				TargetAttributes = {
 					F70AE9AB1BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = V4SYMZQA29;
 					};
 					F70AE9C41BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -1492,6 +1504,7 @@
 				F7FA92BB1BEC3AD000CA97CD /* ESToolView.m in Sources */,
 				F7FA92BA1BEC3AD000CA97CD /* ESToolButton.m in Sources */,
 				6CD4312B1BEC803F00DB73AF /* MBProgressHUD.m in Sources */,
+				D2DAFB821DC09C5B00325282 /* CommenViewController.m in Sources */,
 				F72F04781BF02579008E6FB4 /* UIAlertView+DIY.m in Sources */,
 				F384CBBC1D390C7200C0D192 /* AFURLRequestSerialization.m in Sources */,
 				F722DBDB1BE20DDF00D5EC1F /* NewFeatureViewController.m in Sources */,
@@ -1560,8 +1573,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1573,7 +1588,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1605,8 +1620,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1616,7 +1633,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1636,15 +1653,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Users/albeeert/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1658,15 +1676,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Users/albeeert/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1682,7 +1701,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1703,7 +1722,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "/Users/jxh/Desktop/GitHub项目托管/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiangxh.$(PRODUCT_NAME:rfc1034identifier)";

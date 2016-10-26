@@ -26,7 +26,7 @@
 - (void)test {
     // 可在整个工程中调用如下代码：
     [SingletonClass Ins].name = @"sharedInstnce";
-    NSString *name = [SingletonClass Ins].name;
+    //NSString *name = [SingletonClass Ins].name;
 }
 
 @end

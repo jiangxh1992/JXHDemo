@@ -63,7 +63,7 @@
  */
 - (void)setData {
     //视图名称
-    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AnimationViewController", @"AlertControllerViewController", @"PickerViewController", @"AccountSelectViewController", @"InputAjustViewController"];
+    _classNames = @[@"LabelHeightViewController", @"OpenWebViewController", @"CheckBoxViewController", @"AlertViewController", @"FolderTableViewController", @"AffineViewController", @"AnimationViewController", @"AlertControllerViewController", @"PickerViewController", @"AccountSelectViewController", @"InputAjustViewController", @"CommenViewController"];
     //设置模型数据
     NSMutableArray *mulItems = [[NSMutableArray alloc] init];
     for (NSString *name in _classNames) {
