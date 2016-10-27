@@ -537,6 +537,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D299BE571DC1ACAF008A32C8 /* 单例类 */ = {
+			isa = PBXGroup;
+			children = (
+				F36EE1B81D4E33DD0001EC40 /* SingletonClass.h */,
+				F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */,
+			);
+			name = "单例类";
+			sourceTree = "<group>";
+		};
 		D2DAFB7F1DC09C1900325282 /* 知识点积累 */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,13 +815,12 @@
 			children = (
 				F72F04281BF02579008E6FB4 /* MyDemoViewController.h */,
 				F72F04291BF02579008E6FB4 /* MyDemoViewController.m */,
+				D299BE571DC1ACAF008A32C8 /* 单例类 */,
 				F39AA72E1D24C9D600285B43 /* 下拉菜单 */,
 				F350E2951D0FC14700063466 /* 悬浮窗 */,
 				F7A882211C2A27D500A26674 /* 二维码 */,
 				F72F042A1BF02579008E6FB4 /* 地图 */,
 				F72F042F1BF02579008E6FB4 /* 带搜索框的分栏表格 */,
-				F36EE1B81D4E33DD0001EC40 /* SingletonClass.h */,
-				F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
