@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "checkbox_on.png",
+      "filename" : "checkbox_off.png",
       "scale" : "1x"
     },
     {

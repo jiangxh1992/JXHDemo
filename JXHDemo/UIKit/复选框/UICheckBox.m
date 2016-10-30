@@ -2,26 +2,28 @@
 //  UICheckBox.m
 //  demo
 //
-//  Created by txbydev3 on 15/9/23.
-//  Copyright © 2015年 txbydev3. All rights reserved.
+//  Created by Jiangxh on 15/9/23.
+//  Copyright © 2015年 Jiangxh. All rights reserved.
 //
 #import "UICheckBox.h"
 
 @implementation UICheckBox
+
 /**
- *初始化checkbox按钮
+ * 初始化checkbox按钮
  */
 - (UICheckBox *)initWithFrame:(CGRect)frame {
     if ([super initWithFrame:frame]) {
-        //开始的时候设置复选框是未选中的
+        // 开始的时候设置复选框是未选中的
         self.selected = NO;
         _isChecked = NO;
-        //设置checkobx的监听事件
+        // 设置checkobx的监听事件
         [self addTarget:self action:@selector(checkboxClick) forControlEvents:UIControlEventTouchUpInside];
         return self;
     }
     return nil;
 }
+
 /**
  *  设置未选中图片
  */
@@ -66,7 +68,7 @@
  *按钮点击事件，点击后取反按钮状态
  */
 -(void)checkboxClick {
-    //取反复选框状态，通过取按钮的selected属性可以判断复选框当前有没有选中
+    // 取反复选框状态，通过取按钮的selected属性可以判断复选框当前有没有选中
     self.selected = !self.selected;
     _isChecked = self.selected;
     //后台打印调试

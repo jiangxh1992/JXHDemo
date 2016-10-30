@@ -17,14 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //标题
+    // 标题
     self.title = @"复选框";
-    //背景
+    // 背景
     self.view.backgroundColor = RGBColor(230, 230, 230);
-    //复选框
+    
+    // 定义复选框
     UICheckBox *checkbox = [[UICheckBox alloc] initWithFrame:CGRectMake(ApplicationW/2 - boxSize/2, ApplicationH/3, boxSize, boxSize)];
-    //设置复选框图片
+    // 设置复选框选中和未选中时的图片
     [checkbox setImageWithName:@"checkbox_off" andSelectedName:@"checkbox_on"];
+    // 添加到当前视图
     [self.view addSubview:checkbox];
 }
 @end

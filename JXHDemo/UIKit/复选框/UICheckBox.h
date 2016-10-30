@@ -2,11 +2,11 @@
 //  UICheckBox.h
 //  demo
 //
-//  Created by txbydev3 on 15/9/23.
-//  Copyright © 2015年 txbydev3. All rights reserved.
+//  Created by Jiangxh on 15/9/23.
+//  Copyright © 2015年 Jiangxh. All rights reserved.
 //
 /************************************
- *重写UIButton成复选框组件
+ * 重写UIButton成复选框组件
  ************************************/
 #import <UIKit/UIKit.h>
 
@@ -30,7 +30,7 @@
  */
 - (void)setSelectedImage:(UIImage*)selectedImage;
 /**
- *  设置图片
+ *  设置选中和未选中图片
  */
 - (void)setImage:(UIImage*)normalImage andSelectedImage:(UIImage*)selectedImage;
 
@@ -48,7 +48,7 @@
  */
 - (void)setImageWithName:(NSString*)normalImageName andSelectedName:(NSString*)selectedImageName;
 /**
- *按钮点击事件，点击后取反按钮状态
+ * 按钮点击事件，点击后取反按钮状态
  */
 -(void)checkboxClick;
 @end
