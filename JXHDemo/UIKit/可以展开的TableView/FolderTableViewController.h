@@ -10,13 +10,4 @@
 
 @interface FolderTableViewController : UITableViewController
 
-/**
- *  记录section的展开状态
- */
-@property (nonatomic)NSMutableArray *isOpen;
-/**
- *  记录section的标题数组
- */
-@property (nonatomic)NSArray *titles;
-
 @end

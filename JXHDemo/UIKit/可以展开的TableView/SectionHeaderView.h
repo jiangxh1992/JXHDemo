@@ -7,9 +7,10 @@
 //  section头部视图，是一个buntton
 
 #import <UIKit/UIKit.h>
+
 @class SectionHeaderView;
 /**
- *  自定义协议
+ * 自定义协议
  */
 @protocol SectionHeaderDelegate <NSObject>
 
@@ -17,6 +18,7 @@
 - (void)sectionDidClicked:(SectionHeaderView *)sender;
 
 @end
+
 @interface SectionHeaderView : UIButton
 
 /**
