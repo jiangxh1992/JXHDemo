@@ -8,7 +8,14 @@
 #ifndef JXHDemo_Prefix_pch
 #define JXHDemo_Prefix_pch
 
-// 系统扩展类头文件
+// 自定义XHLog, 在release版本中清除所有的NSLOG
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define XHLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define XHLog(...)
+#endif
+
+// Category
 #import "NSString+Extension.h"
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
@@ -17,51 +24,50 @@
 #import "UITableViewCell+Extension.h"
 #import "UIButton+Extension.h"
 #import "NSString+Crypt.h"
+#import "UIColor+HexString.h"
+
+// 第三方插件
 #import "AFNetworking.h"
-#import "ESImageTool.h"
 #import "MJExtension.h"
 #import "MBProgressHUD.h"
-#import "JXHConst.h"
+
 // ESKit组件
-// 1.表格
 #import "ESListViewController.h"
 #import "ESListItem.h"
 #import "ESListCell.h"
 #import "ESListCellFrame.h"
+#import "ESImageTool.h"
 
-// cell边距
+// 常量
+#import "JXHConst.h"
+
+// 宏常量
+// 1.cell边距
 #define CellMargin 10
+// 2.屏幕高度
+#define ApplicationH [UIScreen mainScreen].bounds.size.height
+// 3.屏幕宽度
+#define ApplicationW [UIScreen mainScreen].bounds.size.width
+// 4.加粗字体
+#define XHFontBold [UIFont boldSystemFontOfSize:15]
+// 5.一般字体
+#define XHFontSmall [UIFont systemFontOfSize:15.0]
+// 6.常规字体,6p调大
+#define XHFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
 
-// 自定义Log, 在release版本中清除所有的NSLOG
-#ifdef DEBUG // 调试状态, 打开LOG功能
-#define ESLog(...) NSLog(__VA_ARGS__)
-#else // 发布状态, 关闭LOG功能
-#define ESLog(...)
-#endif
-
-/**
- *  通过RGB创建颜色
- */
+// 宏方法
+// 1.通过RGB创建颜色
 #define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-
-// 创建UIAlertView并且显示
+// 2.创建UIAlertView并且显示
 #define XHAlert(title,msg) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
-// 纯文本信息提示
+// 3.纯文本信息提示
 #define XHAlertWithOnlyMsg(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
-// 纯标题信息提示
+// 4.纯标题信息提示
 #define XHAlertWithOnlyTitle(title) [[[UIAlertView alloc] initWithTitle:title message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil] show];
 
-/**
- *  获取屏幕尺寸
- */
-// 屏幕高度
-#define ApplicationH [UIScreen mainScreen].bounds.size.height
-// 屏幕宽度
-#define ApplicationW [UIScreen mainScreen].bounds.size.width
 
 // 判断是否为iOS7以上版本
 #define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
-
 // 设备类型
 // iPhone4
 #define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480.0)
@@ -71,12 +77,5 @@
 #define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667.0)
 // iPhone6p
 #define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736.0)
-
-// 加粗字体
-#define XHFontBold [UIFont boldSystemFontOfSize:15]
-// 一般字体
-#define XHFontSmall [UIFont systemFontOfSize:15.0]
-// 常规字体,6p调大
-#define XHFontNormal ApplicationW >= 414 ? [UIFont systemFontOfSize:20.0] : [UIFont systemFontOfSize:15.0]
 
 #endif

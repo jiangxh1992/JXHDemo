@@ -10,7 +10,3 @@
 
 // 测试接口
 extern NSString *const testURL;
-
-// 时间轴常量
-//extern CGFloat const minCellHeight;   //最小的cell高度
-//extern CGFloat const maxCellHeight;   //最大的cell高度

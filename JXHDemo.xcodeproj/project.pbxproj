@@ -15,6 +15,7 @@
 		6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311D1BEC803F00DB73AF /* PinyinFormatter.m */; };
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
+		D2CACF021DD321DC006C671E /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CACF011DD321DC006C671E /* UIColor+HexString.m */; };
 		D2D49C6F1DCDEB9C00D124CB /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6C1DCDEB9C00D124CB /* SectionHeaderView.m */; };
 		D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6E1DCDEB9C00D124CB /* AccountCell.m */; };
 		D2D49C731DCDEBA900D124CB /* FolderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C721DCDEBA900D124CB /* FolderTableViewController.m */; };
@@ -186,6 +187,8 @@
 		6CD4311E1BEC803F00DB73AF /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		D2CACF001DD321DC006C671E /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		D2CACF011DD321DC006C671E /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		D2D49C6B1DCDEB9C00D124CB /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
 		D2D49C6C1DCDEB9C00D124CB /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		D2D49C6D1DCDEB9C00D124CB /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
@@ -546,6 +549,16 @@
 			name = "单例类";
 			sourceTree = "<group>";
 		};
+		D2CACEFF1DD321B7006C671E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F33262531D0817C200BB5C0D /* SystemConfiguration.framework */,
+				F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */,
+				F332624F1D08179F00BB5C0D /* Security.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		D2DAFB7F1DC09C1900325282 /* 知识点积累 */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,9 +655,7 @@
 		F70AE9A31BD08343008F817D = {
 			isa = PBXGroup;
 			children = (
-				F33262531D0817C200BB5C0D /* SystemConfiguration.framework */,
-				F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */,
-				F332624F1D08179F00BB5C0D /* Security.framework */,
+				D2CACEFF1DD321B7006C671E /* Framework */,
 				F70AE9AE1BD08343008F817D /* JXHDemo */,
 				F70AE9C81BD08343008F817D /* JXHDemoTests */,
 				F70AE9AD1BD08343008F817D /* Products */,
@@ -732,6 +743,8 @@
 		F722DBAD1BE0AAA500D5EC1F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D2CACF001DD321DC006C671E /* UIColor+HexString.h */,
+				D2CACF011DD321DC006C671E /* UIColor+HexString.m */,
 				F7D256361C32201600E27130 /* UITableViewCell+Extension.h */,
 				F7D256371C32201600E27130 /* UITableViewCell+Extension.m */,
 				F7D256331C32200500E27130 /* UILabel+Extension.h */,
@@ -1407,6 +1420,7 @@
 				F7FA92A81BEC3AD000CA97CD /* ESPickerItem.m in Sources */,
 				F7258CE61C1E645400851AE9 /* NSObject+MJProperty.m in Sources */,
 				F384CBBE1D390C7200C0D192 /* AFURLSessionManager.m in Sources */,
+				D2CACF021DD321DC006C671E /* UIColor+HexString.m in Sources */,
 				F382B9031D13D53000E8C272 /* UIDragButton.m in Sources */,
 				F7FA92A71BEC3AD000CA97CD /* ESLabelItem.m in Sources */,
 				F384CBBD1D390C7200C0D192 /* AFURLResponseSerialization.m in Sources */,
