@@ -10,14 +10,9 @@
 
 @interface SingletonClass : NSObject
 
-/**
- *  测试变量
- */
+// 测试变量
 @property (nonatomic, copy)NSString *name;
-
-/**
- * class单例
- */
+// class单例
 + (SingletonClass *)Ins;
 
 @end

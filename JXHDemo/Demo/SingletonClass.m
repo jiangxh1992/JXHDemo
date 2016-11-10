@@ -10,9 +10,7 @@
 
 @implementation SingletonClass
 
-/**
- * class单例
- */
+// class单例
 + (SingletonClass *)Ins {
     static dispatch_once_t once;
     static id sharedInstance;
@@ -23,10 +21,25 @@
     return sharedInstance;
 }
 
+// 截断copyWithZone:
++ (id)copyWithZone:(struct _NSZone *)zone{
+    return [SingletonClass Ins];
+}
+- (id)copyWithZone:(NSZone *)zone{
+    return [SingletonClass Ins];
+}
++ (id)mutableCopyWithZone:(struct _NSZone *)zone{
+    return [SingletonClass Ins];
+}
+- (id)mutableCopyWithZone:(NSZone *)zone{
+    return [SingletonClass Ins];
+}
+
+// 测试
 - (void)test {
     // 可在整个工程中调用如下代码：
     [SingletonClass Ins].name = @"sharedInstnce";
-    //NSString *name = [SingletonClass Ins].name;
+    NSString *name = [SingletonClass Ins].name;
 }
 
 @end
