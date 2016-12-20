@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainTableViewController.h"
-#import "MainTabBarController.h"
+#import "RootViewController.h"
 #import "NewFeatureViewController.h"
 
 @interface AppDelegate ()
@@ -45,7 +44,7 @@
     if ([version isEqualToString:savedVersion])
     {
         // 不是第一次(进入主界面)
-        self.window.rootViewController = [[MainTabBarController alloc] init];
+        self.window.rootViewController = [[RootViewController alloc] init];
     }
     else
     {
@@ -64,9 +63,7 @@
 {
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) // iOS8和以后
     {
-        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
-                                                                                                              categories:nil]];
-        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
         [[UIApplication sharedApplication] registerForRemoteNotifications];
     }
     else
@@ -92,7 +89,6 @@
  *  接收到远程通知时会调用
  */
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
 }
 
 @end

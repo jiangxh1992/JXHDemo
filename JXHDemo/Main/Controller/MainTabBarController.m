@@ -11,7 +11,6 @@
 #import "MainTableViewController.h"
 #import "FoundationViewController.h"
 #import "MyDemoViewController.h"
-#import "FloatingViewController.h"
 
 @interface MainTabBarController ()
 
@@ -21,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // 1.UIKit
     MainTableViewController *uikitVC = [[MainTableViewController alloc]init];
     [self addTabBarChildVC:uikitVC title:@"UIKit" icon:@"tabbar_home"];
@@ -35,11 +35,6 @@
     
     // 底部导航栏选中后的文字颜色
     self.tabBar.tintColor = RGBColor(28, 190, 164);
-    
-    // 添加悬浮窗
-    FloatingViewController *floatVC = [[FloatingViewController alloc]init];
-    [self addChildViewController:floatVC];
-    [self.view addSubview:floatVC.view];
 }
 
 /**

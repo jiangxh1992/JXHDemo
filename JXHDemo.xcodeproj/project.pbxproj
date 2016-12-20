@@ -15,6 +15,9 @@
 		6CD431421BEC803F00DB73AF /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311D1BEC803F00DB73AF /* PinyinFormatter.m */; };
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
+		D2152F771E09625100EC7BAD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2152F761E09625100EC7BAD /* RootViewController.m */; };
+		D29E7C901E095B0C00CCD3EE /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */; };
+		D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */; };
 		D2CACF021DD321DC006C671E /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CACF011DD321DC006C671E /* UIColor+HexString.m */; };
 		D2D49C6F1DCDEB9C00D124CB /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6C1DCDEB9C00D124CB /* SectionHeaderView.m */; };
 		D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6E1DCDEB9C00D124CB /* AccountCell.m */; };
@@ -187,6 +190,11 @@
 		6CD4311E1BEC803F00DB73AF /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		D2152F751E09625100EC7BAD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D2152F761E09625100EC7BAD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D29E7C8E1E095B0C00CCD3EE /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D2CACF001DD321DC006C671E /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		D2CACF011DD321DC006C671E /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		D2D49C6B1DCDEB9C00D124CB /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
@@ -478,6 +486,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */,
 				F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */,
 				F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */,
 				F33262501D08179F00BB5C0D /* Security.framework in Frameworks */,
@@ -547,6 +556,23 @@
 				F36EE1B91D4E33DD0001EC40 /* SingletonClass.m */,
 			);
 			name = "单例类";
+			sourceTree = "<group>";
+		};
+		D29E7C8D1E095AEC00CCD3EE /* 震动与音效 */ = {
+			isa = PBXGroup;
+			children = (
+				D29E7C8E1E095B0C00CCD3EE /* AudioViewController.h */,
+				D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */,
+			);
+			name = "震动与音效";
+			sourceTree = "<group>";
+		};
+		D29E7C911E095C2D00CCD3EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D2CACEFF1DD321B7006C671E /* Framework */ = {
@@ -659,6 +685,7 @@
 				F70AE9AE1BD08343008F817D /* JXHDemo */,
 				F70AE9C81BD08343008F817D /* JXHDemoTests */,
 				F70AE9AD1BD08343008F817D /* Products */,
+				D29E7C911E095C2D00CCD3EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -778,6 +805,8 @@
 				F3FA7E0F1D40C52C00248202 /* TabNavController.m */,
 				F3FA7E111D40C82B00248202 /* MainTabBarController.h */,
 				F3FA7E121D40C82B00248202 /* MainTabBarController.m */,
+				D2152F751E09625100EC7BAD /* RootViewController.h */,
+				D2152F761E09625100EC7BAD /* RootViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -859,6 +888,7 @@
 		F72F04421BF02579008E6FB4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D29E7C8D1E095AEC00CCD3EE /* 震动与音效 */,
 				F72F04431BF02579008E6FB4 /* FoundationViewController.h */,
 				F72F04441BF02579008E6FB4 /* FoundationViewController.m */,
 				F72F04451BF02579008E6FB4 /* TestViewController */,
@@ -1345,9 +1375,11 @@
 				TargetAttributes = {
 					F70AE9AB1BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = V4SYMZQA29;
 					};
 					F70AE9C41BD08343008F817D = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = V4SYMZQA29;
 						TestTargetID = F70AE9AB1BD08343008F817D;
 					};
 				};
@@ -1455,6 +1487,7 @@
 				F7FA92AE1BEC3AD000CA97CD /* ESListItem.m in Sources */,
 				F7FA92C31BEC3C6B00CA97CD /* NSString+Crypt.m in Sources */,
 				F7FA92AD1BEC3AD000CA97CD /* ESListCellFrame.m in Sources */,
+				D29E7C901E095B0C00CCD3EE /* AudioViewController.m in Sources */,
 				F36EE1BA1D4E33DD0001EC40 /* SingletonClass.m in Sources */,
 				F72F046D1BF02579008E6FB4 /* MapViewController.m in Sources */,
 				6CD431411BEC803F00DB73AF /* NSString+PinYin4Cocoa.m in Sources */,
@@ -1535,6 +1568,7 @@
 				F7FA931C1BEC43D500CA97CD /* UIImage+WebP.m in Sources */,
 				F72F04801BF02579008E6FB4 /* CheckBoxViewController.m in Sources */,
 				F7258CE01C1E645400851AE9 /* MJProperty.m in Sources */,
+				D2152F771E09625100EC7BAD /* RootViewController.m in Sources */,
 				F39AA75D1D2523E400285B43 /* FloatWindow.m in Sources */,
 				F722DBB01BE0AAAF00D5EC1F /* NSString+Extension.m in Sources */,
 				F7258CE11C1E645400851AE9 /* MJPropertyKey.m in Sources */,
@@ -1610,7 +1644,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1655,7 +1689,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1675,14 +1709,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V4SYMZQA29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1698,14 +1732,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V4SYMZQA29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXHDemo/Common/Lib",
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1719,11 +1753,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V4SYMZQA29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1740,11 +1775,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V4SYMZQA29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "/Volumes/SD/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiangxh.$(PRODUCT_NAME:rfc1034identifier)";

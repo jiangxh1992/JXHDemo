@@ -7,7 +7,7 @@
 //  SCROLLVIEW展示新版本特性
 
 #import "NewFeatureViewController.h"
-#import "MainTabBarController.h"
+#import "RootViewController.h"
 
 // 滚动视图个数
 #define ImageNum 3
@@ -88,7 +88,7 @@
 - (void)start
 {
     // 进入主界面
-    self.view.window.rootViewController = [[MainTabBarController alloc] init];
+    self.view.window.rootViewController = [[RootViewController alloc] init];
 }
 
 @end
