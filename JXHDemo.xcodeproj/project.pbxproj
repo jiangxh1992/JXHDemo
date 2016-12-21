@@ -16,8 +16,12 @@
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
 		D2152F771E09625100EC7BAD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2152F761E09625100EC7BAD /* RootViewController.m */; };
-		D29E7C901E095B0C00CCD3EE /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */; };
 		D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */; };
+		D2B3B30D1E0A6DA700EEE66D /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */; };
+		D2B3B30E1E0A6DA700EEE66D /* SoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */; };
+		D2B3B3191E0A966700EEE66D /* snow.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B3181E0A966700EEE66D /* snow.wav */; };
+		D2B3B31B1E0A97FA00EEE66D /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */; };
+		D2B3B35C1E0AB3D300EEE66D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */; };
 		D2CACF021DD321DC006C671E /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CACF011DD321DC006C671E /* UIColor+HexString.m */; };
 		D2D49C6F1DCDEB9C00D124CB /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6C1DCDEB9C00D124CB /* SectionHeaderView.m */; };
 		D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6E1DCDEB9C00D124CB /* AccountCell.m */; };
@@ -192,9 +196,13 @@
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		D2152F751E09625100EC7BAD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D2152F761E09625100EC7BAD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		D29E7C8E1E095B0C00CCD3EE /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
-		D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
 		D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D2B3B30A1E0A6DA700EEE66D /* SoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundViewController.h; sourceTree = "<group>"; };
+		D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundViewController.m; sourceTree = "<group>"; };
+		D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundViewController.xib; sourceTree = "<group>"; };
+		D2B3B3181E0A966700EEE66D /* snow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snow.wav; sourceTree = "<group>"; };
+		D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D2CACF001DD321DC006C671E /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		D2CACF011DD321DC006C671E /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		D2D49C6B1DCDEB9C00D124CB /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
@@ -486,6 +494,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B3B35C1E0AB3D300EEE66D /* AVFoundation.framework in Frameworks */,
 				D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */,
 				F33262541D0817C200BB5C0D /* SystemConfiguration.framework in Frameworks */,
 				F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */,
@@ -561,8 +570,9 @@
 		D29E7C8D1E095AEC00CCD3EE /* 震动与音效 */ = {
 			isa = PBXGroup;
 			children = (
-				D29E7C8E1E095B0C00CCD3EE /* AudioViewController.h */,
-				D29E7C8F1E095B0C00CCD3EE /* AudioViewController.m */,
+				D2B3B30A1E0A6DA700EEE66D /* SoundViewController.h */,
+				D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */,
+				D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */,
 			);
 			name = "震动与音效";
 			sourceTree = "<group>";
@@ -570,9 +580,19 @@
 		D29E7C911E095C2D00CCD3EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */,
 				D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2B3B3171E0A966700EEE66D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */,
+				D2B3B3181E0A966700EEE66D /* snow.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 		D2CACEFF1DD321B7006C671E /* Framework */ = {
@@ -1066,6 +1086,7 @@
 		F784500E1C24E9F800B7B305 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2B3B3171E0A966700EEE66D /* sounds */,
 				F7AC2A931C24F2EE00D72437 /* plist */,
 				F78450171C24E9F800B7B305 /* Prefix.pch */,
 				F78450151C24E9F800B7B305 /* Images.xcassets */,
@@ -1408,14 +1429,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B3B30E1E0A6DA700EEE66D /* SoundViewController.xib in Resources */,
 				F7AC2A961C24F34900D72437 /* diagnoseType.plist in Resources */,
 				F784501C1C24E9F800B7B305 /* Images.xcassets in Resources */,
 				F39AA74E1D24E7F400285B43 /* account.plist in Resources */,
 				F784501A1C24E9F800B7B305 /* Main.storyboard in Resources */,
 				F78450191C24E9F800B7B305 /* LaunchScreen.xib in Resources */,
+				D2B3B31B1E0A97FA00EEE66D /* gameover.mp3 in Resources */,
 				6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */,
 				F3CA40271D2A33B50020C3F7 /* test.plist in Resources */,
 				F757B0EB1C2A6A2A003A836F /* MJRefresh.bundle in Resources */,
+				D2B3B3191E0A966700EEE66D /* snow.wav in Resources */,
 				F7AC2A971C24F34900D72437 /* nodeRecord.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1487,7 +1511,6 @@
 				F7FA92AE1BEC3AD000CA97CD /* ESListItem.m in Sources */,
 				F7FA92C31BEC3C6B00CA97CD /* NSString+Crypt.m in Sources */,
 				F7FA92AD1BEC3AD000CA97CD /* ESListCellFrame.m in Sources */,
-				D29E7C901E095B0C00CCD3EE /* AudioViewController.m in Sources */,
 				F36EE1BA1D4E33DD0001EC40 /* SingletonClass.m in Sources */,
 				F72F046D1BF02579008E6FB4 /* MapViewController.m in Sources */,
 				6CD431411BEC803F00DB73AF /* NSString+PinYin4Cocoa.m in Sources */,
@@ -1526,6 +1549,7 @@
 				F7FA93111BEC43D500CA97CD /* NSData+GIF.m in Sources */,
 				F7FA92AC1BEC3AD000CA97CD /* ESListViewController.m in Sources */,
 				F72F04811BF02579008E6FB4 /* UICheckBox.m in Sources */,
+				D2B3B30D1E0A6DA700EEE66D /* SoundViewController.m in Sources */,
 				F7258CEA1C1E82EE00851AE9 /* AnimationViewController.m in Sources */,
 				F757B0EF1C2A6A2A003A836F /* MJRefreshGifFooter.m in Sources */,
 				F7258CDE1C1E645400851AE9 /* MJExtensionConst.m in Sources */,
@@ -1722,7 +1746,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1745,7 +1769,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
