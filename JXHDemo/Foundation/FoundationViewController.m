@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.title = @"Foundation";
     // cell的名称
-    _classNames = @[@"TestViewController", @"PlistViewController", @"SoundViewController"];
+    _classNames = @[@"TestViewController", @"PlistViewController", @"DeviceInfoViewController"];
     //设置模型数据
     NSMutableArray *mulItems = [[NSMutableArray alloc] init];
     for (NSString *name in _classNames) {

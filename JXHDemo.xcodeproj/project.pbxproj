@@ -17,8 +17,6 @@
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
 		D2152F771E09625100EC7BAD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2152F761E09625100EC7BAD /* RootViewController.m */; };
 		D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */; };
-		D2B3B30D1E0A6DA700EEE66D /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */; };
-		D2B3B30E1E0A6DA700EEE66D /* SoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */; };
 		D2B3B3191E0A966700EEE66D /* snow.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B3181E0A966700EEE66D /* snow.wav */; };
 		D2B3B31B1E0A97FA00EEE66D /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */; };
 		D2B3B35C1E0AB3D300EEE66D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */; };
@@ -27,6 +25,7 @@
 		D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6E1DCDEB9C00D124CB /* AccountCell.m */; };
 		D2D49C731DCDEBA900D124CB /* FolderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C721DCDEBA900D124CB /* FolderTableViewController.m */; };
 		D2DAFB821DC09C5B00325282 /* CommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAFB811DC09C5B00325282 /* CommenViewController.m */; };
+		D2F1F7111E2101C500B2D917 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7101E2101C500B2D917 /* DeviceInfoViewController.m */; };
 		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
 		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
 		F33262521D0817BC00BB5C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33262511D0817BC00BB5C0D /* MobileCoreServices.framework */; };
@@ -197,9 +196,6 @@
 		D2152F751E09625100EC7BAD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D2152F761E09625100EC7BAD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D2B3B30A1E0A6DA700EEE66D /* SoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundViewController.h; sourceTree = "<group>"; };
-		D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundViewController.m; sourceTree = "<group>"; };
-		D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundViewController.xib; sourceTree = "<group>"; };
 		D2B3B3181E0A966700EEE66D /* snow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snow.wav; sourceTree = "<group>"; };
 		D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
 		D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +209,8 @@
 		D2D49C721DCDEBA900D124CB /* FolderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderTableViewController.m; sourceTree = "<group>"; };
 		D2DAFB801DC09C5B00325282 /* CommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommenViewController.h; sourceTree = "<group>"; };
 		D2DAFB811DC09C5B00325282 /* CommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommenViewController.m; sourceTree = "<group>"; };
+		D2F1F70F1E2101C500B2D917 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
+		D2F1F7101E2101C500B2D917 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
 		F33262491D07C0F400BB5C0D /* InputAjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAjustViewController.m; sourceTree = "<group>"; };
 		F332624F1D08179F00BB5C0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -567,16 +565,6 @@
 			name = "单例类";
 			sourceTree = "<group>";
 		};
-		D29E7C8D1E095AEC00CCD3EE /* 震动与音效 */ = {
-			isa = PBXGroup;
-			children = (
-				D2B3B30A1E0A6DA700EEE66D /* SoundViewController.h */,
-				D2B3B30B1E0A6DA700EEE66D /* SoundViewController.m */,
-				D2B3B30C1E0A6DA700EEE66D /* SoundViewController.xib */,
-			);
-			name = "震动与音效";
-			sourceTree = "<group>";
-		};
 		D29E7C911E095C2D00CCD3EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +600,15 @@
 				D2DAFB811DC09C5B00325282 /* CommenViewController.m */,
 			);
 			name = "知识点积累";
+			sourceTree = "<group>";
+		};
+		D2F1F70E1E21019400B2D917 /* UIDevice设备信息 */ = {
+			isa = PBXGroup;
+			children = (
+				D2F1F70F1E2101C500B2D917 /* DeviceInfoViewController.h */,
+				D2F1F7101E2101C500B2D917 /* DeviceInfoViewController.m */,
+			);
+			name = "UIDevice设备信息";
 			sourceTree = "<group>";
 		};
 		F33262471D07C03800BB5C0D /* 输入框防键盘遮挡 */ = {
@@ -908,7 +905,7 @@
 		F72F04421BF02579008E6FB4 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				D29E7C8D1E095AEC00CCD3EE /* 震动与音效 */,
+				D2F1F70E1E21019400B2D917 /* UIDevice设备信息 */,
 				F72F04431BF02579008E6FB4 /* FoundationViewController.h */,
 				F72F04441BF02579008E6FB4 /* FoundationViewController.m */,
 				F72F04451BF02579008E6FB4 /* TestViewController */,
@@ -1429,7 +1426,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B3B30E1E0A6DA700EEE66D /* SoundViewController.xib in Resources */,
 				F7AC2A961C24F34900D72437 /* diagnoseType.plist in Resources */,
 				F784501C1C24E9F800B7B305 /* Images.xcassets in Resources */,
 				F39AA74E1D24E7F400285B43 /* account.plist in Resources */,
@@ -1482,6 +1478,7 @@
 				F384CBBD1D390C7200C0D192 /* AFURLResponseSerialization.m in Sources */,
 				D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */,
 				F72F046B1BF02579008E6FB4 /* MyDemoViewController.m in Sources */,
+				D2F1F7111E2101C500B2D917 /* DeviceInfoViewController.m in Sources */,
 				F384CBB61D390C7200C0D192 /* AFHTTPRequestOperation.m in Sources */,
 				F7FA92B71BEC3AD000CA97CD /* ESSettingSwitchItem.m in Sources */,
 				F7FA92B41BEC3AD000CA97CD /* ESSettingGroup.m in Sources */,
@@ -1549,7 +1546,6 @@
 				F7FA93111BEC43D500CA97CD /* NSData+GIF.m in Sources */,
 				F7FA92AC1BEC3AD000CA97CD /* ESListViewController.m in Sources */,
 				F72F04811BF02579008E6FB4 /* UICheckBox.m in Sources */,
-				D2B3B30D1E0A6DA700EEE66D /* SoundViewController.m in Sources */,
 				F7258CEA1C1E82EE00851AE9 /* AnimationViewController.m in Sources */,
 				F757B0EF1C2A6A2A003A836F /* MJRefreshGifFooter.m in Sources */,
 				F7258CDE1C1E645400851AE9 /* MJExtensionConst.m in Sources */,
