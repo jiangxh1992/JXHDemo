@@ -1736,7 +1736,7 @@
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1759,7 +1759,7 @@
 					"$(PROJECT_DIR)/JXHDemo/Supporting",
 					Files,
 				);
-				GCC_PREFIX_HEADER = "/Users/xinhoujiang/Desktop/Git/JXHDemo/JXHDemo/Supporting Files/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXHDemo/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
