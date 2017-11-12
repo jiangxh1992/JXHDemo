@@ -16,7 +16,11 @@
 		6CD431431BEC803F00DB73AF /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4311F1BEC803F00DB73AF /* PinyinHelper.m */; };
 		6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */; };
 		D2152F771E09625100EC7BAD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2152F761E09625100EC7BAD /* RootViewController.m */; };
+		D2282ADB1F98CFEB006C2443 /* map_icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2282ADA1F98CFEB006C2443 /* map_icon.bundle */; };
 		D29E7C931E095C2E00CCD3EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */; };
+		D2ACE47A1FA757F3009A3902 /* AudioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ACE4791FA757F3009A3902 /* AudioRecord.m */; };
+		D2ACE4841FA75E12009A3902 /* AudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ACE4821FA75E12009A3902 /* AudioRecordViewController.m */; };
+		D2ACE4851FA75E12009A3902 /* AudioRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2ACE4831FA75E12009A3902 /* AudioRecordViewController.xib */; };
 		D2B3B3191E0A966700EEE66D /* snow.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B3181E0A966700EEE66D /* snow.wav */; };
 		D2B3B31B1E0A97FA00EEE66D /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */; };
 		D2B3B35C1E0AB3D300EEE66D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */; };
@@ -25,6 +29,7 @@
 		D2D49C701DCDEB9C00D124CB /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C6E1DCDEB9C00D124CB /* AccountCell.m */; };
 		D2D49C731DCDEBA900D124CB /* FolderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D49C721DCDEBA900D124CB /* FolderTableViewController.m */; };
 		D2DAFB821DC09C5B00325282 /* CommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAFB811DC09C5B00325282 /* CommenViewController.m */; };
+		D2ED64581F9781B10056CE28 /* MyAnnomation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ED64571F9781B10056CE28 /* MyAnnomation.m */; };
 		D2F1F7111E2101C500B2D917 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7101E2101C500B2D917 /* DeviceInfoViewController.m */; };
 		F332624A1D07C0F400BB5C0D /* InputAjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33262491D07C0F400BB5C0D /* InputAjustViewController.m */; };
 		F33262501D08179F00BB5C0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F332624F1D08179F00BB5C0D /* Security.framework */; };
@@ -195,7 +200,13 @@
 		6CD431211BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		D2152F751E09625100EC7BAD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D2152F761E09625100EC7BAD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D2282ADA1F98CFEB006C2443 /* map_icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = map_icon.bundle; sourceTree = "<group>"; };
 		D29E7C921E095C2E00CCD3EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D2ACE4781FA757F3009A3902 /* AudioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecord.h; sourceTree = "<group>"; };
+		D2ACE4791FA757F3009A3902 /* AudioRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecord.m; sourceTree = "<group>"; };
+		D2ACE4811FA75E12009A3902 /* AudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecordViewController.h; sourceTree = "<group>"; };
+		D2ACE4821FA75E12009A3902 /* AudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecordViewController.m; sourceTree = "<group>"; };
+		D2ACE4831FA75E12009A3902 /* AudioRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioRecordViewController.xib; sourceTree = "<group>"; };
 		D2B3B3181E0A966700EEE66D /* snow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snow.wav; sourceTree = "<group>"; };
 		D2B3B31A1E0A97FA00EEE66D /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
 		D2B3B35B1E0AB3D300EEE66D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +220,8 @@
 		D2D49C721DCDEBA900D124CB /* FolderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderTableViewController.m; sourceTree = "<group>"; };
 		D2DAFB801DC09C5B00325282 /* CommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommenViewController.h; sourceTree = "<group>"; };
 		D2DAFB811DC09C5B00325282 /* CommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommenViewController.m; sourceTree = "<group>"; };
+		D2ED64561F9781B10056CE28 /* MyAnnomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnomation.h; sourceTree = "<group>"; };
+		D2ED64571F9781B10056CE28 /* MyAnnomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnomation.m; sourceTree = "<group>"; };
 		D2F1F70F1E2101C500B2D917 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		D2F1F7101E2101C500B2D917 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		F33262481D07C0F400BB5C0D /* InputAjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAjustViewController.h; sourceTree = "<group>"; };
@@ -574,6 +587,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D2ACE4771FA757C1009A3902 /* 录音 */ = {
+			isa = PBXGroup;
+			children = (
+				D2ACE4781FA757F3009A3902 /* AudioRecord.h */,
+				D2ACE4791FA757F3009A3902 /* AudioRecord.m */,
+				D2ACE4811FA75E12009A3902 /* AudioRecordViewController.h */,
+				D2ACE4821FA75E12009A3902 /* AudioRecordViewController.m */,
+				D2ACE4831FA75E12009A3902 /* AudioRecordViewController.xib */,
+			);
+			name = "录音";
+			sourceTree = "<group>";
+		};
 		D2B3B3171E0A966700EEE66D /* sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -872,6 +897,7 @@
 		F72F04271BF02579008E6FB4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D2ACE4771FA757C1009A3902 /* 录音 */,
 				F72F04281BF02579008E6FB4 /* MyDemoViewController.h */,
 				F72F04291BF02579008E6FB4 /* MyDemoViewController.m */,
 				D299BE571DC1ACAF008A32C8 /* 单例类 */,
@@ -889,6 +915,8 @@
 			children = (
 				F72F042D1BF02579008E6FB4 /* MapViewController.h */,
 				F72F042E1BF02579008E6FB4 /* MapViewController.m */,
+				D2ED64561F9781B10056CE28 /* MyAnnomation.h */,
+				D2ED64571F9781B10056CE28 /* MyAnnomation.m */,
 			);
 			path = "地图";
 			sourceTree = "<group>";
@@ -1083,6 +1111,7 @@
 		F784500E1C24E9F800B7B305 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2282ADA1F98CFEB006C2443 /* map_icon.bundle */,
 				D2B3B3171E0A966700EEE66D /* sounds */,
 				F7AC2A931C24F2EE00D72437 /* plist */,
 				F78450171C24E9F800B7B305 /* Prefix.pch */,
@@ -1431,8 +1460,10 @@
 				F39AA74E1D24E7F400285B43 /* account.plist in Resources */,
 				F784501A1C24E9F800B7B305 /* Main.storyboard in Resources */,
 				F78450191C24E9F800B7B305 /* LaunchScreen.xib in Resources */,
+				D2282ADB1F98CFEB006C2443 /* map_icon.bundle in Resources */,
 				D2B3B31B1E0A97FA00EEE66D /* gameover.mp3 in Resources */,
 				6CD431441BEC803F00DB73AF /* unicode_to_hanyu_pinyin.txt in Resources */,
+				D2ACE4851FA75E12009A3902 /* AudioRecordViewController.xib in Resources */,
 				F3CA40271D2A33B50020C3F7 /* test.plist in Resources */,
 				F757B0EB1C2A6A2A003A836F /* MJRefresh.bundle in Resources */,
 				D2B3B3191E0A966700EEE66D /* snow.wav in Resources */,
@@ -1507,6 +1538,7 @@
 				F7FA92B01BEC3AD000CA97CD /* ESSearchBar.m in Sources */,
 				F7FA92AE1BEC3AD000CA97CD /* ESListItem.m in Sources */,
 				F7FA92C31BEC3C6B00CA97CD /* NSString+Crypt.m in Sources */,
+				D2ACE4841FA75E12009A3902 /* AudioRecordViewController.m in Sources */,
 				F7FA92AD1BEC3AD000CA97CD /* ESListCellFrame.m in Sources */,
 				F36EE1BA1D4E33DD0001EC40 /* SingletonClass.m in Sources */,
 				F72F046D1BF02579008E6FB4 /* MapViewController.m in Sources */,
@@ -1542,6 +1574,7 @@
 				6CD4313F1BEC803F00DB73AF /* ChineseToPinyinResource.m in Sources */,
 				F755A3251BD8B32600803182 /* main.m in Sources */,
 				F384CBB81D390C7200C0D192 /* AFHTTPSessionManager.m in Sources */,
+				D2ED64581F9781B10056CE28 /* MyAnnomation.m in Sources */,
 				F722DBDC1BE20DDF00D5EC1F /* ESTabBar.m in Sources */,
 				F7FA93111BEC43D500CA97CD /* NSData+GIF.m in Sources */,
 				F7FA92AC1BEC3AD000CA97CD /* ESListViewController.m in Sources */,
@@ -1561,6 +1594,7 @@
 				F7FA93171BEC43D500CA97CD /* SDWebImageManager.m in Sources */,
 				F7FA92A31BEC3AD000CA97CD /* ESDateItem.m in Sources */,
 				F7FA92AF1BEC3AD000CA97CD /* ESListCell.m in Sources */,
+				D2ACE47A1FA757F3009A3902 /* AudioRecord.m in Sources */,
 				F7258CDF1C1E645400851AE9 /* MJFoundation.m in Sources */,
 				F7FA931A1BEC43D500CA97CD /* UIImage+GIF.m in Sources */,
 				F755A3221BD8B30000803182 /* AppDelegate.m in Sources */,
@@ -1740,7 +1774,7 @@
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
+				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1763,7 +1797,7 @@
 				INFOPLIST_FILE = JXHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo2egege;
+				PRODUCT_BUNDLE_IDENTIFIER = Jiangxh.JXHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
